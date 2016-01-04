@@ -1,4 +1,4 @@
 ## Summary
 
-- [devY White](devy-white/README.md)
+- [devY White](devy-white)
 - [devY Blue](devy-blue/README.md)
