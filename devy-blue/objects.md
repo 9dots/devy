@@ -55,17 +55,17 @@ Ask students questions to get them thinking about how to create this game on the
   - The game needs to use if/else to react to the user input
   - The room needs to be described in a way the computer can understand
 2. What programming concepts will you need to be able to create the game?
-  - variables
-  - objects
-  - complex conditionals
+  - variables (store temporary information / create rooms)
+  - objects (store game state and room information)
+  - complex conditionals (react to user input)
   - functions (writing)
-  - debugging
+  - debugging (work through problems)
 
 
 ### Explain
 
 ##### How to create a Javascript object
-Show students how to create an object on the computer. Do the example below with your group. The code is all a continuation of one example.
+Show students how to create an object on the computer. Do the example below with your group on [repl.it](repl.it). The code is all a continuation of one example.
 
 1. Start with the keyword var and give it a name
 ```js
@@ -103,33 +103,70 @@ var room = {
   - `room.description`
 
 ##### How to use the game maker
+The game maker has three important parts to it.
 
-```js
-// Set up the game package and pass it the initial state and update function
-require('simple-zork').createGame(initialState(), update)()
+1. `initialState` - The initialState function sets up the starting information for the game. This is the state that will change in the update function.
 
-// Create your room object here
-var room = {
-// Add room properties here
-}
+  **Returns** object (state)
 
-function initialState () {
-  // set up the starting state of your game
-  return {
-    title: ''
+  - Example
+  ```js
+  function initialState () {
+        return {
+          title: 'My game'
+        }
   }
-}
+  ```
 
-function update (state, verb, noun) {
-  // if statements go here
-  return state
-}
-```
+2. `update` - The update function takes the current state of the game and the user input and returns the new updated state.
+  **Returns** state
+
+  - To print out information to the user set the message property on state
+
+  - Example
+  ```js
+  function update (state, verb, noun) {
+        state.message = 'Welcome to my game.'
+        return state
+  }
+  ```
+3. `room / level` - an object that contains information about the levels of the game.
+
+  - Example
+  ```js
+  var room = {
+    name: 'Staircase',
+    description: 'A long wooden staircase. The corridor at the top of the stairs is too dark to see from here.',
+    completed: true
+  }
+  ```
+
+  ```js
+  // Set up the game package and pass it the initial state and update function
+  require('simple-zork').createGame(initialState(), update)()
+
+  // Create your room object here
+  var room = {
+  // Add room properties here
+  }
+
+  function initialState () {
+    // set up the starting state of your game
+    return {
+      title: '' /* Changes the title of the game */
+    }
+  }
+
+  function update (state, verb, noun) {
+    // if statements go here
+    return state
+  }
+  ```
 
 
 ### Engage
 ##### Activities
-
+ - Create an application that keeps track of the current user using the game maker.
 
 ##### Project milestone
-Create the first room of the game by adding the help and look commands.
+ - Create the first room of the game by adding the help and look commands.
