@@ -103,7 +103,7 @@ var room = {
   - `room.description`
 
 ##### How to use the game maker
-The game maker has three important parts to it.
+Show students the game making environment on requirebin (add link). The game maker has three important parts to it.
 
 1. `initialState` - The initialState function sets up the starting information for the game. This is the state that will change in the update function.
 
