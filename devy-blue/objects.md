@@ -5,7 +5,7 @@ By the end of the lesson, students will be able to create a Javascript object us
 
 ##### Overview
 Students start by exploring books as objects. Students then learn how to create those same objects in Javascript using [repl.it](repl.it). Students use objects to complete the activities and then finish by creating the first room in their game.
-``
+
 ### Explore
 
 ##### Example level
@@ -39,13 +39,14 @@ Creating an escape the room game.
   - `Look` - Get a description of what the current situation of the room is.
   - `Help` - Get a list of commands available to use from the computer.
   - Any other verbs needed to interact with the objects around the room such as `Take` or `Use`
-4. Once the level designers hand the plans to the computer that player can start.
-5. When the player has either finished the level or gotten stuck, reflect on how the level went. Some example questions include:
+4. Everyone (including the computer and the player) creates a level.
+5. Once the level designers hand the plans to the computer that player can start.
+6. When the player has either finished the level or gotten stuck, reflect on how the level went. Some example questions include:
   - What worked well about the level?
   - What was confusing?
   - Was the level challenging?
   - What could be changed about the level design to make it easier to understand?
-6. Change roles and try the exercise again.
+7. Change roles and try the exercise again.
 
 ### Questions
 Ask students questions to get them thinking about how to create this game on the computer.
@@ -142,6 +143,7 @@ The game maker has three important parts to it.
   ```
 
 2. `update` - The update function takes the current state of the game and the user input and returns the new updated state.
+
   **Returns** state
 
   - To print out information to the user set the message property on state
