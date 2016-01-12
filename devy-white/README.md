@@ -1,11 +1,22 @@
 ## devY white
 
-devy White is an introduction course that covers the following coding concepts.
+devY White is an introduction course that introduces students to the dash(name?) coding environment and basic Javascript concepts.
 
-- Sequence
-- Function calls
-- Basic variable types
-    - Numbers
-    - Strings
-- Debugging
-- Defining functions
+##### Concepts
+
+- sequencing
+- functions (reading)
+- variables (assigning, reading)
+- object properties
+- functions
+- numbers
+- simple conditionals
+- strings
+
+##### Projects
+Students demonstrate their knowledge of dash and these concepts to create a student toolbox that has:
+
+- a dictionary
+- a calculator
+- a gpa finder
+- a todo list
