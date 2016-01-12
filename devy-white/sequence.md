@@ -1,7 +1,7 @@
 # Sequence and function calls
 
-### Explore 
-Students program teacher to get through maze.
+### Explore
+Students program teacher to create a peanut butter and jelly sandwich.
 
 Students write out the algorithm to make a peanut butter and jelly sandwich using the functions:
 
@@ -28,7 +28,7 @@ Suggested Questions:
 
 ### Explain
 
-1. In programming, the computer runs the instructions in order. 
+1. In programming, the computer runs the instructions in order.
 2. This is called sequencing. It means that the instructions run from top to bottom.
 3. Instructions that perform a specific task are called are called function calls.
 4. Ask students to name the functions that Teacher robot knows.
@@ -40,7 +40,7 @@ getPeanutButter()  -  Calls the function named getPeanutButter
 getJelly() - Calls the function named getJelly
 ```
 
-### Engage 
+### Engage
 1. getCoding squirrel - http://www.getcoding.io/squirrel
 2. getCoding squirrel 2 - http://www.getcoding.io/squirrel2
 3. getCoding magic words - http://www.getcoding.io/magic-words
