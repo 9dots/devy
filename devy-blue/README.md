@@ -2,7 +2,7 @@
 
 **prerequisites:** devY white
 
-devY blue focuses on continued exploration of introductory Javascript concepts and create a more advanced web application in dash(name?).
+devY blue focuses on continued exploration of introductory Javascript concepts to create a more advanced web application in dash(name?).
 
 ##### Concepts:
 - variables

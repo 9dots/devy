@@ -30,7 +30,7 @@ Suggested Questions:
 
 1. In programming, the computer runs the instructions in order.
 2. This is called sequencing. It means that the instructions run from top to bottom.
-3. Instructions that perform a specific task are called are called function calls.
+3. Instructions that perform a specific task are called functions.
 4. Ask students to name the functions that Teacher robot knows.
 5. What is the task of each function?
 6. Ask students, “What special symbols did you notice are needed when calling a function?”
