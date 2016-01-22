@@ -7,4 +7,4 @@
       * [sequence](devy-white/alternate/sequence.md)
 * [devY Blue](devy-blue/README.md)
     * [object literals](devy-blue/objects.md)
-    * [update function](devy-blue/update.md)
+    * [update function](devy-blue/main.md)
