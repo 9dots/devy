@@ -54,32 +54,17 @@ var room = {
   room.completed = true
 ```
 
-##### Updating state
+##### The main function
+The main function takes the arguments inputted by the user returns the next view.
 
-1. `initialState` - The initialState function sets up the starting information for the game. This is the state that will change in the update function.
+  **Returns** [string, array, object]
 
-  **Returns** object (state)
+1. Each word in the input is split up and sent to the main function as arguments. For example, if the user inputs `hello cycle` the main function receives to arguments `hello` and `cycle`.
 
-  - Example
+  - Example: To build a simple app that echoes the user input
   ```js
-  function initialState () {
-        return {
-            title: 'My game'
-        }
-  }
-  ```
-
-2. `update` - The update function takes the current state of the game and the user input and returns the new updated state.
-
-  **Returns** state
-
-  - To print out information to the user set the message property on state
-
-  - Example
-  ```js
-  function update (state, verb, noun) {
-        state.message = 'Welcome to my game.'
-        return state
+  function main (message) {
+        return message
   }
   ```
 
