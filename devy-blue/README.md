@@ -2,7 +2,7 @@
 
 **prerequisites:** devY white
 
-devY blue focuses on continued exploration of introductory Javascript concepts to create a more advanced web application in dash(name?).
+devY blue focuses on continued exploration of introductory Javascript concepts to create a more advanced web application in cycle-shell.
 
 ##### Concepts:
 - variables
@@ -12,4 +12,4 @@ devY blue focuses on continued exploration of introductory Javascript concepts t
 - debugging
 
 ##### Project
-Students create a text based game in dash. The inspiration for this project is the game Zork. Check out an online version [here](http://iplayif.com/?story=http%3A%2F%2Fwww.ifarchive.org%2Fif-archive%2Fgames%2Fzcode%2Fzdungeon.z5) to see how the game works.
+Students create a text based game in cycle-shell. The inspiration for this project is the game Zork. Check out an online version [here](http://iplayif.com/?story=http%3A%2F%2Fwww.ifarchive.org%2Fif-archive%2Fgames%2Fzcode%2Fzdungeon.z5) to see how the game works.

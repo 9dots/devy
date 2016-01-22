@@ -104,67 +104,18 @@ var room = {
   - `room.description`
 
 ##### How to use the game maker
-Show students the game making environment on requirebin (add link). The starting code should look like this:
+Show students the game making environment on [requirebin](www.requirebin.com). The starting code should look like this:
 ```js
 // Set up the game package and pass it the initial state and update function
-require('simple-zork').createGame(initialState(), update)()
+require('cycle-shell')(main)
 
 // Create your room object here
-var room = {
-// Add room properties here
-}
 
-function initialState () {
-  // set up the starting state of your game
-  return {
-    title: '' /* Changes the title of the game */
-  }
-}
+// Main function
+function main (...args) {
 
-function update (state, verb, noun) {
-  // if statements go here
-  return state
 }
 ```
-
-The game maker has three important parts to it.
-
-1. `initialState` - The initialState function sets up the starting information for the game. This is the state that will change in the update function.
-
-  **Returns** object (state)
-
-  - Example
-  ```js
-  function initialState () {
-        return {
-          title: 'My game'
-        }
-  }
-  ```
-
-2. `update` - The update function takes the current state of the game and the user input and returns the new updated state.
-
-  **Returns** state
-
-  - To print out information to the user set the message property on state
-
-  - Example
-  ```js
-  function update (state, verb, noun) {
-        state.message = 'Welcome to my game.'
-        return state
-  }
-  ```
-3. `room / level` - an object that contains information about the levels of the game.
-
-  - Example
-  ```js
-  var room = {
-        name: 'Staircase',
-        description: 'A long wooden staircase. The corridor at the top of the stairs is too dark to see from here.',
-        completed: true
-  }
-  ```
 
 ### Engage
 ##### Activities
