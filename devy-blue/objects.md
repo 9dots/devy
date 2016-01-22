@@ -123,3 +123,6 @@ function main (...args) {
 
 ##### Project milestone
  - Create the first room of the game by adding the help and look commands.
+
+##### Check for understanding
+ - Give students ten minutes at the end of the lesson to complete [this](http://bit.ly/1nqRoD5) challenge on codewars. [http://bit.ly/1nqRoD5](http://bit.ly/1nqRoD5)
