@@ -103,26 +103,7 @@ var room = {
 8. Ask students, "How would you get the description of the room"
   - `room.description`
 
-##### How to use the game maker
-Show students the game making environment on [requirebin](www.requirebin.com). The starting code should look like this:
-```js
-// Set up the game package and pass it the initial state and update function
-require('cycle-shell')(main)
-
-// Create your room object here
-
-// Main function
-function main (...args) {
-
-}
-```
-
 ### Engage
-##### Activities
- - Create an application that keeps track of the current user using the game maker.
-
-##### Project milestone
- - Create the first room of the game by adding the help and look commands.
 
 ##### Check for understanding
  - Give students ten minutes at the end of the lesson to complete [this](http://bit.ly/1nqRoD5) challenge on codewars. [http://bit.ly/1nqRoD5](http://bit.ly/1nqRoD5)

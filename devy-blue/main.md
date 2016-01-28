@@ -1,9 +1,10 @@
 # The update function
 
 ##### Learning Goals
-Students learn how to use conditionals and the update function to update the state of the game.
+Students learn how to use the main function to take the user input and generate a new view.
 
 ##### Overview
+This lesson starts with students revisiting the explore from the first day. Then, students review what they learned about creating objects and getting/setting properties on those objects. After the review, introduce students to requirebin and cycle-shell. Students use those tools to create the first level of their game.
 
 ### Explore
 
@@ -54,18 +55,35 @@ var room = {
   room.completed = true
 ```
 
+#### Using cycle-shell
+
 ##### The main function
+
 The main function takes the arguments inputted by the user returns the next view.
 
-  **Returns** [string, array, object]
+  **Returns** [number, string, array, object]
 
-1. Each word in the input is split up and sent to the main function as arguments. For example, if the user inputs `hello cycle` the main function receives to arguments `hello` and `cycle`.
+1. Each word in the input is split up and sent to the main function as arguments. For example, if the user inputs `hello cycle` the main function receives two arguments `hello` and `cycle`.
+```js
+function main (word1, word2) {
+      console.log(word1) // hello
+      console.log(word2) // cycle
+}
+```
 
+2. Whatever gets returned from the function will be displayed.
   - Example: To build a simple app that echoes the user input
-  ```js
-  function main (message) {
-        return message
-  }
-  ```
+    ```js
+    function main (message) {
+          return message
+    }
+    ```
 
 ### Engage
+
+##### Activities
+ - Echo program
+
+
+##### Project milestone
+Implement the first room using cycle-shell
