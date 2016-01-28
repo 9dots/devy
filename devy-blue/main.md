@@ -11,14 +11,11 @@ This lesson starts with students revisiting the explore from the first day. Then
 ##### Revisit the human version of the game
 
 1. Show students the example escape the room level.
-2. The goal is to make it out of the room by giving instructions to the computer (instructor).
-3. The only instructions that the computer will understand will be those given in verb + noun form. For example:
-  - Take key
-  - Open door
+2. Ask students what kind of data type is used to create the room in Javascript.
+  - Map out the room as an object. Students write down this object in the top section of their handout.
+3. Ask students, 'How does the computer (instructor) know when to respond to the user?'
+  - The computer waits for the user to input instructions
 4. After each command, ask students the following set of questions and chart students responses
-  - What room is the character in?
-  - What does the user have in their inventory?
-  - Is the level completed?
   - What message should the player recieve?
 5. Continue until the level is completed.
 
@@ -26,7 +23,7 @@ This lesson starts with students revisiting the explore from the first day. Then
 
 1. What Javascript data type would be good to keep track of the game information?
   - An object can keep track of all of the information that is stored about the game.
-2. At what point in the game is the state updated?
+2. At what point in the game is the message changed?
   - The game gets updated whenever the user inputs a command.
 3. How did we decide which part of the state should be updated?
   - We check what command the user inputs, and then change the state of the game accordingly.
@@ -37,15 +34,23 @@ This lesson starts with students revisiting the explore from the first day. Then
 
 1. Ask students, "How do you create an object?"
     - An object is create by using the curly braces.
-2. Tell students to create an example room object.
+2. Tell students to create the room object for their first level. This room should include the following properties:
+  - a name
+  - a description
+  - items: an object that contains the items in the room
+    - each item should be in the form `name: description`
+  - completed: true or false on whether or not the user is done with the level.
 ```js
 var room = {
       name: 'Example room',
       description: 'This is for an example room.',
+      items: {
+        couch: 'big and comfy',
+        chair: 'old and rickety'
+      },
       completed: false
 }
 ```
-
 3. Ask students, "How would you get value of the description from this object?"
 ```js
   room.description
@@ -59,7 +64,11 @@ var room = {
 
 ##### The main function
 
-The main function takes the arguments inputted by the user returns the next view.
+1. Ask students, "Should the game act the same way for every input?"
+  - No. The game should react to the user input.
+2. Going back to the worksheet from the explore phase, student complete the second and third parts on the handout.
+3. Introduce the main function on requirebin + cycle-shell
+4. The main function takes the arguments inputted by the user returns the next view.
 
   **Returns** [number, string, array, object]
 
@@ -78,12 +87,22 @@ function main (word1, word2) {
           return message
     }
     ```
+3. To make the function react to the input students need to implement conditionals.
+```js
+if (verb === 'help') {
+  return room.help
+}
+```
+4. To add a second command students use `else-if`
+```js
+if (verb === 'help') {
+  return room.help
+} else if (verb === 'look') {
+  return room.description
+}
+```
 
 ### Engage
-
-##### Activities
- - Echo program
-
 
 ##### Project milestone
 Implement the first room using cycle-shell
