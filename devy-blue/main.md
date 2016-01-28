@@ -90,15 +90,15 @@ function main (word1, word2) {
 3. To make the function react to the input students need to implement conditionals.
 ```js
 if (verb === 'help') {
-  return room.help
+      return room.help
 }
 ```
 4. To add a second command students use `else-if`
 ```js
 if (verb === 'help') {
-  return room.help
+      return room.help
 } else if (verb === 'look') {
-  return room.description
+      return room.description
 }
 ```
 
