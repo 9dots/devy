@@ -71,7 +71,7 @@ var favoriteAnimal = dog
 var favoriteAnimal = `dog`
 ```
 4. Students add a second variable for their leastFavoriteAnimal
-5. Variables can be added to strings by putting them inside of a pair of brackets with a dollar sign in front. `${variable}`
+5. Variables can be added to strings by putting them inside of a pair of curly braces with a dollar sign in front. `${variable}`
 ```js
 var phrase = `My favorite animal is ${favoriteAnimal}`
 ```
