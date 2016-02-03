@@ -24,7 +24,15 @@ function main () {
 }
 ```
 1. The first line of cycle-shell sets up the interactive page on the right side of the screen.
-2. A function is a reusable set of instructions
+2. A function is a reusable set of instructions. The function is written as
+```js
+function name (parameters) {
+      return value
+}
+```
+3. Parameters are variables that only exist inside of the function.
+  - In cycle shell the parameters have the value of whatever is written in the input box.
+4. The function
 
 ##### string concatenation
 
