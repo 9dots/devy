@@ -32,7 +32,8 @@ function name (parameters) {
 ```
 3. Parameters are variables that only exist inside of the function.
   - In cycle shell the parameters have the value of whatever is written in the input box.
-4. The function
+4. Use the return statement to update the view.
+
 
 ##### string concatenation
 
