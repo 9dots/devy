@@ -11,6 +11,9 @@ Students learn about
   - returning a value from a function
 
 ### Explore
+Pizza making function.
+
+1.
 
 ### Questions
 
@@ -26,27 +29,44 @@ function main () {
 1. The first line of cycle-shell sets up the interactive page on the right side of the screen.
 2. A function is a reusable set of instructions. The function is written as
 ```js
-function name (parameters) {
+function name (parameter1, parameter2) {
       return value
 }
 ```
 3. Parameters are variables that only exist inside of the function.
   - In cycle shell the parameters have the value of whatever is written in the input box.
-4. Use the return statement to update the view.
-
-
-##### string concatenation
-
-##### reading a function
-
-##### using parameters
-
-##### returning a value from a function
+  - Each word that is separate by a space will be the value of the next parameter.
+4. The `return` statement ends the function and sends back a value. In cycle-shell this value is displayed.
 
 ### Engage
 
-1. Create an echo application that returns the user's input.
+1. As a group, create an echo application that returns the user's input.
+```js
+function main (input) {
+      return input
+}
+```
 2. Create a pluralizer that adds an 's' to the user's input.
+```js
+function main (word) {
+      return `${input}s`
+}
+```
 3. Create a greeting app that returns 'Hello, -------'
+```js
+function main (name) {
+      return `Hello, ${input}`
+}
+```
 4. Create a compliment machine app that returns a compliment with the name the user inputs.
+```js
+function main (name) {
+      return `${name}, you have a wonderful smile.`
+}
+```
 5. Create a mad lib that takes multiple user inputs and places them in a sentence.
+```js
+function main (adjective, noun, verb) {
+      return `The ${adjective} ${noun} ${verb} to the pond.`
+}
+```
