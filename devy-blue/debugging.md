@@ -1,29 +1,21 @@
 # The update function
 
 ##### Learning Goals
-
+By the end of the lesson students will be able to:
+  - Explain the process to debug syntax errors
 
 ##### Overview
 
 ### Explore
+Use pre-made example of code with bugs in it to practice debugging skills. Make sure to ask students about the process by which they debug the code.
 
-1. Show students the example escape the room level.
-2. Ask students what kind of data type is used to create the room in Javascript.
-  - Map out the room as an object. Students write down this object in the top section of their handout.
-3. Ask students, 'How does the computer (instructor) know when to respond to the user?'
-  - The computer waits for the user to input instructions
-4. After each command, ask students the following set of questions and chart students responses
-  - What message should the player recieve?
-5. Continue until the level is completed.
-
-### Questions
-
-1. What Javascript data type would be good to keep track of the game information?
-  - An object can keep track of all of the information that is stored about the game.
-2. At what point in the game is the message changed?
-  - The game gets updated whenever the user inputs a command.
-3. How did we decide which part of the state should be updated?
-  - We check what command the user inputs, and then change the state of the game accordingly.
+1. Show students an example of a Javascript object with syntax errors.
+2. Students have one minute to write down what the mistake is.
+3. Ask students:
+  - "What did you do to find the error?"
+  - "What is the error?"
+  - "How can you fix it?"
+4. Distribute examples of properly written Javascript objects and conditionals.
 
 ### Explain
 

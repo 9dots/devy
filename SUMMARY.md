@@ -10,4 +10,4 @@
 * [devY Blue](devy-blue/README.md)
     * [object literals](devy-blue/objects.md)
     * [main function](devy-blue/main.md)
-    * [conditionals](devy-blue/conditionals.md)
+    * [conditionals](devy-blue/debugging.md)

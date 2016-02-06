@@ -37,6 +37,12 @@ function name (parameter1, parameter2) {
   - In cycle shell the parameters have the value of whatever is written in the input box.
   - Each word that is separate by a space will be the value of the next parameter.
 4. The `return` statement ends the function and sends back a value. In cycle-shell this value is displayed.
+5. Walk through an example of creating an echo application. After coding push the `Run` button in requirebin.
+```js
+function main (input) {
+      return input
+}
+```
 
 ### Engage
 
