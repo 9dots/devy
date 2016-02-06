@@ -11,19 +11,37 @@ Students learn about
   - returning a value from a function
 
 ### Explore
-Pizza making function.
+Practice with string concatenation
 
-1.
+1. Review variables
+  - Create a variable named age and store a number in it
+  ```js
+  var age = 15
+  ```
+  - Subtract 10 from age
+  ```js
+  age - 10
+  ```
+  - Create a variable called name that saves your name
+  ```js
+  var name = `Daniel`
+  ```  
+
+ 2. Explore template strings
+ ```js
+ var name = `Daniel`
+ `My name is ${name}`
+ ```
 
 ### Questions
 
 ### Explain
-Students go to [requirebin](http://requirebin.com/?gist=23f4f40c24828a632b0a) which should have the following starting code:
+Students go to [requirebin](http://bit.ly/1VZxlGt) http://bit.ly/1VZxlGt which should have the following starting code:
 ```js
 require('cycle-shell')(main)
 
-function main () {
-  // return output here
+function main (input) {
+  return
 }
 ```
 1. The first line of cycle-shell sets up the interactive page on the right side of the screen.
