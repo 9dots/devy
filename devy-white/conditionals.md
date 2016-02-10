@@ -67,8 +67,8 @@ function main (input) {
       }
 }
 ```
-### Engage
 
+### Engage
 1. Personalized greeting - Check to see if the name entered is your own
 ```js
 function main (name) {
