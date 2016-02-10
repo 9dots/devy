@@ -1,10 +1,10 @@
 # The update function
 
+##### Overview
+
 ##### Learning Goals
 By the end of the lesson students will be able to:
   - Explain the process to debug syntax errors
-
-##### Overview
 
 ### Explore
 Use pre-made example of code with bugs in it to practice debugging skills. Make sure to ask students about the process by which they debug the code.
@@ -61,6 +61,8 @@ if (verb === 'help') {
 
 ### Engage
 
-Students make two of the items in the room interactive.
+Students continue work on the first room of their game.
 
 ##### Project milestone
+
+The user can inspect the items around the room.
