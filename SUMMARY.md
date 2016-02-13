@@ -12,3 +12,4 @@
     * [object literals](devy-blue/objects.md)
     * [main function](devy-blue/main.md)
     * [debugging](devy-blue/debugging.md)
+    * [accessing properties](devy-blue/accessing-properties.md)
