@@ -101,7 +101,7 @@ function main (num1, op, num2) {
         return num1 + num2
       } else if (op === `-`) {
         return num1 - num2
-      } else if (op === '*' || op === 'x') {
+      } else if (op === 'x') {
         return num1 * num2
       } else if (op === '/') {
         return num1 / num2
