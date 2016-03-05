@@ -7,6 +7,7 @@
     * [cycle-shell](devy-white/cycle-shell.md)
     * [conditionals](devy-white/conditionals.md)
     * [conditionals cont'd](devy-white/conditionals2.md)
+    * [objects](devy-white/objects.md)
     * [alternate](devy-white/alternate/README.md)
       * [sequence](devy-white/alternate/sequence.md)
 * [devY Blue](devy-blue/README.md)
