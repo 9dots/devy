@@ -9,7 +9,16 @@ Students start by exploring books as objects. Students then learn how to create 
 ### Explore
 
 ##### Example level
-(**Add Example**)
+In the second room hide a key and a sword cutout
+
+Sample script:
+Room 1 - You wake up in a large empty room with no windows and no furniture. There is a musty smell in the air and you can't here anyone else around. At the far end of the room you see a door.
+
+Room 2 - As you walk into the next room, the only light is coming from the door behind you. With that light you can barely see a light switch. (Wait for students to give you command to turn on the lights.)
+With the lights on you see (describe the things in the room that you hid the key and sword under).
+
+Room 3 - Upon entering the room you hear strange noises in the distance. As you look around you see the room has a window and piles of old books. (When the students try to leave through the window...)
+A monster jumps through the window
 
 1. Show students the example escape the room level.
 2. The goal is to make it out of the room by giving instructions to the computer (instructor).
@@ -20,6 +29,9 @@ Students start by exploring books as objects. Students then learn how to create 
   - Look
   - Help
 5. After each command, the computer responds with a new description of the room.
+
+##### Play Zork
+Give students 10 minutes try out Zork on the computer at [tinyurl.com/9dotszork](tinyurl.com/9dotszork)
 
 ##### Student created level
 Creating an escape the room game.
