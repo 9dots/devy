@@ -1,10 +1,10 @@
-# The update function
+# The main function
 
 ##### Learning Goals
 Students learn how to use the main function to take the user input and generate a new view.
 
 ##### Overview
-This lesson starts with students revisiting the explore from the first day. Then, students review what they learned about creating objects and getting/setting properties on those objects. After the review, introduce students to requirebin and cycle-shell. Students use those tools to create the first level of their game.
+This lesson starts with students revisiting the explore from the first day. Then, students review what they learned about creating objects and getting/setting properties on those objects. After the review, introduce students to cycle-shell. Students use this new tool to create the first level of their game.
 
 ### Explore
 
@@ -15,8 +15,8 @@ This lesson starts with students revisiting the explore from the first day. Then
   - Map out the room as an object. Students write down this object in the top section of their handout.
 3. Ask students, 'How does the computer (instructor) know when to respond to the user?'
   - The computer waits for the user to input instructions
-4. After each command, ask students the following set of questions and chart students responses
-  - What message should the player recieve?
+4. After each command, ask students the following question and chart students responses.
+  - What message should the player receive?
 5. Continue until the level is completed.
 
 ### Questions
@@ -47,17 +47,12 @@ var room = {
       items: {
         couch: 'big and comfy',
         chair: 'old and rickety'
-      },
-      completed: false
+      }
 }
 ```
 3. Ask students, "How would you get value of the description from this object?"
 ```js
   room.description
-```
-4. Ask students, "How would you set the value of completed to true?"
-```js
-  room.completed = true
 ```
 
 #### Using cycle-shell
@@ -90,15 +85,15 @@ function main (word1, word2) {
 3. To make the function react to the input students need to implement conditionals.
 ```js
 if (verb === 'help') {
-      return room.help
+      return help()
 }
 ```
 4. To add a second command students use `else-if`
 ```js
 if (verb === 'help') {
-      return room.help
+      return help()
 } else if (verb === 'look') {
-      return room.description
+      return look()
 }
 ```
 
