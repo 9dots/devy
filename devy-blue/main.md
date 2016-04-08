@@ -4,7 +4,7 @@
 Students learn how to use the main function to take the user input and generate a new view.
 
 ##### Overview
-This lesson starts with students revisiting the explore from the first day. Then, students review what they learned about creating objects and getting/setting properties on those objects. After the review, introduce students to requirebin and cycle-shell. Students use those tools to create the first level of their game.
+This lesson starts with students revisiting the explore from the first day. Students then review what they learned about creating objects and getting/setting properties on those objects. After the review, introduce students to requirebin and cycle-shell. Students will use those tools to create the first level of their game.
 
 ### Explore
 
@@ -39,26 +39,44 @@ This lesson starts with students revisiting the explore from the first day. Then
   - a description
   - items: an object that contains the items in the room
     - each item should be in the form `name: description`
-  - completed: true or false on whether or not the user is done with the level.
+  - takeable: true or false on whether or not the user can add item to inventory.
 ```js
-var room = {
-      name: 'Example room',
-      description: 'This is for an example room.',
-      items: {
-        couch: 'big and comfy',
-        chair: 'old and rickety'
-      },
-      completed: false
+var rooms = {
+   exampleRoom: {
+        name: 'Example room',
+        description: 'This is for an example room.',
+        items: {
+          couch: {
+            description: 'big and comfy',
+            takeable: false
+          }
+          briefcase: {
+            description: 'old and rickety',
+            takeable: true
+          }
+        }
+    },
+    kitchen: {
+        name: 'Haunted Kitchen',
+        description: 'Messy and stinky.',
+        items: {
+          knife: {
+            description: 'sharp and shiny',
+            takeable: true
+          },
+          oven: {
+            description: 'old and dirty',
+            takeable: false
+          }
+        }
+    }
 }
 ```
-3. Ask students, "How would you get value of the description from this object?"
+3. Ask students, "How would you get value of the description of exampleRoom from this object?"
 ```js
-  room.description
+  rooms.exampleRoom.description
 ```
-4. Ask students, "How would you set the value of completed to true?"
-```js
-  room.completed = true
-```
+
 
 #### Using cycle-shell
 
@@ -68,11 +86,11 @@ var room = {
   - No. The game should react to the user input.
 2. Going back to the worksheet from the explore phase, student complete the second and third parts on the handout.
 3. Introduce the main function on requirebin + cycle-shell
-4. The main function takes the arguments inputted by the user returns the next view.
+4. The main function takes the arguments input by the user and returns the next view.
 
   **Returns** [number, string, array, object]
 
-1. Each word in the input is split up and sent to the main function as arguments. For example, if the user inputs `hello cycle` the main function receives two arguments `hello` and `cycle`.
+1. Each word in the input is split up and sent to the main function as arguments. For example, if the user inputs `hello cycle` the main function receives two arguments: `hello` and `cycle`.
 ```js
 function main (word1, word2) {
       console.log(word1) // hello
@@ -90,15 +108,81 @@ function main (word1, word2) {
 3. To make the function react to the input students need to implement conditionals.
 ```js
 if (verb === 'help') {
-      return room.help
+      return look()
 }
 ```
 4. To add a second command students use `else-if`
 ```js
 if (verb === 'help') {
-      return room.help
+      return help()
 } else if (verb === 'look') {
-      return room.description
+      return look()
+}
+```
+5. Sample main function
+```js
+function main (verb, noun) {
+  if (verb === 'help') {
+    return help()
+  } else if (verb === 'look') {
+    return look()
+  } 
+}
+```
+
+#####Setting current room
+1. Students must set the currentRoom to their starting room. This way, users can move through the game and keep up to date with which room they're in.  The functions created can access necessary information using less code.
+```js
+var currentRoom = rooms.livingRoom
+```
+
+#####Additional functions
+1. The main function calls the functions look and help. Now, we need to create those functions.
+2. The look function must return the description of the room user is currently in.
+```js
+function look () {
+  return currentRoom.description
+}
+```
+3. Help function will return a message providing hints to user about the level.
+```js
+function help () {
+  return `
+  To play the game, input a verb and press enter.
+  Look: Describes setting of room you are currently in.
+  Help: Provides hints to complete the level.
+  `
+}
+```
+4. Students may realize that there is no way to access the descriptions of their items. To do so, we will need to create another function call called inspect.
+```js
+function inspect (noun) {
+  if (noun === 'couch') {
+    return currentRoom.items.couch.description
+  } else if (noun === 'briefcase') {
+    return currentRoom.items.briefcase.description
+  }
+}
+```
+5. To move user from one room to the next, we will need to create a move function setting the new room as the current room.
+```js
+function move () {
+  currentRoom = rooms[currentRoom.next]
+  return currentRoom.description
+}
+```
+6. The main function must be updated to reflect these changes.
+```js
+function main (verb, noun) {
+    if (verb === 'help') {
+      return help()
+    } else if (verb === 'look') {
+      return look()
+    } else if (verb === 'inspect') {
+      return inspect(noun)
+    } else if (verb === 'move') {
+      return move()
+    }
 }
 ```
 
