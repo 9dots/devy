@@ -190,3 +190,10 @@ function main (verb, noun) {
 
 ##### Project milestone
 Implement the first room using cycle-shell
+
+##### Adding new features
+To add new features to the game, students should:
+- complete 'Creating a Function' worksheet
+- create function in their code
+- add necessary information to main function
+- add necessary information to help function
