@@ -186,6 +186,77 @@ function main (verb, noun) {
 }
 ```
 
+##### Overall code
+```js
+var rooms = {
+  kitchen: {
+    description: 'You are in an abandoned kitchen. Brad Pitt is sitting on a couch. There are two dark rooms located to your left. You see a knife on the counter.',
+    items: {
+      knife: {
+        description: 'The knife is rusted and old. It is sharp and deadly.',
+        takeable: true
+      },
+      couch: {
+        description: 'Brad Pitt is sitting on the couch. The couch is old and covered in holes.',
+        takeable: false
+      }
+    }
+  },
+  livingRoom: {
+    description: 'describe your living room',
+    items: {
+      item1: {
+        description: 'describe item',
+        takeable: false
+      },
+      item2: {
+        description: 'describe second item',
+        takeable: true
+      }
+    }
+  }
+}
+
+var currentRoom = rooms.kitchen
+
+function main (verb, noun) {
+   if (verb === 'help') {
+     return help()
+   } else if (verb === 'look') {
+     return look()
+   } else if (verb === 'inspect') {
+     return inspect(noun)
+   } else if (verb === 'move') {
+     return move()
+   }
+}
+
+function look () {
+   return currentRoom.description
+}
+
+function help () {
+   return `
+   To play the game, input a verb and press enter.
+   Look: Describes setting of room you are currently in.
+   Help: Provides hints to complete the level.
+   `
+}
+
+function inspect (noun) {
+   if (noun === 'knife') {
+     return currentRoom.items.knife.description
+   } else if (noun === 'couch') {
+     return currentRoom.items.couch.description
+   }
+}
+
+function move () {
+   currentRoom = rooms[currentRoom.next]
+   return currentRoom.description
+}
+```
+
 ### Engage
 
 ##### Project milestone
