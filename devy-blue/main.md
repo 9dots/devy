@@ -39,24 +39,25 @@ This lesson starts with students revisiting the explore from the first day. Stud
   - a description
   - items: an object that contains the items in the room
     - each item should be in the form `name: description`
-  - takeable: true or false on whether or not the user can add item to inventory.
-```js
-var rooms = {
-   exampleRoom: {
+    - takeable: true or false on whether or not the user can add item to inventory.
+
+  ```js
+  var rooms = {
+      exampleRoom: {
         name: 'Example room',
         description: 'This is for an example room.',
         items: {
           couch: {
             description: 'big and comfy',
             takeable: false
-          }
+          },
           briefcase: {
             description: 'old and rickety',
             takeable: true
           }
         }
-    },
-    kitchen: {
+      },
+      kitchen: {
         name: 'Haunted Kitchen',
         description: 'Messy and stinky.',
         items: {
@@ -69,9 +70,9 @@ var rooms = {
             takeable: false
           }
         }
-    }
-}
-```
+      }
+  }
+  ```
 3. Ask students, "How would you get value of the description of exampleRoom from this object?"
 ```js
   rooms.exampleRoom.description

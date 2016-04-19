@@ -2,9 +2,8 @@
 
 * [Introduction](README.md)
 * [devY White](devy-white/README.md)
-    * [sequence](devy-white/sequence.md)
-    * [variables](devy-white/variables.md)
     * [cycle-shell](devy-white/cycle-shell.md)
+    * [variables](devy-white/variables.md)
     * [conditionals](devy-white/conditionals.md)
     * [conditionals cont'd](devy-white/conditionals2.md)
     * [objects](devy-white/objects.md)
@@ -16,3 +15,7 @@
     * [adding-levels](devy-blue/adding-levels.md)
 * [devY Green](devy-green/README.md)
     * [functions](devy-green/functions.md)
+* [Resources](resources/README.md)
+    * [cycle-shell](resources/cycle.md)
+    * [codewars](resources/codewars.md)
+    * [weo](resources/weo.md)
