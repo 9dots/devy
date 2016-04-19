@@ -1,7 +1,7 @@
 # cycle shell
 
 ##### Overview
-In this lesson, students will use [cycle-shell](http://cycle.sh) to create simple applications.
+In this lesson, students will use [cycle shell](http://cycle.sh) to create simple applications.
 
 ##### Learning Goals
 Students learn about
@@ -36,10 +36,10 @@ Practice with string concatenation
 ### Questions
 
 ### Explain
-Students go to [cycle shell](http://cycle.sh) http://cycle.sh which should have the following starting code:
+Students go to [cycle shell](http://cycle.sh) (http://cycle.sh) which should have the following starting code:
 ```js
 function main (input) {
-  return
+  return input
 }
 ```
 1. The first line of cycle-shell sets up the interactive page on the right side of the screen.
