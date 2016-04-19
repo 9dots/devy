@@ -2,7 +2,7 @@
 
 Using [cycle shell](http://cycle.sh) students can interact with their computer in a terminal like environment. This allows students to build meaningful web applications with only and introductory knowledge of Javascript.
 
-**Authentication:** Github
+**Authentication:** [Github](http://github.com)
 
 ![alt text](../images/home.png "cycle shell homepage")
 
@@ -20,7 +20,9 @@ At the bottom of the screen is a log that displays error and console messages. I
 ### How it works
 
 ##### The `main` function
-The function `main` is required to make cycle-shell work. The function is called whenever the input box on the right side of the screen submits. The input is parsed (split at every space) and passed to the `main` function as parameters. The return value of the `main` function is outputted as a card element
+The function `main` is required to make cycle-shell work. The function is called whenever the input box on the right side of the screen submits. The input is parsed (split at every space) and passed to the `main` function as parameters. The return value of the `main` function is outputted as a card element.
+
+![alt text](../images/home.gif "cycle shell basic")
 
 Example:
 
@@ -41,8 +43,6 @@ function main (input1, input2) { // input1 = 'hello' input2 = 'daniel'
   return input2 // returns 'daniel'
 }
 ```
-
-![alt text](../images/home.gif "cycle shell basic")
 
 ##### Running the code
 Anytime the code is altered, you must use the `Run Code` button to compile the new program. You can use the standard keyboard shortcut on your operating system to save.
