@@ -34,33 +34,32 @@ var pet = {type: 'dog', name: 'Fido'}
 5. The key-value pairs can also be written on separate lines to help with legibility
 ```js
 var pet = {
-  type: 'dog',
-  name: 'Fido'
+      type: 'dog',
+      name: 'Fido'
 }
 ```
 6. To access the information in an object start with the name of the variable followed by a `.` and then the name (key) of the information.
 ```js
 var pet = {
-  type: 'dog',
-  name: 'Fido'
+      type: 'dog',
+      name: 'Fido'
 }
 pet.type // dog
 pet.name // Fido
 ```
 ### Engage
-Students create an object with information about their favorite movie. It should have at least four properties such as
+Students create an object with information about their favorite movie. It should have at least four properties such as:
   - name
   - year
   - plot summary
-  - lead actor
   - rotten tomato rating
 
 Example:
 ```js
 var movie = {
-  name: 'Zootopia',
-  year: 2016,
-  plot: "The modern mammal metropolis of Zootopia is a city like no other. Comprised of habitat neighborhoods like ritzy Sahara Square and frigid Tundratown, it's a melting pot where animals from every environment live together-a place where no matter what you are, from the biggest elephant to the smallest shrew, you can be anything.",
-  rating: '96%'  
+    name: 'Zootopia',
+    year: 2016,
+    plot: "The modern mammal metropolis of Zootopia is a city like no other. Comprised of habitat neighborhoods like ritzy Sahara Square and frigid Tundratown, it's a melting pot where animals from every environment live together-a place where no matter what you are, from the biggest elephant to the smallest shrew, you can be anything.",
+    rating: '96%'  
 }
 ```
