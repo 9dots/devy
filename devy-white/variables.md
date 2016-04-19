@@ -1,16 +1,5 @@
 # Variables (numbers + strings)
 
-### Review sequence and function calls
-
-1. Ask students questions to help remind them of the first lesson.
-  1. "What is a function?"
-    - A function is a block of code created to complete a specific task.
-  2. How do you use a function?
-    - To use (call) a function, write the name of the function followed by parentheses.
-  3. Ask students, "Why is sequence important in coding"?
-    - The order in which the code is run affects the outcome of the program
-2. Students go to [www.getcoding.io](www.getcoding.io) and complete the first five levels of the space ranger game.
-
 ### Explore
 1. Set up 5 boxes and label them:
   - favoriteNumber
@@ -79,4 +68,14 @@ var phrase = `My favorite animal is ${favoriteAnimal}`
 ### Engage
 
 1. Split into smaller groups with tutors to complete [variable worksheet](http://bit.ly/1SebxsH).  (http://bit.ly/1SebxsH)
-2. Students work through the variables unit on [www.getcoding.io](www.getcoding.io).
+2. Start building guess the number game.
+```js
+var myNumber = 5
+function main (guess) {
+  if (guess === myNumber) {
+    return `Correct!`
+  } else {
+    return `Nope.`
+  }
+}
+```

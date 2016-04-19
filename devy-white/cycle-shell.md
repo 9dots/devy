@@ -1,7 +1,7 @@
-# Reading functions and cycle-shell
+# cycle shell
 
 ##### Overview
-In this lesson, students will use [cycle-shell](gitbook) + [requirebin](http://www.requirebin.com) to create simple applications.
+In this lesson, students will use [cycle-shell](http://cycle.sh) to create simple applications.
 
 ##### Learning Goals
 Students learn about
@@ -36,10 +36,8 @@ Practice with string concatenation
 ### Questions
 
 ### Explain
-Students go to [requirebin](http://bit.ly/1VZxlGt) http://bit.ly/1VZxlGt which should have the following starting code:
+Students go to [cycle shell](http://cycle.sh) http://cycle.sh which should have the following starting code:
 ```js
-require('cycle-shell')(main)
-
 function main (input) {
   return
 }
@@ -54,8 +52,8 @@ function name (parameter1, parameter2) {
 3. Parameters are variables that only exist inside of the function.
   - In cycle shell the parameters have the value of whatever is written in the input box.
   - Each word that is separate by a space will be the value of the next parameter.
-4. The `return` statement ends the function and sends back a value. In cycle-shell this value is displayed.
-5. Walk through an example of creating an echo application. After coding push the `Run` button in requirebin.
+4. The `return` statement ends the function and sends back a value. In cycle shell this value is displayed.
+5. Walk through an example of creating an echo application. After coding push the `Run Code` button in cycle shell.
 ```js
 function main (input) {
       return input

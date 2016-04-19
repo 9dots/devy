@@ -2,7 +2,7 @@
 [Weo](http://weo.io) is an educational platform that makes it easy to create and grade assignments. The devY curriculum employs this to create quizzes and short review exercises.
 
 **Authentication:**
- - For Teachers: [Google](), [Facebook](), or E-mail
+ - For Teachers: Google, Facebook, or E-mail
  - For Students: No email required
 
 
