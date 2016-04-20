@@ -1,6 +1,6 @@
 ## devY white
 
-devY White is an introduction course that introduces students to the dash(name?) coding environment and basic Javascript concepts.
+devY White is an introduction course that introduces students to the cycle shell coding environment and basic Javascript concepts.
 
 ##### Concepts
 
@@ -8,7 +8,6 @@ devY White is an introduction course that introduces students to the dash(name?)
 - functions (reading)
 - variables (assigning, reading)
 - object properties
-- functions
 - numbers
 - simple conditionals
 - strings

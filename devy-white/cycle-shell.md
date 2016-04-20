@@ -4,36 +4,11 @@
 In this lesson, students will use [cycle shell](http://cycle.sh) to create simple applications.
 
 ##### Learning Goals
-Students learn about
-  - string concatenation
-  - reading a function
-  - using parameters
-  - returning a value from a function
-
-### Explore
-Practice with string concatenation
-
-1. Review variables
-  - Create a variable named age and store a number in it
-  ```js
-  var age = 15
-  ```
-  - Subtract 10 from age
-  ```js
-  age - 10
-  ```
-  - Create a variable called name that saves your name
-  ```js
-  var name = `Daniel`
-  ```  
-
- 2. Explore template strings
- ```js
- var name = `Daniel`
- `My name is ${name}`
- ```
-
-### Questions
+By the end of the lesson, students will be able to
+  - concatenate strings
+  - read a function
+  - identify parameters
+  - explain how to return a value from a function
 
 ### Explain
 Students go to [cycle shell](http://cycle.sh) (http://cycle.sh) which should have the following starting code:

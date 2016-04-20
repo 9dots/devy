@@ -79,21 +79,6 @@ function main (name) {
       }
 }
 ```
-2. Guess the number - Create a variable that stores the correct answer and the user attempts to guess the number.
-```
-Optional extension - create another variable that keeps track of the number of wrong guesses
-```
-```js
-var answer = 4
-function main (num) {
-      if (num === answer) {
-        return `Correct`
-      } else {
-        return `Not quite`
-      }
-}
-```
-
 2. Calculator
 ```js
 function main (num1, op, num2) {
