@@ -19,3 +19,4 @@
     * [cycle shell](resources/cycle.md)
     * [codewars](resources/codewars.md)
     * [weo](resources/weo.md)
+    * [escape the room guide](devy-blue/escape-game.md)
