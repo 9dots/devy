@@ -35,17 +35,15 @@ This lesson starts with students revisiting the explore from the first day. Stud
 1. Ask students, "How do you create an object?"
     - An object is create by using the curly braces.
 2. Tell students to create the room object for their first level. This room should include the following properties:
-  - a name
   - a description
   - items: an object that contains the items in the room
-    - each item should be in the form `name: description`
+    - description: a description of the item
     - takeable: true or false on whether or not the user can add item to inventory.
 
   ```js
   var rooms = {
-      exampleRoom: {
-        name: 'Example room',
-        description: 'This is for an example room.',
+      basement: {
+        description: 'The basement is dark. You can just manage to see a couch and a briefcase.',
         items: {
           couch: {
             description: 'big and comfy',
@@ -58,7 +56,6 @@ This lesson starts with students revisiting the explore from the first day. Stud
         }
       },
       kitchen: {
-        name: 'Haunted Kitchen',
         description: 'Messy and stinky.',
         items: {
           knife: {

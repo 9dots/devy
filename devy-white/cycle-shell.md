@@ -21,14 +21,22 @@ function main (input) {
 2. A function is a reusable set of instructions. The function is written as
 ```js
 function name (parameter1, parameter2) {
-      return value
+    return value
 }
 ```
 3. Parameters are variables that only exist inside of the function.
   - In cycle shell the parameters have the value of whatever is written in the input box.
-  - Each word that is separate by a space will be the value of the next parameter.
+  - Each word that is separated by a space will be the value of the next parameter.
 4. The `return` statement ends the function and sends back a value. In cycle shell this value is displayed.
 5. Walk through an example of creating an echo application. After coding push the `Run Code` button in cycle shell.
+6. Walk through the code as the computer would.
+  - Type the word `hello` into the input box on the right side of the screen but do not push `enter` yet.
+  2. Ask students, 'When I push enter, what is the value of `input`?'
+    - `input` = `'hello'`
+  3. Ask students, 'What value gets returned from this function?'
+    - `hello`
+
+
 ```js
 function main (input) {
       return input
@@ -45,20 +53,20 @@ function main (input) {
 ```
 2. Create a pluralizer that adds an 's' to the user's input.
 ```js
-function main (word) {
+function main (input) {
       return `${input}s`
 }
 ```
 3. Create a greeting app that returns 'Hello, -------'
 ```js
-function main (name) {
+function main (input) {
       return `Hello, ${input}`
 }
 ```
 4. Create a compliment machine app that returns a compliment with the name the user inputs.
 ```js
-function main (name) {
-      return `${name}, you have a wonderful smile.`
+function main (input) {
+      return `${input}, you have a wonderful smile.`
 }
 ```
 5. Create a mad lib that takes multiple user inputs and places them in a sentence.
