@@ -6,6 +6,7 @@ The goal for the project is build a text-based adventure games. There's no way f
 ## Core features
 These features will be implemented with help from your tutors while learning the new coding concepts.
 
+{% tlist %}
 - [ ] **Three rooms with descriptions and items**
   - Your game should have three rooms. Each room should have a description and items.
   - *Skills learned:*
@@ -13,8 +14,8 @@ These features will be implemented with help from your tutors while learning the
     - Nested objects (objects inside of objects)
     - Strings
 - [ ] **Help**
-    - The help command should return a list of the available commands of the game.
-    - *Skills learned:*
+  - The help command should return a list of the available commands of the game.
+  - *Skills learned:*
       - Creating functions
       - Conditionals (if/else)
       - Returning values from a function
@@ -65,23 +66,23 @@ These features will be implemented independently once the core features of your 
     - Return a string
 - [ ] **Hidden items**
   - Add items to the game that are hidden at the beginning and that are only revealed when one of the other items in the room is inspected.
-	- Skills required:
+  - *Skills required:*
     - Setting object properties (bracket notation)
     - Accessing object properties (bracket notation)
     - Conditionals (if/else)
 - [ ] **View inventory**
-  - The user should be able to use the ‘inventory’ command to look at what is currently being held in their inventory
-	- Skills required:
+  - The user should be able to use the ‘inventory’ command to look at what is currently being held in their inventory.
+  - *Skills required:*
     - Return an object
 - [ ] **Use Items**
   - The user should be able to use the item if it exists in their inventory.
-  - Skills required:
+  - *Skills required:*
     - Accessing object properties (bracket notation)
     - Conditionals (if/else)
     - Return a string
 - [ ] **Teleport**
   - In certain rooms, the user should be able to use the teleport command to move to another room that is not adjacent to it.
-  - Skills required:
+  - *Skills required:*
     - Set a new value in an existing variable
     - Accessing object properties (bracket notation)
     - Conditionals (if/else)
@@ -93,7 +94,6 @@ These features will be implemented independently once the core features of your 
     - A relevant image is displayed when items are inspected
   - Room images
     - A relevant image is displayed when the user performs a ‘look’ command
-
   - *Skills required:*
       - Template strings
       - HTML - image tag
@@ -105,7 +105,7 @@ These features will be implemented independently once the core features of your 
     - CSS styles
     - Create object
 - [ ] **Check health**
-	- The user should be able to check the status of their health.
+  - The user should be able to check the status of their health.
   - *Skills required:*
     - Return a string
     - String concatenation
@@ -117,3 +117,4 @@ These features will be implemented independently once the core features of your 
     - Passing parameters
     - Variables - set a new value
     - Return string
+{% endtlist %}

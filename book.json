@@ -3,7 +3,7 @@
     "structure": {
         "summary": "SUMMARY.md"
     },
-    "plugins": ["edit-link", "prism", "-highlight"],
+    "plugins": ["edit-link", "prism", "-highlight", "tasklist"],
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/9dots/devy/tree/master"
