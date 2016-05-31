@@ -1,0 +1,859 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>main function | devY</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-tasklist/github-markdown.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../devy-blue/debugging.html" />
+    
+    
+    <link rel="prev" href="../devy-blue/objects.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.2"
+        data-chapter-title="main function"
+        data-filepath="devy-blue/main.md"
+        data-basepath=".."
+        data-revision="Tue May 31 2016 11:51:35 GMT-0700 (PDT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="devy-white/index.html">
+            
+                
+                    <a href="../devy-white/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        devY White
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="devy-white/cycle-shell.html">
+            
+                
+                    <a href="../devy-white/cycle-shell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        cycle shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="devy-white/checkGuess.html">
+            
+                
+                    <a href="../devy-white/checkGuess.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        guess
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="devy-white/hints.html">
+            
+                
+                    <a href="../devy-white/hints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        hints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="devy-white/store-answer.html">
+            
+                
+                    <a href="../devy-white/store-answer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        store answer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="devy-white/max-guesses.html">
+            
+                
+                    <a href="../devy-white/max-guesses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        maximum guesses
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+            <span><b>1.6.</b> concepts</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="devy-white/concepts/string-templates.html">
+            
+                
+                    <a href="../devy-white/concepts/string-templates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        string templates
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="devy-white/concepts/defining-functions.html">
+            
+                
+                    <a href="../devy-white/concepts/defining-functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        defining functions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="devy-white/concepts/conditionals.html">
+            
+                
+                    <a href="../devy-white/concepts/conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="devy-white/concepts/conditionals2.html">
+            
+                
+                    <a href="../devy-white/concepts/conditionals2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.4.</b>
+                        
+                        conditionals continued
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="devy-white/concepts/variables.html">
+            
+                
+                    <a href="../devy-white/concepts/variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.5.</b>
+                        
+                        variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="devy-white/concepts/objects.html">
+            
+                
+                    <a href="../devy-white/concepts/objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.6.</b>
+                        
+                        objects
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="devy-blue/index.html">
+            
+                
+                    <a href="../devy-blue/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        devY Blue
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="devy-blue/objects.html">
+            
+                
+                    <a href="../devy-blue/objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        object literals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="devy-blue/main.html">
+            
+                
+                    <a href="../devy-blue/main.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        main function
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="devy-blue/debugging.html">
+            
+                
+                    <a href="../devy-blue/debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        debugging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="devy-blue/accessing-properties.html">
+            
+                
+                    <a href="../devy-blue/accessing-properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        accessing properties
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="devy-blue/adding-levels.html">
+            
+                
+                    <a href="../devy-blue/adding-levels.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        adding levels
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="devy-green/index.html">
+            
+                
+                    <a href="../devy-green/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        devY Green
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="devy-green/functions.html">
+            
+                
+                    <a href="../devy-green/functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        functions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="resources/index.html">
+            
+                
+                    <a href="../resources/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Resources
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="resources/cycle.html">
+            
+                
+                    <a href="../resources/cycle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        cycle shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="resources/codewars.html">
+            
+                
+                    <a href="../resources/codewars.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        codewars
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="resources/weo.html">
+            
+                
+                    <a href="../resources/weo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        weo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="devy-blue/escape-game.html">
+            
+                
+                    <a href="../devy-blue/escape-game.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        escape the room guide
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >devY</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="the-main-function">The main function</h1>
+<h5 id="learning-goals">Learning Goals</h5>
+<p>Students learn how to use the main function to take the user input and generate a new view.</p>
+<h5 id="overview">Overview</h5>
+<p>This lesson starts with students revisiting the explore from the first day. Students then review what they learned about creating objects and getting/setting properties on those objects. After the review, introduce students to cycle-shell. Students will use this new tool to create the first level of their game.</p>
+<h3 id="explore">Explore</h3>
+<h5 id="revisit-the-human-version-of-the-game">Revisit the human version of the game</h5>
+<ol>
+<li>Show students the example escape the room level.</li>
+<li>Ask students what kind of data type is used to create the room in Javascript.<ul>
+<li>Map out the room as an object. Students write down this object in the top section of their handout.</li>
+</ul>
+</li>
+<li>Ask students, &apos;How does the computer (instructor) know when to respond to the user?&apos;<ul>
+<li>The computer waits for the user to input instructions</li>
+</ul>
+</li>
+<li>After each command, ask students the following question and chart students responses.<ul>
+<li>What message should the player receive?</li>
+</ul>
+</li>
+<li>Continue until the level is completed.</li>
+</ol>
+<h3 id="questions">Questions</h3>
+<ol>
+<li>What Javascript data type would be good to keep track of the game information?<ul>
+<li>An object can keep track of all of the information that is stored about the game.</li>
+</ul>
+</li>
+<li>At what point in the game is the message changed?<ul>
+<li>The game gets updated whenever the user inputs a command.</li>
+</ul>
+</li>
+<li>How did we decide which part of the state should be updated?<ul>
+<li>We check what command the user inputs, and then change the state of the game accordingly.</li>
+</ul>
+</li>
+</ol>
+<h3 id="explain">Explain</h3>
+<h5 id="review">Review</h5>
+<ol>
+<li>Ask students, &quot;How do you create an object?&quot;<ul>
+<li>An object is create by using the curly braces.</li>
+</ul>
+</li>
+<li><p>Tell students to create the room object for their first level. This room should include the following properties:</p>
+<ul>
+<li>a description</li>
+<li>items: an object that contains the items in the room<ul>
+<li>description: a description of the item</li>
+<li>takeable: true or false on whether or not the user can add item to inventory.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="token keyword">var</span> rooms <span class="token operator">=</span> <span class="token punctuation">{</span>
+   basement<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     description<span class="token punctuation">:</span> <span class="token string">&apos;The basement is dark. You can just manage to see a couch and a briefcase.&apos;</span><span class="token punctuation">,</span>
+     items<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+       couch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+         description<span class="token punctuation">:</span> <span class="token string">&apos;big and comfy&apos;</span><span class="token punctuation">,</span>
+         takeable<span class="token punctuation">:</span> <span class="token keyword">false</span>
+       <span class="token punctuation">}</span><span class="token punctuation">,</span>
+       briefcase<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+         description<span class="token punctuation">:</span> <span class="token string">&apos;old and rickety&apos;</span><span class="token punctuation">,</span>
+         takeable<span class="token punctuation">:</span> <span class="token keyword">true</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   kitchen<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     description<span class="token punctuation">:</span> <span class="token string">&apos;Messy and stinky.&apos;</span><span class="token punctuation">,</span>
+     items<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+       knife<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+         description<span class="token punctuation">:</span> <span class="token string">&apos;sharp and shiny&apos;</span><span class="token punctuation">,</span>
+         takeable<span class="token punctuation">:</span> <span class="token keyword">true</span>
+       <span class="token punctuation">}</span><span class="token punctuation">,</span>
+       oven<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+         description<span class="token punctuation">:</span> <span class="token string">&apos;old and dirty&apos;</span><span class="token punctuation">,</span>
+         takeable<span class="token punctuation">:</span> <span class="token keyword">false</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>Ask students, &quot;How would you get value of the description of exampleRoom from this object?&quot;<pre><code class="lang-js">rooms<span class="token punctuation">.</span>exampleRoom<span class="token punctuation">.</span>description
+</code></pre>
+</li>
+</ol>
+<h4 id="using-cycleshell">Using cycle-shell</h4>
+<h5 id="the-main-function">The main function</h5>
+<ol>
+<li>Ask students, &quot;Should the game act the same way for every input?&quot;<ul>
+<li>No. The game should react to the user input.</li>
+</ul>
+</li>
+<li>Going back to the worksheet from the explore phase, student complete the second and third parts on the handout.</li>
+<li>Introduce the main function on requirebin + cycle-shell</li>
+<li><p>The main function takes the arguments input by the user and returns the next view.</p>
+<p><strong>Returns</strong> [number, string, array, object]</p>
+</li>
+<li><p>Each word in the input is split up and sent to the main function as arguments. For example, if the user inputs <code>hello cycle</code> the main function receives two arguments: <code>hello</code> and <code>cycle</code>.</p>
+<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>word1<span class="token punctuation">,</span> word2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>word1<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// hello</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>word2<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// cycle</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>Whatever gets returned from the function will be displayed.</p>
+<ul>
+<li>Example: To build a simple app that echoes the user input<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> message
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>To make the function react to the input students need to implement conditionals.<pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;help&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>To add a second command students use <code>else-if</code><pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;help&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;look&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token function">look</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>Sample main function<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>verb<span class="token punctuation">,</span> noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;help&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;look&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">look</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h5 id="setting-current-room">Setting current room</h5>
+<ol>
+<li>Students must set the currentRoom to their starting room. This way, users can move through the game and keep up to date with which room they&apos;re in.  The functions created can access necessary information using less code.<pre><code class="lang-js"><span class="token keyword">var</span> currentRoom <span class="token operator">=</span> rooms<span class="token punctuation">.</span>livingRoom
+</code></pre>
+</li>
+</ol>
+<h5 id="additional-functions">Additional functions</h5>
+<ol>
+<li>The main function calls the functions look and help. Now, we need to create those functions.</li>
+<li>The look function must return the description of the room user is currently in.<pre><code class="lang-js"><span class="token keyword">function</span> look <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>description
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>Help function will return a message providing hints to user about the level.<pre><code class="lang-js"><span class="token keyword">function</span> help <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> `
+   To play the game<span class="token punctuation">,</span> input a verb and press enter<span class="token punctuation">.</span>
+   Look<span class="token punctuation">:</span> Describes setting of room you are currently <span class="token keyword">in</span><span class="token punctuation">.</span>
+   Help<span class="token punctuation">:</span> Provides hints to complete the level<span class="token punctuation">.</span>
+   `
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>Students may realize that there is no way to access the descriptions of their items. To do so, we will need to create another function call called inspect.<pre><code class="lang-js"><span class="token keyword">function</span> inspect <span class="token punctuation">(</span>noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>noun <span class="token operator">===</span> <span class="token string">&apos;couch&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>items<span class="token punctuation">.</span>couch<span class="token punctuation">.</span>description
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>noun <span class="token operator">===</span> <span class="token string">&apos;briefcase&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>items<span class="token punctuation">.</span>briefcase<span class="token punctuation">.</span>description
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>To move user from one room to the next, we will need to create a move function setting the new room as the current room.<pre><code class="lang-js"><span class="token keyword">function</span> move <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   currentRoom <span class="token operator">=</span> rooms<span class="token punctuation">[</span>currentRoom<span class="token punctuation">.</span>next<span class="token punctuation">]</span>
+   <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>description
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>The main function must be updated to reflect these changes.<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>verb<span class="token punctuation">,</span> noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;help&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;look&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">look</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;inspect&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">inspect</span><span class="token punctuation">(</span>noun<span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;move&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h5 id="overall-code">Overall code</h5>
+<pre><code class="lang-js"><span class="token keyword">var</span> rooms <span class="token operator">=</span> <span class="token punctuation">{</span>
+  kitchen<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    description<span class="token punctuation">:</span> <span class="token string">&apos;You are in an abandoned kitchen. Brad Pitt is sitting on a couch. There are two dark rooms located to your left. You see a knife on the counter.&apos;</span><span class="token punctuation">,</span>
+    items<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      knife<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        description<span class="token punctuation">:</span> <span class="token string">&apos;The knife is rusted and old. It is sharp and deadly.&apos;</span><span class="token punctuation">,</span>
+        takeable<span class="token punctuation">:</span> <span class="token keyword">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      couch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        description<span class="token punctuation">:</span> <span class="token string">&apos;Brad Pitt is sitting on the couch. The couch is old and covered in holes.&apos;</span><span class="token punctuation">,</span>
+        takeable<span class="token punctuation">:</span> <span class="token keyword">false</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  livingRoom<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    description<span class="token punctuation">:</span> <span class="token string">&apos;describe your living room&apos;</span><span class="token punctuation">,</span>
+    items<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      item1<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        description<span class="token punctuation">:</span> <span class="token string">&apos;describe item&apos;</span><span class="token punctuation">,</span>
+        takeable<span class="token punctuation">:</span> <span class="token keyword">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      item2<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        description<span class="token punctuation">:</span> <span class="token string">&apos;describe second item&apos;</span><span class="token punctuation">,</span>
+        takeable<span class="token punctuation">:</span> <span class="token keyword">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> currentRoom <span class="token operator">=</span> rooms<span class="token punctuation">.</span>kitchen
+
+<span class="token keyword">function</span> main <span class="token punctuation">(</span>verb<span class="token punctuation">,</span> noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;help&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;look&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">look</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;inspect&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">inspect</span><span class="token punctuation">(</span>noun<span class="token punctuation">)</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;move&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> look <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>description
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> help <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> `
+   To play the game<span class="token punctuation">,</span> input a verb and press enter<span class="token punctuation">.</span>
+   Look<span class="token punctuation">:</span> Describes setting of room you are currently <span class="token keyword">in</span><span class="token punctuation">.</span>
+   Help<span class="token punctuation">:</span> Provides hints to complete the level<span class="token punctuation">.</span>
+   `
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> inspect <span class="token punctuation">(</span>noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>noun <span class="token operator">===</span> <span class="token string">&apos;knife&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>items<span class="token punctuation">.</span>knife<span class="token punctuation">.</span>description
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>noun <span class="token operator">===</span> <span class="token string">&apos;couch&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>items<span class="token punctuation">.</span>couch<span class="token punctuation">.</span>description
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> move <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   currentRoom <span class="token operator">=</span> rooms<span class="token punctuation">[</span>currentRoom<span class="token punctuation">.</span>next<span class="token punctuation">]</span>
+   <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>description
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="engage">Engage</h3>
+<h5 id="project-milestone">Project milestone</h5>
+<p>Implement the first room using cycle-shell</p>
+<h5 id="adding-new-features">Adding new features</h5>
+<p>To add new features to the game, students should:</p>
+<ul>
+<li>complete &apos;Creating a Function&apos; worksheet</li>
+<li>create function in their code</li>
+<li>add necessary information to main function</li>
+<li>add necessary information to help function</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../devy-blue/objects.html" class="navigation navigation-prev " aria-label="Previous page: object literals"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../devy-blue/debugging.html" class="navigation navigation-next " aria-label="Next page: debugging"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/9dots/devy/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/9dots/devy"},"prism":{},"tasklist":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

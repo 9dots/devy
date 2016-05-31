@@ -5,12 +5,30 @@ In this lesson, students will use [cycle shell](http://cycle.sh) to create simpl
 
 ##### Learning Goals
 By the end of the lesson, students will be able to
-  - concatenate strings
   - read a function
   - identify parameters
   - explain how to return a value from a function
+  - concatenate strings
 
-### Explain
+### pseudocode planning
+Distribute the features checklist and introduce the guess the number game.
+
+1. Ask students to describe the steps to playing a number in game if they were playing with another person. The list should be similar to:
+  1. Person 1 thinks of a number. (variables)
+  2. Person 1 tells person 2 the number of guesses they are allowed to take. (variables)
+  3. Person 2 guesses a number.
+  4. Person 1 checks if the guess is correct. (conditionals)
+    - If the guess is correct person 2 wins (strings)
+    - Otherwise person 1 give person 2 a hint: higher or lower. (strings)
+  5. If person 2 runs out of guesses without getting the correct answer they lose the game. (conditionals)
+2. Tell students that the game is going to be built in stages as they learn new concepts.
+3. To create this game the first step is to learn about functions and cycle-shell.
+
+### introduce concept
+Cycle-shell lesson
+
+##### Functions
+
 Students go to [cycle shell](http://cycle.sh) (http://cycle.sh) which should have the following starting code:
 ```js
 function main (input) {
@@ -21,7 +39,7 @@ function main (input) {
 2. A function is a reusable set of instructions. The function is written as
 ```js
 function name (parameter1, parameter2) {
-    return value
+      return value
 }
 ```
 3. Parameters are variables that only exist inside of the function.
@@ -40,6 +58,25 @@ function name (parameter1, parameter2) {
 ```js
 function main (input) {
       return input
+}
+```
+
+##### Strings
+
+1. To return words return ` `` `
+```js
+function main (input) {
+      return `Hello`
+}
+```
+```js
+function main (input) {
+      return `Hello, Daniel`
+}
+```
+```js
+function main (name) {
+      return `Hello, ${name}`
 }
 ```
 
@@ -75,3 +112,5 @@ function main (adjective, noun, verb) {
       return `The ${adjective} ${noun} ${verb} to the pond.`
 }
 ```
+
+### Justify code

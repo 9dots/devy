@@ -68,14 +68,15 @@ var phrase = `My favorite animal is ${favoriteAnimal}`
 ### Engage
 
 1. Split into smaller groups with tutors to complete [variable worksheet](http://bit.ly/1SebxsH).  (http://bit.ly/1SebxsH)
+2. [Messi goals](http://codewars.com/messigoals)
 2. Start building guess the number game.
 ```js
 var myNumber = 5
 function main (guess) {
-  if (guess === myNumber) {
-    return `Correct!`
-  } else {
-    return `Nope.`
-  }
+      if (guess === myNumber) {
+        return `Correct!`
+      } else {
+        return `Nope.`
+      }
 }
 ```

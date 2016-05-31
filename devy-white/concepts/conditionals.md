@@ -1,12 +1,5 @@
 # Simple conditionals
 
-##### Learning Goals
-By the end of the lesson, students will be able to:
-  - write simple conditionals
-  - return values based on input
-
-##### Overview
-
 ### Explore
 Play a game where students react to different situations based on instructions. For example:
 ```js

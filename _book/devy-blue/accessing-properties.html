@@ -1,0 +1,669 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>accessing properties | devY</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-tasklist/github-markdown.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../devy-blue/adding-levels.html" />
+    
+    
+    <link rel="prev" href="../devy-blue/debugging.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.4"
+        data-chapter-title="accessing properties"
+        data-filepath="devy-blue/accessing-properties.md"
+        data-basepath=".."
+        data-revision="Tue May 31 2016 11:51:35 GMT-0700 (PDT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="devy-white/index.html">
+            
+                
+                    <a href="../devy-white/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        devY White
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="devy-white/cycle-shell.html">
+            
+                
+                    <a href="../devy-white/cycle-shell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        cycle shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="devy-white/checkGuess.html">
+            
+                
+                    <a href="../devy-white/checkGuess.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        guess
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="devy-white/hints.html">
+            
+                
+                    <a href="../devy-white/hints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        hints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="devy-white/store-answer.html">
+            
+                
+                    <a href="../devy-white/store-answer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        store answer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="devy-white/max-guesses.html">
+            
+                
+                    <a href="../devy-white/max-guesses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        maximum guesses
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+            <span><b>1.6.</b> concepts</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="devy-white/concepts/string-templates.html">
+            
+                
+                    <a href="../devy-white/concepts/string-templates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        string templates
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="devy-white/concepts/defining-functions.html">
+            
+                
+                    <a href="../devy-white/concepts/defining-functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        defining functions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="devy-white/concepts/conditionals.html">
+            
+                
+                    <a href="../devy-white/concepts/conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="devy-white/concepts/conditionals2.html">
+            
+                
+                    <a href="../devy-white/concepts/conditionals2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.4.</b>
+                        
+                        conditionals continued
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="devy-white/concepts/variables.html">
+            
+                
+                    <a href="../devy-white/concepts/variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.5.</b>
+                        
+                        variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="devy-white/concepts/objects.html">
+            
+                
+                    <a href="../devy-white/concepts/objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.6.</b>
+                        
+                        objects
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="devy-blue/index.html">
+            
+                
+                    <a href="../devy-blue/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        devY Blue
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="devy-blue/objects.html">
+            
+                
+                    <a href="../devy-blue/objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        object literals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="devy-blue/main.html">
+            
+                
+                    <a href="../devy-blue/main.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        main function
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="devy-blue/debugging.html">
+            
+                
+                    <a href="../devy-blue/debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        debugging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="devy-blue/accessing-properties.html">
+            
+                
+                    <a href="../devy-blue/accessing-properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        accessing properties
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="devy-blue/adding-levels.html">
+            
+                
+                    <a href="../devy-blue/adding-levels.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        adding levels
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="devy-green/index.html">
+            
+                
+                    <a href="../devy-green/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        devY Green
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="devy-green/functions.html">
+            
+                
+                    <a href="../devy-green/functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        functions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="resources/index.html">
+            
+                
+                    <a href="../resources/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Resources
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="resources/cycle.html">
+            
+                
+                    <a href="../resources/cycle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        cycle shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="resources/codewars.html">
+            
+                
+                    <a href="../resources/codewars.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        codewars
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="resources/weo.html">
+            
+                
+                    <a href="../resources/weo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        weo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="devy-blue/escape-game.html">
+            
+                
+                    <a href="../devy-blue/escape-game.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        escape the room guide
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >devY</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="accessing-properties">Accessing properties</h1>
+<h5 id="learning-goals">Learning Goals</h5>
+<p>By the end of the lesson, students will be able to:</p>
+<ul>
+<li>Access object keys by variable</li>
+</ul>
+<h5 id="overview">Overview</h5>
+<h3 id="debugging-review">Debugging Review</h3>
+<p>Debugging review with examples.</p>
+<p>Discuss order:</p>
+<ol>
+<li>Syntax error</li>
+<li>Logic mistakes</li>
+</ol>
+<h3 id="explore">Explore</h3>
+<p>Create a human version of an object and if/else chain.  </p>
+<ol>
+<li>Go through an example with if/else chain similar to the one students create in the previous lesson. Announce your steps out loud.<ol>
+<li>Check the input</li>
+<li>Go to the if/else chain and check the noun</li>
+<li>If it is not the noun proceed to the next until you find the proper noun</li>
+<li>Once the proper one has been found walk over to the example object to find the description.</li>
+<li>Bring the description to the user.</li>
+</ol>
+</li>
+<li>Ask students, &quot;Can you think of a better way to find the description?&quot;<ul>
+<li>If students are having trouble, point out that the object already has a list of the available items.</li>
+</ul>
+</li>
+<li>Go through the example again, this time only checking the object.<ol>
+<li>Check the input</li>
+<li>Go to the object</li>
+<li>If the input is there bring back the description</li>
+</ol>
+</li>
+</ol>
+<h3 id="questions">Questions</h3>
+<ol>
+<li>Why is the checking the object important?</li>
+<li>As your game gets bigger how many items do you think will be in the game?</li>
+<li>Is it easier to check the list or create an if/else chain to check each word?</li>
+</ol>
+<h3 id="explain">Explain</h3>
+<ol>
+<li>Review what students currently know about accessing properties of objects</li>
+<li>In the generic example show students the syntax for accessing a Javascript object using a variable in <a href="repl.it">repl.it</a><pre><code class="lang-js">items<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   light<span class="token punctuation">:</span> <span class="token string">&apos;There is a dim light&apos;</span><span class="token punctuation">,</span>
+   chair<span class="token punctuation">:</span> <span class="token string">&apos;The chair is old and green.&apos;</span><span class="token punctuation">,</span>
+   closet<span class="token punctuation">:</span> <span class="token string">&apos;Inside the closet you see a shiny key.&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>Students practice accessing the properties on the right hand side of the repl<ol>
+<li>First students access using a string<pre><code class="lang-js">items<span class="token punctuation">[</span><span class="token string">&apos;light&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+</li>
+<li>Then students create a variable and access that way<pre><code class="lang-js"><span class="token keyword">var</span> input <span class="token operator">=</span> <span class="token string">&apos;light&apos;</span>
+items<span class="token punctuation">[</span>input<span class="token punctuation">]</span>
+</code></pre>
+</li>
+<li>Then create a function to do the same<pre><code class="lang-js"><span class="token keyword">function</span> getItem <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> items<span class="token punctuation">[</span>input<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&apos;chair&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li>Students practice adding an item to an object using this notation<pre><code class="lang-js"><span class="token keyword">function</span> addToInventory <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  inventory<span class="token punctuation">[</span>input<span class="token punctuation">]</span> <span class="token operator">=</span> items<span class="token punctuation">[</span>inventory<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="engage">Engage</h3>
+<ol>
+<li>Students work on refactoring their code</li>
+<li>Students work on adding an inventory to their game</li>
+<li>Students work on implementing an original feature</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../devy-blue/debugging.html" class="navigation navigation-prev " aria-label="Previous page: debugging"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../devy-blue/adding-levels.html" class="navigation navigation-next " aria-label="Next page: adding levels"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/9dots/devy/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/9dots/devy"},"prism":{},"tasklist":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
