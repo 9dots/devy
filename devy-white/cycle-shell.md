@@ -29,7 +29,7 @@ Cycle-shell lesson
 
 ##### Functions
 
-Students go to [cycle shell](http://cycle.sh) (http://cycle.sh) which should have the following starting code:
+Students go to http://cycle.sh which should have the following starting code:
 ```js
 function main (input) {
   return input
