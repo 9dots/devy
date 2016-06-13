@@ -57,7 +57,7 @@
         data-chapter-title="get user&#39;s name"
         data-filepath="devy-white/get-username.md"
         data-basepath=".."
-        data-revision="Fri Jun 03 2016 15:42:50 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -232,15 +232,7 @@
     
         <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
             
-                
-                    <a href="../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.1.</b>
-                        
-                        string templates
-                    </a>
+            <span><b>1.9.1.</b> string templates</span>
             
             
         </li>
@@ -578,13 +570,53 @@
                     
                         <h1 id="get-username">get username</h1>
 <h5 id="learning-goals">Learning Goals</h5>
-<p>By the end of the lesson, students will be able to:
-  -</p>
+<p>By the end of the lesson, students will be able to:</p>
+<ul>
+<li>Use conditionals to check if the user has inputted a name</li>
+<li>Update a variable</li>
+</ul>
 <h5 id="overview">Overview</h5>
+<p>Students add a welcome message to their game and ask the user to input a name. Students save the name and use it in their code to personalize the messages that get sent back to the user.</p>
 <h5 id="suggested-stations">Suggested stations</h5>
+<ul>
+<li>conditionals</li>
+<li>setting variables</li>
+</ul>
 <h3 id="plan-5-minutes">plan (5 minutes)</h3>
-<h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
+<p><ol>
+<li>Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox"> Person 1 gets the name of the player 2 (variables, conditionals)</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 1 thinks of a number. (variables)</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 1 decides the maximum number of guesses. (variables)</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> If the person has guesses left. (conditionals)<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 2 guesses a number.</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 1 (game) checks if the guess is correct. (conditionals)<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> If the guess is correct person 2 wins (return, strings)<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> The user receives a score based on the number of tries</li></ul>
+</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Otherwise person 1 give person 2 a hint: higher or lower. (function, return, strings, conditional)</li></ul>
+</li></ul>
+</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Otherwise game is over. (conditionals)</li></ul>
+</li><li>Label each of the steps with a javascript concept (in the parentheses above)</li><li>Discuss which concepts are new.</li></ol>
+</p>
 <h3 id="produce-20-minutes">produce (20 minutes)</h3>
+<p>pseudocode with students:</p>
+<ol>
+<li>Create a variable called <code>name</code></li>
+<li>When the user inputs:<ul>
+<li>If there is no name saved in the variable <code>name</code><ul>
+<li>call the <code>setName</code> function</li>
+<li>the <code>setName</code> function should:<ul>
+<li>update the value of <code>name</code> to equal the input</li>
+<li>return a message<pre><code class="lang-js">`Ok $<span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token punctuation">,</span> guess a number between <span class="token number">1</span> and $<span class="token punctuation">{</span>MAX_NUMBER<span class="token punctuation">}</span>`
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>the input is a guess and should call <code>checkDone</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 <p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
@@ -596,15 +628,18 @@
 <ol>
 <li>Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.</li>
 <li><p>After hearing their solutions, introduce students to the teacher solution.</p>
-<pre><code class="lang-js">
- <span class="token keyword">var</span> name <span class="token comment" spellcheck="true">// create a name variable but do not assign a value or set as empty strings</span>
+<pre><code class="lang-js"><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;cycle-shell&apos;</span><span class="token punctuation">)</span><span class="token punctuation">(</span>main<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+   welcome<span class="token punctuation">:</span> `Welcome to my game<span class="token operator">!</span> Please enter your name<span class="token operator">!</span>` <span class="token comment" spellcheck="true">//Add a welcome message to your game</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> name <span class="token comment" spellcheck="true">// create a name variable but do not assign a value or set as empty strings</span>
 <span class="token keyword">var</span> MAX_NUMBER <span class="token operator">=</span> <span class="token number">10</span>
 
 <span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
      <span class="token keyword">return</span> <span class="token function">setName</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span>
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token function">guessNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+     <span class="token keyword">return</span> <span class="token function">checkDone</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span>
    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
@@ -617,7 +652,7 @@
    <span class="token keyword">return</span> `Ok $<span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token punctuation">,</span> guess a number between <span class="token number">1</span> and $<span class="token punctuation">{</span>MAX_NUMBER<span class="token punctuation">}</span>`
 <span class="token punctuation">}</span>
 
-<span class="token comment" spellcheck="true">//... guessNumber ...</span>
+<span class="token comment" spellcheck="true">//... checkDone ...</span>
 </code></pre>
 </li>
 <li>Students contrast the ideal solutions with their own ideas.</li>

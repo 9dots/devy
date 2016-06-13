@@ -24,9 +24,6 @@ Distribute the features checklist and introduce the guess the number game.
 2. Tell students that the game is going to be built in stages as they learn new concepts.
 3. To create this game the first step is to learn about functions and cycle-shell.
 
-### introduce concept
-Cycle-shell lesson
-
 ##### Functions
 
 Students go to http://cycle.sh which should have the following starting code:
@@ -114,3 +111,4 @@ function main (adjective, noun, verb) {
 ```
 
 ### Justify code
+As a group discuss step by step what happens in one of the example programs. After going through one as a group, students practice explaining one of the other examples to a partner.

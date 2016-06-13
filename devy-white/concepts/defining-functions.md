@@ -1,8 +1,12 @@
 # defining functions
 
 ##### Overview
+This lesson starts with students exploring decomposition of a problem and creating functions. Then, students learn how to create a function using Javascript. Finally, students cement understanding by completing codewars exercises.
 
 ##### Objectives
+By the end of the lesson, students will be able to:
+  - recognize proper function syntax
+  - create a function to solve a problem
 
 ### Explore
 Build functions for a day
@@ -23,7 +27,7 @@ Build functions for a day
 3. The function won’t run until it is called.
 
 ##### Hello World Example
-Create a function that says “Hello World”. Students follow along by coding this example on their own computers
+Create a function that says 'Hello World'. Students follow along by coding this example on their own computers
 
 1. Define a function called helloWorld
 
@@ -32,11 +36,11 @@ Create a function that says “Hello World”. Students follow along by coding t
   // code goes here
   }
   ```
-2. Add the list of actions inside the curly braces. In this case we want to use alert(“Hello World”)
+2. Add the list of actions inside the curly braces. In this case we want to use return “Hello World”
 
   ```js
   function helloWorld () {
-  	console.log("Hello World")
+  	console.log('Hello World')
   }
   ```
 3. Why is the program not doing anything?
@@ -45,7 +49,7 @@ Create a function that says “Hello World”. Students follow along by coding t
 
   ```js
   function helloWorld () {
-  	console.log("Hello World")
+  	console.log('Hello World')
   }
 
   helloWorld()
@@ -54,7 +58,7 @@ Create a function that says “Hello World”. Students follow along by coding t
 
   ```js
   function helloWorld () {
-  	console.log("Hello World")
+  	console.log('Hello World')
   }
 
   helloWorld()

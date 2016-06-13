@@ -44,7 +44,7 @@
     <link rel="next" href="../../devy-white/concepts/conditionals.html" />
     
     
-    <link rel="prev" href="../../devy-white/concepts/string-templates.html" />
+    <link rel="prev" href="../../devy-white/reset.html" />
     
 
         
@@ -57,7 +57,7 @@
         data-chapter-title="defining functions"
         data-filepath="devy-white/concepts/defining-functions.md"
         data-basepath="../.."
-        data-revision="Fri Jun 03 2016 15:42:50 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -232,15 +232,7 @@
     
         <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
             
-                
-                    <a href="../../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.1.</b>
-                        
-                        string templates
-                    </a>
+            <span><b>1.9.1.</b> string templates</span>
             
             
         </li>
@@ -578,7 +570,13 @@
                     
                         <h1 id="defining-functions">defining functions</h1>
 <h5 id="overview">Overview</h5>
+<p>This lesson starts with students exploring decomposition of a problem and creating functions. Then, students learn how to create a function using Javascript. Finally, students cement understanding by completing codewars exercises.</p>
 <h5 id="objectives">Objectives</h5>
+<p>By the end of the lesson, students will be able to:</p>
+<ul>
+<li>recognize proper function syntax</li>
+<li>create a function to solve a problem</li>
+</ul>
 <h3 id="explore">Explore</h3>
 <p>Build functions for a day</p>
 <ol>
@@ -596,7 +594,7 @@
 <li>The function won&#x2019;t run until it is called.</li>
 </ol>
 <h5 id="hello-world-example">Hello World Example</h5>
-<p>Create a function that says &#x201C;Hello World&#x201D;. Students follow along by coding this example on their own computers</p>
+<p>Create a function that says &apos;Hello World&apos;. Students follow along by coding this example on their own computers</p>
 <ol>
 <li><p>Define a function called helloWorld</p>
 <pre><code class="lang-js"><span class="token keyword">function</span> helloWorld <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -604,9 +602,9 @@
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
-<li><p>Add the list of actions inside the curly braces. In this case we want to use alert(&#x201C;Hello World&#x201D;)</p>
+<li><p>Add the list of actions inside the curly braces. In this case we want to use return &#x201C;Hello World&#x201D;</p>
 <pre><code class="lang-js"><span class="token keyword">function</span> helloWorld <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
@@ -614,7 +612,7 @@
 <li>The function won&#x2019;t run until it is called</li>
 <li><p>Call the function by writing the function&#x2019;s name followed by parentheses</p>
 <pre><code class="lang-js"><span class="token keyword">function</span> helloWorld <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
 <span class="token function">helloWorld</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -622,7 +620,7 @@
 </li>
 <li><p>Functions can be called multiple times.</p>
 <pre><code class="lang-js"><span class="token keyword">function</span> helloWorld <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
 <span class="token function">helloWorld</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -648,7 +646,7 @@
         </div>
 
         
-        <a href="../../devy-white/concepts/string-templates.html" class="navigation navigation-prev " aria-label="Previous page: string templates"><i class="fa fa-angle-left"></i></a>
+        <a href="../../devy-white/reset.html" class="navigation navigation-prev " aria-label="Previous page: reset game"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../../devy-white/concepts/conditionals.html" class="navigation navigation-next " aria-label="Next page: conditionals"><i class="fa fa-angle-right"></i></a>

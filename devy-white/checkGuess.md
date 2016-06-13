@@ -35,18 +35,24 @@ With their partner, students plan and attempt to implement a solution for checki
 
 ### implement (15 minutes)
 1. Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.
-2. After hearing their solutions, introduce students to the ideal solution.
+2. After hearing their solutions, introduce students to the teacher solution.
+
 ```js
 function main (guess) {
-      if (guess === 4) {// could be any number
-        return `Correct! You win!` // or any winning message
-      } else {
-        return `Wrong! Try again!` // or any losing message
-      }
+  return checkGuess(guess)
+}
+
+function checkGuess (guess) {
+  if (guess === 4) {// could be any number
+    return `Correct! You win!` // or any winning message
+  } else {
+    return `Wrong! Try again!` // or any losing message
+  }
 }
 ```
-3. Students contrast the ideal solutions with their own ideas.
+3. Students contrast the teacher solution with their own ideas.
 4. Student implement a working solution in their project.
+5. Students add comments to their code explaining what each line means.
 
 ### justify (5 minutes)
 1. As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.

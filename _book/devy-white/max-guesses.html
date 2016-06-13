@@ -57,7 +57,7 @@
         data-chapter-title="maximum guesses"
         data-filepath="devy-white/max-guesses.md"
         data-basepath=".."
-        data-revision="Fri Jun 03 2016 15:42:50 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -232,15 +232,7 @@
     
         <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
             
-                
-                    <a href="../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.1.</b>
-                        
-                        string templates
-                    </a>
+            <span><b>1.9.1.</b> string templates</span>
             
             
         </li>
@@ -584,6 +576,7 @@
 <li>increment a variable</li>
 </ul>
 <h5 id="overview">Overview</h5>
+<p>Students use their knowledge of defining functions, creating variables, and conditionals to add a maximum number of guesses to their game. If the maximum number of guesses has been exceeded, then the game returns a game over message.</p>
 <h5 id="suggested-stations">Suggested stations</h5>
 <ul>
 <li>variable values</li>
@@ -599,9 +592,16 @@
 </li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox"> Otherwise game is over. (conditionals)</li></ul>
 </li><li>Label each of the steps with a javascript concept (in the parentheses above)</li><li>Discuss which concepts are new.</li></ol>
 </p>
-<h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
-<p><a href="">variable arithmetic lesson</a></p>
 <h3 id="produce-20-minutes">produce (20 minutes)</h3>
+<p>Remind students that their goals are:</p>
+<ol>
+<li>Create a variable to store the maximum guesses</li>
+<li>Create a function called <code>checkDone</code> that checks if the current number of guesses is greater than or equal to the maximum guesses.<ul>
+<li>If it is tell the player the game is over.</li>
+<li>Otherwise check the guess.</li>
+</ul>
+</li>
+</ol>
 <p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
@@ -613,50 +613,32 @@
 <ol>
 <li>Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.</li>
 <li><p>After hearing their solutions, introduce students to the teacher solution.</p>
-<pre><code class="lang-js"><span class="token keyword">var</span> random <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;random-js&apos;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-
+<pre><code class="lang-js">
 <span class="token keyword">var</span> MAX_TRIES <span class="token operator">=</span> <span class="token number">10</span>
 <span class="token keyword">var</span> guesses <span class="token operator">=</span> <span class="token number">0</span>
-<span class="token keyword">var</span> answer <span class="token operator">=</span> random<span class="token punctuation">.</span><span class="token function">integer</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
-<span class="token keyword">var</span> gameOver <span class="token operator">=</span> <span class="token keyword">false</span>
+<span class="token keyword">var</span> answer <span class="token operator">=</span> <span class="token number">6</span>
 
 <span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>gameOver<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token function">checkDone</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Game is over`
-   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> <span class="token function">checkDone</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">function</span> checkDone <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span>guesses <span class="token operator">&gt;=</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     gameOver <span class="token operator">=</span> <span class="token keyword">true</span>
      <span class="token keyword">return</span> `Game over`
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token function">guessNumber</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+     <span class="token keyword">return</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">function</span> guessNumber <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">function</span> checkGuess <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
      <span class="token keyword">return</span> `Correct<span class="token operator">!</span>`
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token function">renderWrongGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+     <span class="token keyword">return</span> <span class="token function">renderHint</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">function</span> renderWrongGuess <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   guesses<span class="token operator">++</span>
-   <span class="token keyword">return</span> `Wrong<span class="token operator">!</span>
- $<span class="token punctuation">{</span><span class="token function">getHint</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span><span class="token punctuation">}</span>
- $<span class="token punctuation">{</span><span class="token function">getGuessesLeft</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
-<span class="token punctuation">}</span>
-
-<span class="token keyword">function</span> getGuessesLeft <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `You have $<span class="token punctuation">{</span>MAX_TRIES <span class="token operator">-</span> guesses<span class="token punctuation">}</span> guesses left<span class="token punctuation">.</span>`
-<span class="token punctuation">}</span>
-
-<span class="token keyword">function</span> getHint <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">function</span> renderHint <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">&gt;</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
      <span class="token keyword">return</span> `$<span class="token punctuation">{</span>guess<span class="token punctuation">}</span> is too high<span class="token operator">!</span>`
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>

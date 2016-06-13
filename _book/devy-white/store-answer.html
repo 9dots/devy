@@ -57,7 +57,7 @@
         data-chapter-title="store answer"
         data-filepath="devy-white/store-answer.md"
         data-basepath=".."
-        data-revision="Fri Jun 03 2016 15:42:50 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -232,15 +232,7 @@
     
         <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
             
-                
-                    <a href="../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.1.</b>
-                        
-                        string templates
-                    </a>
+            <span><b>1.9.1.</b> string templates</span>
             
             
         </li>
@@ -583,8 +575,10 @@
 <li>define a variable</li>
 <li>use a variable to store a value</li>
 <li>use a variable in a conditional</li>
+<li>increment a variable</li>
 </ul>
 <h5 id="overview">Overview</h5>
+<p>Students learn how to use variables to store the correct answer to their guess the number game.  This lesson starts by discussing the advantages of storing information in a variable. If this is the first variable lesson for your students, use the <a href="concepts/variables.html">variable concept lesson</a> to introduce variables. Then students implement storing the correct solution in their game.</p>
 <h5 id="suggested-stations">Suggested stations</h5>
 <ul>
 <li>variable syntax</li>
@@ -595,11 +589,15 @@
 <li><p>Have students look at their code from last time.
 code:</p>
 <pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token function">guessNumber</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// pass the guess to the guessNumber function</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> guessNumber <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// could be any number</span>
      <span class="token keyword">return</span> `Correct<span class="token operator">!</span>`
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
      <span class="token keyword">return</span> <span class="token function">getHint</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// call the getHint function</span>
-   <span class="token punctuation">}</span>                       <span class="token comment" spellcheck="true">// pass the guess to the getHint function</span>
+   <span class="token punctuation">}</span>      
 <span class="token punctuation">}</span>
 
 <span class="token keyword">function</span> getHint <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -619,6 +617,11 @@ code:</p>
 <li><a href="concepts/variables.html">variables lesson</a></li>
 </ul>
 <h3 id="produce-20-minutes">produce (20 minutes)</h3>
+<p>Students have two goals:</p>
+<ol>
+<li>Store the correct answer as a variable</li>
+<li>Keep track of how many guesses the user has attempted</li>
+</ol>
 <p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
@@ -632,21 +635,27 @@ code:</p>
 <li><p>After hearing their solutions, introduce students to the ideal solution.
 teacher solution:</p>
 <pre><code class="lang-js"><span class="token keyword">var</span> answer <span class="token operator">=</span> <span class="token number">6</span>
+<span class="token keyword">var</span> guesses <span class="token operator">=</span> <span class="token number">0</span>
 
 <span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
- <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Correct<span class="token operator">!</span>`
- <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> <span class="token function">getHint</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
- <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> <span class="token function">guessNumber</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// pass the guess to the guessNumber function</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">function</span> getHint <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
- <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">&gt;</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `$<span class="token punctuation">{</span>guess<span class="token punctuation">}</span> is too high`
- <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `$<span class="token punctuation">{</span>guess<span class="token punctuation">}</span> is too low`
- <span class="token punctuation">}</span>
+<span class="token keyword">function</span> guessNumber <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   guesses<span class="token operator">++</span> <span class="token comment" spellcheck="true">// Add one to guesses</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// could be any number</span>
+     <span class="token keyword">return</span> `Correct<span class="token operator">!</span> It took you $<span class="token punctuation">{</span>guesses<span class="token punctuation">}</span> guesses to solve it<span class="token operator">!</span>`
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token function">renderHint</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// call the getHint function</span>
+   <span class="token punctuation">}</span>      
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> renderHint <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">&gt;</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// if the guess is larger than the answer</span>
+     <span class="token keyword">return</span> `$<span class="token punctuation">{</span>guess<span class="token punctuation">}</span> is too high` <span class="token comment" spellcheck="true">// the guess is too high</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> `$<span class="token punctuation">{</span>guess<span class="token punctuation">}</span> is too low` <span class="token comment" spellcheck="true">// the guess is too low</span>
+   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>

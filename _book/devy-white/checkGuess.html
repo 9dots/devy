@@ -57,7 +57,7 @@
         data-chapter-title="guess"
         data-filepath="devy-white/checkGuess.md"
         data-basepath=".."
-        data-revision="Fri Jun 03 2016 15:42:50 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -232,15 +232,7 @@
     
         <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
             
-                
-                    <a href="../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.1.</b>
-                        
-                        string templates
-                    </a>
+            <span><b>1.9.1.</b> string templates</span>
             
             
         </li>
@@ -618,17 +610,24 @@
 <h3 id="implement-15-minutes">implement (15 minutes)</h3>
 <ol>
 <li>Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.</li>
-<li>After hearing their solutions, introduce students to the ideal solution.<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">// could be any number</span>
-     <span class="token keyword">return</span> `Correct<span class="token operator">!</span> You win<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any winning message</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> Try again<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any losing message</span>
-   <span class="token punctuation">}</span>
+<li>After hearing their solutions, introduce students to the teacher solution.</li>
+</ol>
+<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> checkGuess <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">// could be any number</span>
+    <span class="token keyword">return</span> `Correct<span class="token operator">!</span> You win<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any winning message</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> Try again<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any losing message</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-</li>
-<li>Students contrast the ideal solutions with their own ideas.</li>
+<ol>
+<li>Students contrast the teacher solution with their own ideas.</li>
 <li>Student implement a working solution in their project.</li>
+<li>Students add comments to their code explaining what each line means.</li>
 </ol>
 <h3 id="justify-5-minutes">justify (5 minutes)</h3>
 <ol>

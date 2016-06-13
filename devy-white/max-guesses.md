@@ -6,7 +6,7 @@ By the end of the lesson, students will be able to:
   - increment a variable
 
 ##### Overview
-
+Students use their knowledge of defining functions, creating variables, and conditionals to add a maximum number of guesses to their game. If the maximum number of guesses has been exceeded, then the game returns a game over message.
 
 ##### Suggested stations
 - variable values
@@ -27,10 +27,13 @@ By the end of the lesson, students will be able to:
 3. Discuss which concepts are new.
 {% endtlist %}
 
-### discover (30-45 minutes)
-[variable arithmetic lesson]()
-
 ### produce (20 minutes)
+Remind students that their goals are:
+1. Create a variable to store the maximum guesses
+2. Create a function called `checkDone` that checks if the current number of guesses is greater than or equal to the maximum guesses.
+  - If it is tell the player the game is over.
+  - Otherwise check the guess.
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout
@@ -42,50 +45,32 @@ With their partner, students plan and attempt to implement a solution for checki
 1. Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.
 2. After hearing their solutions, introduce students to the teacher solution.
   ```js
-  var random = require('random-js')()
 
   var MAX_TRIES = 10
   var guesses = 0
-  var answer = random.integer(1, 10)
-  var gameOver = false
+  var answer = 6
 
   function main (guess) {
-      if (!gameOver) {
-        return checkDone(guess)
-      } else {
-        return `Game is over`
-      }
+      return checkDone(guess)
   }
 
   function checkDone (guess) {
       if (guesses >= MAX_TRIES) {
-        gameOver = true
         return `Game over`
       } else {
-        return guessNumber(guess)
+        return checkGuess(guess)
       }
   }
 
-  function guessNumber (guess) {
+  function checkGuess (guess) {
       if (guess === answer) {
         return `Correct!`
       } else {
-        return renderWrongGuess(guess)
+        return renderHint(guess)
       }
   }
 
-  function renderWrongGuess (guess) {
-      guesses++
-      return `Wrong!
-    ${getHint(guess)}
-    ${getGuessesLeft()}`
-  }
-
-  function getGuessesLeft () {
-      return `You have ${MAX_TRIES - guesses} guesses left.`
-  }
-
-  function getHint (guess) {
+  function renderHint (guess) {
       if (guess > answer) {
         return `${guess} is too high!`
       } else {

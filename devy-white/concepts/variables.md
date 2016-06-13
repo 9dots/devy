@@ -47,6 +47,16 @@ var myAge
 ```js
 var myAge = 27
 ```
+4. To change the value of a variable once it has already been defined drop the keyword `var`
+```js
+var myAge = 27
+myAge = 28
+```
+5. You can also use math operations to change the value of a variable. Show students the example below and ask them what the value of myAge will be after the code is run. (29)
+```js
+var myAge = 27
+myAge = myAge + 2
+```
 
 #### Introduce strings
 
@@ -69,14 +79,4 @@ var phrase = `My favorite animal is ${favoriteAnimal}`
 
 1. Split into smaller groups with tutors to complete [variable worksheet](http://bit.ly/1SebxsH).  (http://bit.ly/1SebxsH)
 2. [Messi goals](http://codewars.com/messigoals)
-2. Start building guess the number game.
-```js
-var myNumber = 5
-function main (guess) {
-      if (guess === myNumber) {
-        return `Correct!`
-      } else {
-        return `Nope.`
-      }
-}
-```
+3. [Variable assignment debug](https://www.codewars.com/kata/5612e743cab69fec6d000077/train/javascript)

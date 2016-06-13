@@ -57,7 +57,7 @@
         data-chapter-title="get score"
         data-filepath="devy-white/get-score.md"
         data-basepath=".."
-        data-revision="Fri Jun 03 2016 15:42:50 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -232,15 +232,7 @@
     
         <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
             
-                
-                    <a href="../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.1.</b>
-                        
-                        string templates
-                    </a>
+            <span><b>1.9.1.</b> string templates</span>
             
             
         </li>
@@ -578,13 +570,39 @@
                     
                         <h1 id="get-score">get score</h1>
 <h5 id="learning-goals">Learning Goals</h5>
-<p>By the end of the lesson, students will be able to:
-  -</p>
+<p>By the end of the lesson, students will be able to:</p>
+<ul>
+<li>call a function from a template string</li>
+<li>use arithmetic to create a score for their player</li>
+<li>render the score for their player</li>
+</ul>
 <h5 id="overview">Overview</h5>
+<p>Students add a feature to the game where the user is presented with a score based on the number of guesses they have attempted.</p>
 <h5 id="suggested-stations">Suggested stations</h5>
+<ul>
+<li>arithmetic</li>
+<li>calling functions</li>
+<li>defining functions</li>
+</ul>
 <h3 id="plan-5-minutes">plan (5 minutes)</h3>
-<h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
+<p><ol>
+<li>Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 1 thinks of a number. (variables)</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 1 decides the maximum number of guesses. (variables)</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> If the person has guesses left. (conditionals)<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 2 guesses a number.</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Person 1 (game) checks if the guess is correct. (conditionals)<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> If the guess is correct person 2 wins (return, strings)<ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox"> The user receives a score based on the number of tries</li></ul>
+</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Otherwise person 1 give person 2 a hint: higher or lower. (function, return, strings, conditional)</li></ul>
+</li></ul>
+</li><li style="list-style: none"><input type="checkbox" class="task-list-item-checkbox" checked> Otherwise game is over. (conditionals)</li></ul>
+</li><li>Label each of the steps with a javascript concept (in the parentheses above)</li><li>Discuss which concepts are new.</li></ol>
+</p>
 <h3 id="produce-20-minutes">produce (20 minutes)</h3>
+<p>Students need to:</p>
+<ol>
+<li>Create a function called <code>getScore</code> that calculates the score using the formula: <code>(guessesLeft / MAX_TRIES) * 100</code></li>
+<li>Create a function called <code>renderScore</code> that uses a string template to create a sentence out of the score.</li>
+<li>Call <code>renderScore</code> when the player either wins or loses.</li>
+</ol>
 <p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
@@ -599,13 +617,30 @@
 <pre><code class="lang-js"> <span class="token keyword">var</span> MAX_TRIES <span class="token operator">=</span> <span class="token number">10</span>
  <span class="token keyword">var</span> guesses <span class="token operator">=</span> <span class="token number">0</span>
  <span class="token comment" spellcheck="true">//...</span>
+
+ <span class="token keyword">function</span> checkDone <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>guesses <span class="token operator">&gt;=</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> `Game Over<span class="token operator">!</span> $<span class="token punctuation">{</span><span class="token function">renderScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+
+ <span class="token keyword">function</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> `Correct<span class="token operator">!</span> $<span class="token punctuation">{</span><span class="token function">renderScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> $<span class="token punctuation">{</span><span class="token function">renderHint</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+
  <span class="token keyword">function</span> getScore <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">var</span> guessesLeft <span class="token operator">=</span> MAX_TRIES <span class="token operator">-</span> guesses
    <span class="token keyword">return</span> <span class="token punctuation">(</span>guessesLeft <span class="token operator">/</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span>
  <span class="token punctuation">}</span>
 
  <span class="token keyword">function</span> renderScore <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Your score is<span class="token punctuation">:</span> $<span class="token punctuation">{</span>getScore<span class="token punctuation">}</span>`
+   <span class="token keyword">return</span> `Your score is<span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token function">getScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
  <span class="token punctuation">}</span>
 </code></pre>
 </li>

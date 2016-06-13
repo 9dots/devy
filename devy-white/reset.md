@@ -2,19 +2,40 @@
 
 ##### Learning Goals
 By the end of the lesson, students will be able to:
-  -
+  - create a function that updates all of the variable values
 
 ##### Overview
-
+Students add a reset function that resets the variable values back to their original state. This function should be called whenever the user enters the word 'reset'.
 
 ##### Suggested stations
-
+- conditional syntax
+- updating variable values
 
 ### plan (5 minutes)
-
-### discover (30-45 minutes)
+{% tlist %}
+1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
+  - [ ] If at any points the user types 'reset' the game should be reset to it's initial state (variables, conditionals, function)
+  - [x] Person 1 gets the name of the player 2 (variables, conditionals)
+  - [x] Person 1 thinks of a number. (variables)
+  - [x] Person 1 decides the maximum number of guesses. (variables)
+  - [x] If the person has guesses left. (conditionals)
+    - [x] Person 2 guesses a number.
+    - [x] Person 1 (game) checks if the guess is correct. (conditionals)
+      - [x] If the guess is correct person 2 wins (return, strings)
+        - [x] The user receives a score based on the number of tries
+      - [x] Otherwise person 1 give person 2 a hint: higher or lower. (function, return, strings, conditional)
+  - [x] Otherwise game is over. (conditionals)
+2. Label each of the steps with a javascript concept (in the parentheses above)
+3. Discuss which concepts are new.
+{% endtlist %}
 
 ### produce (20 minutes)
+pseudocode
+- create a function called `reset`
+  - reset should set all of the variables back to their original values
+- the main function should check to see if the user inputted 'reset'
+  - if the input === 'reset', call the reset function
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout
@@ -26,11 +47,24 @@ With their partner, students plan and attempt to implement a solution for checki
 1. Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.
 2. After hearing their solutions, introduce students to the teacher solution.
   ```js
-    function reset () {
+    // ...variables
+
+    function main (input) {
+      if (input === 'reset') {
+        return reset()
+      } else if (!name) {
+        return setName(input)
+      } else {
+        checkDone(input)
+      }
+    }
+
+    function reset () { // the reset function resets all of the changing variables back to their original state
       guesses = 0
       name = ''
-      gameOver = false
     }
+
+    // Other functions..
   ```
 3. Students contrast the ideal solutions with their own ideas.
 4. Student implement a working solution in their project.

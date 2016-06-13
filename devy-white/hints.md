@@ -7,11 +7,11 @@ By the end of the lesson, students will be able to:
   - use inequalities in a conditional
 
 ##### Overview
-
+Students learn how to add hints to their game. During this lesson students learn how to create a new function and use it to implement a new feature in their game.
 
 ##### Suggested stations
 - conditional syntax
-- funtion syntax
+- function syntax
 
 ### plan (5 minutes)
 {% tlist %}
@@ -25,9 +25,13 @@ By the end of the lesson, students will be able to:
 {% endtlist %}
 
 ### discover (30-45 minutes)
-[creating functions lesson]()
+[creating functions lesson](concepts/defining-functions.md)
 
 ### produce (20 minutes)
+Remind students that their goal is to:
+1. Make a `guessNumber` function to check the answer and call it from the main function.
+2. Make a `getHint` function that returns either 'higher' or 'lower' and gets called from the `guessNumber` function.
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout
@@ -40,17 +44,22 @@ With their partner, students plan and attempt to implement a solution for checki
 2. After hearing their solutions, introduce students to the teacher solution.
 
   Teacher solution:
+
   ```js
   function main (guess) {
+      return checkGuess(guess) // pass the guess to the guessNumber function
+  }
+
+  function checkGuess (guess) {
       if (guess === 6) { // could be any number
         return `Correct!`
       } else {
-        return getHint(guess) // call the getHint function
-      }                       // pass the guess to the getHint function
+        return renderHint(guess) // call the getHint function
+      }      
   }
 
-  function getHint (guess) {
-      if (guess > answer) { // if the guess is larger than the answer
+  function renderHint (guess) {
+      if (guess > 6) { // if the guess is larger than the answer
         return `${guess} is too high` // the guess is too high
       } else {
         return `${guess} is too low` // the guess is too low
