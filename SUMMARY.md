@@ -7,6 +7,9 @@
     * [hints](devy-white/hints.md)
     * [store answer](devy-white/store-answer.md)
     * [maximum guesses](devy-white/max-guesses.md)
+    * [get score](devy-white/get-score.md)
+    * [get user's name](devy-white/get-username.md)
+    * [reset game](devy-white/reset.md)
     * concepts
       * [string templates](devy-white/concepts/string-templates.md)
       * [defining functions](devy-white/concepts/defining-functions.md)
