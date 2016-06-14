@@ -19,6 +19,8 @@ Build functions for a day
 
 
 ### Questions
+1. Why was creating the functions useful?
+2. How did you use a specific function?
 
 ### Explain
 

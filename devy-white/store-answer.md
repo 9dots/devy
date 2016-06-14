@@ -49,6 +49,28 @@ Students have two goals:
 1. Store the correct answer as a variable
 2. Keep track of how many guesses the user has attempted
 
+pseudocode:
+```
+SET answer to number
+SET guesses to 0
+
+FUNCTION main
+  CALL checkGuess
+
+FUNCTION checkGuess
+  INCREMENT guesses
+  IF guess is equal to answer
+    RETURN win message
+  ELSE
+    RETURN CALL renderHint
+
+FUNCTION renderHint
+  IF guess is greater than answer
+    RETURN too big hint
+  ELSE
+    RETURN too small hint
+```
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout

@@ -28,9 +28,23 @@ Students learn how to add hints to their game. During this lesson students learn
 [creating functions lesson](concepts/defining-functions.md)
 
 ### produce (20 minutes)
-Remind students that their goal is to:
-1. Make a `guessNumber` function to check the answer and call it from the main function.
-2. Make a `getHint` function that returns either 'higher' or 'lower' and gets called from the `guessNumber` function.
+pseudocode:
+```
+FUNCTION main
+  CALL checkGuess
+
+FUNCTION checkGuess
+  IF guess is equal to answer
+    RETURN win message
+  ELSE
+    RETURN CALL renderHint
+
+FUNCTION renderHint
+  IF guess is greater than answer
+    RETURN too big hint
+  ELSE
+    RETURN too small hint
+```
 
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 

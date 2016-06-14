@@ -31,6 +31,20 @@ Students add a welcome message to their game and ask the user to input a name. S
 
 ### produce (20 minutes)
 pseudocode with students:
+
+```
+SET name
+
+FUNCTION main
+  IF name is empty
+    RETURN CALL setName
+  ELSE
+    RETURN CALL checkGuess
+
+FUNCTION setName
+  SET name to input
+  RETURN Ok + name + guess a number between 1 and 100
+```
 1. Create a variable called `name`
 2. When the user inputs:
   - If there is no name saved in the variable `name`

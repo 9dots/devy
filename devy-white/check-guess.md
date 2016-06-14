@@ -18,7 +18,7 @@ This lesson introduces students to the process of adding new features to their p
   1. Person 2 guesses a number.
   2. Person 1 (game) checks if the guess is correct. (conditionals)
     - If the guess is correct person 2 wins (return, strings)
-    - Otherwise person 1 give person 2 a hint: higher or lower. (return, strings)
+    - Otherwise person the guess is incorrect
 2. Label each of the steps with a javascript concept (in the parentheses above)
 3. Discuss which concepts are new.
 
@@ -26,6 +26,15 @@ This lesson introduces students to the process of adding new features to their p
 [conditionals lesson](concepts/conditionals.md)
 
 ### produce (20 minutes)
+pseudocode
+```
+FUNCTION main
+  IF guess is equal to correct
+    RETURN win message
+  ELSE
+    RETURN lose message
+```
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout

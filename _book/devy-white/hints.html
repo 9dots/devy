@@ -44,7 +44,7 @@
     <link rel="next" href="../devy-white/store-answer.html" />
     
     
-    <link rel="prev" href="../devy-white/checkGuess.html" />
+    <link rel="prev" href="../devy-white/check-guess.html" />
     
 
         
@@ -57,7 +57,7 @@
         data-chapter-title="hints"
         data-filepath="devy-white/hints.md"
         data-basepath=".."
-        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 15:32:50 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -117,16 +117,16 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="devy-white/checkGuess.html">
+        <li class="chapter " data-level="1.2" data-path="devy-white/check-guess.html">
             
                 
-                    <a href="../devy-white/checkGuess.html">
+                    <a href="../devy-white/check-guess.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                        guess
+                        check guess
                     </a>
             
             
@@ -230,21 +230,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
-            
-            <span><b>1.9.1.</b> string templates</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2" data-path="devy-white/concepts/defining-functions.html">
+        <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/defining-functions.html">
             
                 
                     <a href="../devy-white/concepts/defining-functions.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.2.</b>
+                            <b>1.9.1.</b>
                         
                         defining functions
                     </a>
@@ -252,14 +245,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="devy-white/concepts/conditionals.html">
+        <li class="chapter " data-level="1.9.2" data-path="devy-white/concepts/conditionals.html">
             
                 
                     <a href="../devy-white/concepts/conditionals.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.3.</b>
+                            <b>1.9.2.</b>
                         
                         conditionals
                     </a>
@@ -267,14 +260,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="devy-white/concepts/conditionals2.html">
+        <li class="chapter " data-level="1.9.3" data-path="devy-white/concepts/conditionals2.html">
             
                 
                     <a href="../devy-white/concepts/conditionals2.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.4.</b>
+                            <b>1.9.3.</b>
                         
                         conditionals continued
                     </a>
@@ -282,31 +275,16 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="devy-white/concepts/variables.html">
+        <li class="chapter " data-level="1.9.4" data-path="devy-white/concepts/variables.html">
             
                 
                     <a href="../devy-white/concepts/variables.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.5.</b>
+                            <b>1.9.4.</b>
                         
                         variables
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.6" data-path="devy-white/concepts/objects.html">
-            
-                
-                    <a href="../devy-white/concepts/objects.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.6.</b>
-                        
-                        objects
                     </a>
             
             
@@ -594,12 +572,22 @@
 <h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
 <p><a href="concepts/defining-functions.html">creating functions lesson</a></p>
 <h3 id="produce-20-minutes">produce (20 minutes)</h3>
-<p>Remind students that their goal is to:</p>
-<ol>
-<li>Make a <code>guessNumber</code> function to check the answer and call it from the main function.</li>
-<li>Make a <code>getHint</code> function that returns either &apos;higher&apos; or &apos;lower&apos; and gets called from the <code>guessNumber</code> function.</li>
-</ol>
-<p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
+<p>pseudocode:</p>
+<pre><code>FUNCTION main
+  CALL checkGuess
+
+FUNCTION checkGuess
+  IF guess is equal to answer
+    RETURN win message
+  ELSE
+    RETURN CALL renderHint
+
+FUNCTION renderHint
+  IF guess is greater than answer
+    RETURN too big hint
+  ELSE
+    RETURN too small hint
+</code></pre><p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
 <li>Discuss plans</li>
@@ -651,7 +639,7 @@
         </div>
 
         
-        <a href="../devy-white/checkGuess.html" class="navigation navigation-prev " aria-label="Previous page: guess"><i class="fa fa-angle-left"></i></a>
+        <a href="../devy-white/check-guess.html" class="navigation navigation-prev " aria-label="Previous page: check guess"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../devy-white/store-answer.html" class="navigation navigation-next " aria-label="Next page: store answer"><i class="fa fa-angle-right"></i></a>

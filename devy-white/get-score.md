@@ -36,6 +36,42 @@ Students need to:
 2. Create a function called `renderScore` that uses a string template to create a sentence out of the score.
 3. Call `renderScore` when the player either wins or loses.
 
+pseudocode:
+```
+SET answer to number
+SET guesses to 0
+SET maxGuesses to number
+
+FUNCTION main
+  CALL checkDone
+
+FUNCTION checkDone
+  IF guesses is greater than or equal to maxGuesses
+    RETURN CALL renderScore + game over message
+  ELSE
+    RETURN CALL checkGuess
+
+FUNCTION checkGuess
+  INCREMENT guesses
+  IF guess is equal to answer
+    RETURN win message
+  ELSE
+    RETURN CALL renderHint
+
+FUNCTION renderHint
+  IF guess is greater than answer
+    RETURN too big hint
+  ELSE
+    RETURN too small hint
+
+FUNCTION renderScore
+  RETURN your score is: + CALL getScore
+
+FUNCTION getScore
+  SET guessesLeft = maxGuesses - guesses
+  RETURN (guessesLeft / maxGuesses) * 100
+```
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout

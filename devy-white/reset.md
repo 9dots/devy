@@ -30,7 +30,20 @@ Students add a reset function that resets the variable values back to their orig
 {% endtlist %}
 
 ### produce (20 minutes)
-pseudocode
+pseudocode:
+```
+FUNCTION main
+  IF input is equal to reset
+    RETURN CALL reset
+  ELSE IF name is empty
+    RETURN CALL setName
+  ELSE
+    RETURN CALL checkDone
+
+FUNCTION reset
+  SET guesses to 0
+  SET name to ''
+```
 - create a function called `reset`
   - reset should set all of the variables back to their original values
 - the main function should check to see if the user inputted 'reset'

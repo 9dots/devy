@@ -34,6 +34,35 @@ Remind students that their goals are:
   - If it is tell the player the game is over.
   - Otherwise check the guess.
 
+  pseudocode:
+  ```
+  SET answer to number
+  SET guesses to 0
+  SET maxGuesses to number
+
+  FUNCTION main
+    CALL checkDone
+
+  FUNCTION checkDone
+    IF guesses is greater than or equal to maxGuesses
+      RETURN game over message
+    ELSE
+      RETURN CALL checkGuess
+
+  FUNCTION checkGuess
+    INCREMENT guesses
+    IF guess is equal to answer
+      RETURN win message
+    ELSE
+      RETURN CALL renderHint
+
+  FUNCTION renderHint
+    IF guess is greater than answer
+      RETURN too big hint
+    ELSE
+      RETURN too small hint
+  ```
+
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
 1. Fill in handout

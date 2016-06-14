@@ -57,7 +57,7 @@
         data-chapter-title="get score"
         data-filepath="devy-white/get-score.md"
         data-basepath=".."
-        data-revision="Mon Jun 13 2016 12:04:16 GMT-0700 (PDT)"
+        data-revision="Mon Jun 13 2016 15:32:50 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -117,16 +117,16 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="devy-white/checkGuess.html">
+        <li class="chapter " data-level="1.2" data-path="devy-white/check-guess.html">
             
                 
-                    <a href="../devy-white/checkGuess.html">
+                    <a href="../devy-white/check-guess.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                        guess
+                        check guess
                     </a>
             
             
@@ -230,21 +230,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/string-templates.html">
-            
-            <span><b>1.9.1.</b> string templates</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2" data-path="devy-white/concepts/defining-functions.html">
+        <li class="chapter " data-level="1.9.1" data-path="devy-white/concepts/defining-functions.html">
             
                 
                     <a href="../devy-white/concepts/defining-functions.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.2.</b>
+                            <b>1.9.1.</b>
                         
                         defining functions
                     </a>
@@ -252,14 +245,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="devy-white/concepts/conditionals.html">
+        <li class="chapter " data-level="1.9.2" data-path="devy-white/concepts/conditionals.html">
             
                 
                     <a href="../devy-white/concepts/conditionals.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.3.</b>
+                            <b>1.9.2.</b>
                         
                         conditionals
                     </a>
@@ -267,14 +260,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="devy-white/concepts/conditionals2.html">
+        <li class="chapter " data-level="1.9.3" data-path="devy-white/concepts/conditionals2.html">
             
                 
                     <a href="../devy-white/concepts/conditionals2.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.4.</b>
+                            <b>1.9.3.</b>
                         
                         conditionals continued
                     </a>
@@ -282,31 +275,16 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="devy-white/concepts/variables.html">
+        <li class="chapter " data-level="1.9.4" data-path="devy-white/concepts/variables.html">
             
                 
                     <a href="../devy-white/concepts/variables.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.5.</b>
+                            <b>1.9.4.</b>
                         
                         variables
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.6" data-path="devy-white/concepts/objects.html">
-            
-                
-                    <a href="../devy-white/concepts/objects.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.6.</b>
-                        
-                        objects
                     </a>
             
             
@@ -603,7 +581,40 @@
 <li>Create a function called <code>renderScore</code> that uses a string template to create a sentence out of the score.</li>
 <li>Call <code>renderScore</code> when the player either wins or loses.</li>
 </ol>
-<p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
+<p>pseudocode:</p>
+<pre><code>SET answer to number
+SET guesses to 0
+SET maxGuesses to number
+
+FUNCTION main
+  CALL checkDone
+
+FUNCTION checkDone
+  IF guesses is greater than or equal to maxGuesses
+    RETURN CALL renderScore + game over message
+  ELSE
+    RETURN CALL checkGuess
+
+FUNCTION checkGuess
+  INCREMENT guesses
+  IF guess is equal to answer
+    RETURN win message
+  ELSE
+    RETURN CALL renderHint
+
+FUNCTION renderHint
+  IF guess is greater than answer
+    RETURN too big hint
+  ELSE
+    RETURN too small hint
+
+FUNCTION renderScore
+  RETURN your score is: + CALL getScore
+
+FUNCTION getScore
+  SET guessesLeft = maxGuesses - guesses
+  RETURN (guessesLeft / maxGuesses) * 100
+</code></pre><p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
 <li>Discuss plans</li>

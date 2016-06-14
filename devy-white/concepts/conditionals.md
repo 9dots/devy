@@ -15,9 +15,9 @@ if (shoeColor === `white`) {
 if (shoeColor === `white`) {
 	  raiseRightHand()
 } else if (shoeColor === `blue`) {
-      raiseLeftHand()
+    raiseLeftHand()
 } else {
-      clap()
+    clap()
 }
 ```
 4. Students interpret the rules. If they do the wrong actions they sit down.

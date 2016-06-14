@@ -33,7 +33,7 @@ function main (input) {
 }
 ```
 1. The first line of cycle-shell sets up the interactive page on the right side of the screen.
-2. A function is a reusable set of instructions. The function is written as
+2. A function is a reusable set of instructions. A function is a block of code and has curly braces `{}` to mark the beginning and end of the code block. Code inside of the code block should be indented. The function is written as:
 ```js
 function name (parameter1, parameter2) {
       return value
@@ -71,6 +71,7 @@ function main (input) {
       return `Hello, Daniel`
 }
 ```
+2. To use a variable in a string, use a dollar sign followed by curly braces such as `${variableName}`
 ```js
 function main (name) {
       return `Hello, ${name}`
