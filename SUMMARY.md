@@ -10,6 +10,7 @@
     * [get score](devy-white/get-score.md)
     * [get user's name](devy-white/get-username.md)
     * [reset game](devy-white/reset.md)
+    * [render grade](devy-white/render-grade.md)
     * concepts
       * [defining functions](devy-white/concepts/defining-functions.md)
       * [conditionals](devy-white/concepts/conditionals.md)

@@ -34,13 +34,13 @@ FUNCTION main
   CALL checkGuess
 
 FUNCTION checkGuess
-  IF guess is equal to answer
+  IF guess [is equal to] answer
     RETURN win message
   ELSE
     RETURN CALL renderHint
 
 FUNCTION renderHint
-  IF guess is greater than answer
+  IF guess [is greater than] answer
     RETURN too big hint
   ELSE
     RETURN too small hint
@@ -87,3 +87,14 @@ With their partner, students plan and attempt to implement a solution for checki
 1. As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.
 2. Tell students that in the future, they are expected to justify their code in this way after each feature that they add.
 3. Students practice by explaining their code to a partner.
+
+### test
+1. Students play the game of their partner.
+2. When students are testing a game, they are looking for:
+  - bugs
+  - feature improvements
+3. When students find a bug they fill out a bug report:
+  - What were you doing in the game?
+  - What did you type into the input box?
+  - What did you expect to happen?
+  - What actually happened?

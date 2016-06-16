@@ -11,14 +11,15 @@ if (shoeColor === `white`) {
 1. Start the game with just an if statement
 2. Then add in an else
 3. Add an else-if
-```js
-if (shoeColor === `white`) {
-	  raiseRightHand()
-} else if (shoeColor === `blue`) {
-    raiseLeftHand()
-} else {
-    clap()
-}
+
+  ```js
+  if (shoeColor === `white`) {
+  	raiseRightHand()
+  } else if (shoeColor === `blue`) {
+      raiseLeftHand()
+  } else {
+      clap()
+  }
 ```
 4. Students interpret the rules. If they do the wrong actions they sit down.
 
@@ -62,7 +63,9 @@ function main (input) {
 ```
 
 ### Engage
-1. Personalized greeting - Check to see if the name entered is your own
+
+1. [Comparing values handout]()
+2. Personalized greeting - Check to see if the name entered is your own
 ```js
 function main (name) {
       if (name === `Daniel`) {
@@ -72,7 +75,7 @@ function main (name) {
       }
 }
 ```
-2. Calculator
+3. Calculator
 ```js
 function main (num1, op, num2) {
       if (op === `+`) {

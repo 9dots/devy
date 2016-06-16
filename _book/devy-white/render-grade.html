@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>check guess | devY</title>
+        <title>render grade | devY</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../devy-white/hints.html" />
+    <link rel="next" href="../devy-white/concepts/defining-functions.html" />
     
     
-    <link rel="prev" href="../devy-white/cycle-shell.html" />
+    <link rel="prev" href="../devy-white/reset.html" />
     
 
         
@@ -53,9 +53,9 @@
         
         
     <div class="book"
-        data-level="1.2"
-        data-chapter-title="check guess"
-        data-filepath="devy-white/check-guess.md"
+        data-level="1.9"
+        data-chapter-title="render grade"
+        data-filepath="devy-white/render-grade.md"
         data-basepath=".."
         data-revision="Thu Jun 16 2016 10:22:05 GMT-0700 (PDT)"
         data-innerlanguage="">
@@ -117,7 +117,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="devy-white/check-guess.html">
+        <li class="chapter " data-level="1.2" data-path="devy-white/check-guess.html">
             
                 
                     <a href="../devy-white/check-guess.html">
@@ -222,7 +222,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="devy-white/render-grade.html">
+        <li class="chapter active" data-level="1.9" data-path="devy-white/render-grade.html">
             
                 
                     <a href="../devy-white/render-grade.html">
@@ -561,45 +561,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="check-user-guess">Check user guess</h1>
+                        <h1 id="render-grade">render grade</h1>
 <h5 id="learning-goals">Learning Goals</h5>
-<p>By the end of the lesson, students will be able to:</p>
-<ul>
-<li>write simple conditionals</li>
-<li>return values based on input</li>
-<li>use conditionals to check if the user won in their guess the number game</li>
-</ul>
+<p>By the end of the lesson, students will be able to:
+  -</p>
 <h5 id="overview">Overview</h5>
-<p>This lesson introduces students to the process of adding new features to their projects. Start by leading a pseudocode planning time. Once the concepts required have been outlined, introduce students to conditionals using the conditionals lesson. After practicing conditionals in their smaller projects, refocus students on guess the number project.  Students get with a partner and discuss strategies for implementing conditionals in their project to check if the player has guessed the correct number.</p>
 <h5 id="suggested-stations">Suggested stations</h5>
-<ol>
-<li>String templates (link)</li>
-<li>Function syntax (link)</li>
-</ol>
 <h3 id="plan-5-minutes">plan (5 minutes)</h3>
-<ol>
-<li>Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:<ol>
-<li>Person 2 guesses a number.</li>
-<li>Person 1 (game) checks if the guess is correct. (conditionals)<ul>
-<li>If the guess is correct person 2 wins (return, strings)</li>
-<li>Otherwise person the guess is incorrect</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>Label each of the steps with a javascript concept (in the parentheses above)</li>
-<li>Discuss which concepts are new.</li>
-</ol>
 <h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
-<p><a href="concepts/conditionals.html">conditionals lesson</a></p>
-<h3 id="produce-30-minutes">produce (30 minutes)</h3>
-<p>pseudocode</p>
-<pre><code>FUNCTION main
-  IF guess is equal to correct
-    RETURN win message
-  ELSE
-    RETURN lose message
-</code></pre><p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
+<h3 id="produce-20-minutes">produce (20 minutes)</h3>
+<p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
 <li>Fill in handout</li>
 <li>Discuss plans</li>
@@ -609,24 +580,41 @@
 <h3 id="implement-15-minutes">implement (15 minutes)</h3>
 <ol>
 <li>Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.</li>
-<li>After hearing their solutions, introduce students to the teacher solution.</li>
-</ol>
-<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+<li><p>After hearing their solutions, introduce students to the teacher solution.</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">/**
+... other functions ...
+
+Get grade based on score
+Assume grades work as follows:
+&gt;= 90 A
+&gt;= 80 B
+&gt;= 70 C
+&gt;= 60 D
+&lt; 60 F
+*/</span>
+
+<span class="token keyword">function</span> getGrade <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> score <span class="token operator">=</span> <span class="token function">getScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&gt;=</span> <span class="token number">90</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token string">&apos;A&apos;</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&gt;=</span> <span class="token number">80</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token string">&apos;B&apos;</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&gt;=</span> <span class="token number">70</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token string">&apos;C&apos;</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&gt;=</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token string">&apos;D&apos;</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     <span class="token keyword">return</span> <span class="token string">&apos;F&apos;</span>
+   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">function</span> checkGuess <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">// could be any number</span>
-    <span class="token keyword">return</span> `Correct<span class="token operator">!</span> You win<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any winning message</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> Try again<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any losing message</span>
-  <span class="token punctuation">}</span>
+<span class="token keyword">function</span> renderGrade <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> `Your grade was a<span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token function">getGrade</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
 <span class="token punctuation">}</span>
 </code></pre>
-<ol>
-<li>Students contrast the teacher solution with their own ideas.</li>
+</li>
+<li>Students contrast the ideal solutions with their own ideas.</li>
 <li>Student implement a working solution in their project.</li>
-<li>Students add comments to their code explaining what each line means.</li>
 </ol>
 <h3 id="justify-5-minutes">justify (5 minutes)</h3>
 <ol>
@@ -660,10 +648,10 @@
         </div>
 
         
-        <a href="../devy-white/cycle-shell.html" class="navigation navigation-prev " aria-label="Previous page: cycle shell"><i class="fa fa-angle-left"></i></a>
+        <a href="../devy-white/reset.html" class="navigation navigation-prev " aria-label="Previous page: reset game"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../devy-white/hints.html" class="navigation navigation-next " aria-label="Next page: hints"><i class="fa fa-angle-right"></i></a>
+        <a href="../devy-white/concepts/defining-functions.html" class="navigation navigation-next " aria-label="Next page: defining functions"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
