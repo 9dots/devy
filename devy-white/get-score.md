@@ -42,32 +42,34 @@ SET answer to number
 SET guesses to 0
 SET maxGuesses to number
 
-FUNCTION main
-  CALL checkDone
+FUNCTION main (guess)
+  RETURN checkDone(guess)
 
-FUNCTION checkDone
+FUNCTION checkDone (guess)
   IF guesses is greater than or equal to maxGuesses
-    RETURN CALL renderScore + game over message
+    SET scoreMessage to renderScore()
+    RETURN game over message + scoreMessage
   ELSE
-    RETURN CALL checkGuess
+    RETURN CALL checkGuess(guess)
 
-FUNCTION checkGuess
+FUNCTION checkGuess (guess)
   INCREMENT guesses
   IF guess is equal to answer
     RETURN win message
   ELSE
-    RETURN CALL renderHint
+    RETURN renderHint(guess)
 
-FUNCTION renderHint
+FUNCTION renderHint (guess)
   IF guess is greater than answer
     RETURN too big hint
   ELSE
     RETURN too small hint
 
-FUNCTION renderScore
-  RETURN your score is: + CALL getScore
+FUNCTION renderScore ()
+  SET score to getScore()
+  RETURN your score is: + score
 
-FUNCTION getScore
+FUNCTION getScore ()
   SET guessesLeft = maxGuesses - guesses
   RETURN (guessesLeft / maxGuesses) * 100
 ```

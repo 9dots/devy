@@ -54,17 +54,17 @@ pseudocode:
 SET answer to number
 SET guesses to 0
 
-FUNCTION main
-  CALL checkGuess
+FUNCTION main (guess)
+  RETURN checkGuess(guess)
 
-FUNCTION checkGuess
+FUNCTION checkGuess (guess)
   INCREMENT guesses
   IF guess is equal to answer
     RETURN win message
   ELSE
-    RETURN CALL renderHint
+    RETURN renderHint(guess)
 
-FUNCTION renderHint
+FUNCTION renderHint (guess)
   IF guess is greater than answer
     RETURN too big hint
   ELSE

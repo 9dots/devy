@@ -28,7 +28,7 @@ This lesson introduces students to the process of adding new features to their p
 ### produce (30 minutes)
 pseudocode
 ```
-FUNCTION main
+FUNCTION main (guess)
   IF guess is equal to correct
     RETURN win message
   ELSE

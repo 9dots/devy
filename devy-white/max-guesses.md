@@ -40,23 +40,23 @@ Remind students that their goals are:
   SET guesses to 0
   SET maxGuesses to number
 
-  FUNCTION main
-    CALL checkDone
+  FUNCTION main (guess)
+    RETURN checkDone(guess)
 
-  FUNCTION checkDone
+  FUNCTION checkDone (guess)
     IF guesses is greater than or equal to maxGuesses
       RETURN game over message
     ELSE
-      RETURN CALL checkGuess
+      RETURN checkGuess(guess)
 
-  FUNCTION checkGuess
+  FUNCTION checkGuess (guess)
     INCREMENT guesses
     IF guess is equal to answer
       RETURN win message
     ELSE
-      RETURN CALL renderHint
+      RETURN renderHint(guess)
 
-  FUNCTION renderHint
+  FUNCTION renderHint (guess)
     IF guess is greater than answer
       RETURN too big hint
     ELSE

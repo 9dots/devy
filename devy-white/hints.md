@@ -30,16 +30,16 @@ Students learn how to add hints to their game. During this lesson students learn
 ### produce (20 minutes)
 pseudocode:
 ```
-FUNCTION main
-  CALL checkGuess
+FUNCTION main (guess)
+  RETURN checkGuess(guess)
 
-FUNCTION checkGuess
-  IF guess [is equal to] answer
+FUNCTION checkGuess (guess)
+  IF guess is equal to answer
     RETURN win message
   ELSE
-    RETURN CALL renderHint
+    RETURN renderHint(guess)
 
-FUNCTION renderHint
+FUNCTION renderHint (guess)
   IF guess [is greater than] answer
     RETURN too big hint
   ELSE

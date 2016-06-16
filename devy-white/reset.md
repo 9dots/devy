@@ -32,17 +32,18 @@ Students add a reset function that resets the variable values back to their orig
 ### produce (20 minutes)
 pseudocode:
 ```
-FUNCTION main
+FUNCTION main (input)
   IF input is equal to reset
-    RETURN CALL reset
+    RETURN reset()
   ELSE IF name is empty
-    RETURN CALL setName
+    RETURN setName(input)
   ELSE
-    RETURN CALL checkDone
+    RETURN checkDone(input)
 
 FUNCTION reset
   SET guesses to 0
   SET name to ''
+  RETURN welcome message
 ```
 - create a function called `reset`
   - reset should set all of the variables back to their original values

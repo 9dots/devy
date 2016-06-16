@@ -57,7 +57,7 @@
         data-chapter-title="store answer"
         data-filepath="devy-white/store-answer.md"
         data-basepath=".."
-        data-revision="Thu Jun 16 2016 10:22:05 GMT-0700 (PDT)"
+        data-revision="Thu Jun 16 2016 10:42:28 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -619,17 +619,17 @@ code:</p>
 <pre><code>SET answer to number
 SET guesses to 0
 
-FUNCTION main
-  CALL checkGuess
+FUNCTION main (guess)
+  RETURN checkGuess(guess)
 
-FUNCTION checkGuess
+FUNCTION checkGuess (guess)
   INCREMENT guesses
   IF guess is equal to answer
     RETURN win message
   ELSE
-    RETURN CALL renderHint
+    RETURN renderHint(guess)
 
-FUNCTION renderHint
+FUNCTION renderHint (guess)
   IF guess is greater than answer
     RETURN too big hint
   ELSE

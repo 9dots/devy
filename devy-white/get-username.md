@@ -35,13 +35,13 @@ pseudocode with students:
 ```
 SET name
 
-FUNCTION main
+FUNCTION main (input)
   IF name is empty
-    RETURN CALL setName
+    RETURN CALL setName(input)
   ELSE
-    RETURN CALL checkGuess
+    RETURN CALL checkGuess(input)
 
-FUNCTION setName
+FUNCTION setName (input)
   SET name to input
   RETURN Ok + name + guess a number between 1 and 100
 ```
