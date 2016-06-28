@@ -16,6 +16,8 @@ Students explore conditionals by playing a game of simon says with conditionals.
 
 ### Explain
 
+[Create conditional codewars 2 exercises](#todo:0)
+
 1. Review what students know about conditionals
 ```js
 if (condition) {

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>functions | devY</title>
+        <title>turtles | devY</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -44,7 +44,7 @@
     <link rel="next" href="../resources/index.html" />
     
     
-    <link rel="prev" href="../devy-green/index.html" />
+    <link rel="prev" href="../devy-minecraft/plan.html" />
     
 
         
@@ -54,10 +54,10 @@
         
     <div class="book"
         data-level="3.1"
-        data-chapter-title="functions"
-        data-filepath="devy-green/functions.md"
+        data-chapter-title="turtles"
+        data-filepath="devy-minecraft/turtles.md"
         data-basepath=".."
-        data-revision="Thu Jun 16 2016 10:42:28 GMT-0700 (PDT)"
+        data-revision="Mon Jun 27 2016 17:43:55 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -411,32 +411,32 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="devy-green/index.html">
+        <li class="chapter " data-level="3" data-path="devy-minecraft/plan.html">
             
                 
-                    <a href="../devy-green/index.html">
+                    <a href="../devy-minecraft/plan.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
                         
-                        devY Green
+                        devY Minecraft
                     </a>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="3.1" data-path="devy-green/functions.html">
+        <li class="chapter active" data-level="3.1" data-path="devy-minecraft/turtles.html">
             
                 
-                    <a href="../devy-green/functions.html">
+                    <a href="../devy-minecraft/turtles.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                        functions
+                        turtles
                     </a>
             
             
@@ -561,72 +561,87 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="functions">Functions</h1>
-<h2 id="learning-goals">Learning Goals</h2>
-<p>By the end of the lessons, students will be able to:</p>
+                        <p><a href="#todo:0">minecraft lesson 1</a></p>
+<h1 id="building-with-turtles">building with turtles</h1>
+<h5 id="learning-goals">Learning Goals</h5>
+<p>By the end of the lesson, students will be able to:</p>
 <ul>
-<li>Explain the importance of separating concerns in their code</li>
-<li>Create simple functions to handle actions in their game</li>
+<li>Call methods to control the turtle</li>
+<li>Explain how to move the turtle</li>
 </ul>
-<h2 id="overview">Overview</h2>
-<p>Students work on refactoring their code to make the main function smaller and separating concerns into more specific functions.</p>
-<h3 id="explore">Explore</h3>
+<h5 id="overview">Overview</h5>
+<p>This lesson starts by introducing students to the goals of the class. Then, students explore the programmable turtles and complete some coding challenges. After using their turtle to build, students are given time to build without the use of the turtle.</p>
+<h3 id="plan-5-minutes">plan (5 minutes)</h3>
+<p>Explain the goal of the class</p>
+<ul>
+<li>Students are working to create a city, a theme park, and an automatic mining facility.</li>
+<li>In the city, each student has a plot of land that they can build their house on.</li>
+<li>There is one catch: for 45 minutes per day, students will not be able to build directly. They need to use programmable turtle to do their building!</li>
+</ul>
+<h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
 <ol>
-<li>Split students into groups of two.</li>
-<li>Each person in the group shares their code with the partner and explains what the code does.</li>
+<li>Introduce students to turtles<ul>
+<li>Turtles are programmable Minecraft blocks that allow you to automate different Minecraft actions such as:<ul>
+<li>building</li>
+<li>mining</li>
+<li>crafting</li>
+<li>and more!</li>
+</ul>
+</li>
+<li>Turtles are programmed in a language called <strong>Lua</strong>.<ul>
+<li>Lua is a scripting language like Javascript.</li>
+<li>Lua is used in lots of games such as World of Warcraft and Angry Birds.</li>
+<li>This means the concepts will be the same as your coding classes but the syntax, or how it is written, will be different.</li>
+</ul>
+</li>
+<li>To call functions in Lua simple write the name of the function and the add parentheses (just like Javascript)</li>
+</ul>
+</li>
+<li>Show students how to interact with a turtle.<ul>
+<li>You need a remote to control the turtle. Once you have a remote right-click on the turtle you want to program.</li>
+<li>You can use the remote to control the robot directly.</li>
+<li>Show students the coding interface.</li>
+<li>After adding code, students need to push the run button to make the robot run the code.</li>
+<li>The undo button will reset the turtle back to where it started and undo everything from the last run.</li>
+</ul>
+</li>
+<li>Students test out turtles using the examples.<ul>
+<li>Students have 5 minutes to try out all of the example methods in the API. For example:<ul>
+<li><code>turtle.forward()</code></li>
+<li><code>turtle.back()</code></li>
+<li><code>turtle.turnLeft()</code></li>
+<li><code>turtle.digDown()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Show students their movement challenges for the first day. When students finish a challenge, they raise their hand and have a tutor check their work to make sure that it functions correctly.</li>
 </ol>
-<h3 id="explain">Explain</h3>
+<h3 id="produce-20-minutes">produce (20 minutes)</h3>
+<p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
 <ol>
-<li>devY green is about ideas and mixing ideas and justifying ideas. This is really what coding is about.</li>
-<li>At the end of each lesson students will share their ideas and explain the code that they have written.</li>
-<li>Ask students, &quot;What is the hardest part about sharing your code?&quot;</li>
-<li>In this first lesson, we are going to refactor (Code refactoring is the process of restructuring existing computer code &#x2013; changing the factoring &#x2013; without changing its external behavior) their code to make it more legible and easier to reason about.</li>
-<li>The main function in their code right now is handling lots of different concerns (moving, updating inventory, inspecting items, etc...).</li>
-<li>All of these concerns should be split up into separate functions so that the main function&apos;s job is only to take then input and decide which function(s) to call</li>
+<li>Discuss plans</li>
+<li>Attempt a solution</li>
+<li>Justify reasoning</li>
 </ol>
-<h4 id="review-functions">Review functions</h4>
-<pre><code class="lang-js"><span class="token comment" spellcheck="true">// to create a function</span>
-<span class="token keyword">function</span> name <span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> value
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// to call a function</span>
-<span class="token function">name</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span>
+<h3 id="implement-15-minutes">implement (15 minutes)</h3>
+<ol>
+<li>Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.</li>
+<li>After hearing their solutions, introduce students to the teacher solution.</li>
+</ol>
+<pre><code class="lang-ruby">turtle<span class="token punctuation">.</span><span class="token function">forward<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span><span class="token function">forward<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span><span class="token function">forward<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="engage">Engage</h3>
-<p>Students work on refactoring their code so that the main function is simply an if-else chain with calls to other functions.</p>
-<h4 id="example">Example</h4>
-<pre><code class="lang-js"><span class="token comment" spellcheck="true">// Main function checks the noun and calls the appropriate function</span>
-<span class="token keyword">function</span> main <span class="token punctuation">(</span>verb<span class="token punctuation">,</span> noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;look&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token function">look</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>verb <span class="token operator">===</span> <span class="token string">&apos;inspect&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token function">inspect</span><span class="token punctuation">(</span>noun<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// The inspect function needs to know what the noun is</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">function</span> look <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>description
-<span class="token punctuation">}</span>
-
-<span class="token keyword">function</span> inspect <span class="token punctuation">(</span>noun<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>currentRoom<span class="token punctuation">.</span>items<span class="token punctuation">[</span>noun<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> currentRoom<span class="token punctuation">.</span>items<span class="token punctuation">[</span>noun<span class="token punctuation">]</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> `I can&apos;t find that<span class="token punctuation">.</span>`
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h4 id="stations">Stations</h4>
 <ol>
-<li><a href="tinyurl.com/functiondebug">tinyurl.com/functiondebug</a></li>
-<li><a href="https://www.weo.io/activity/56e1d10d4e895e0b0005c8c0/public/preview/" target="_blank">Weo object review</a></li>
+<li>Students contrast the ideal solutions with their own ideas.</li>
+<li>Student implement a working solution in their project.</li>
 </ol>
-<h3 id="discuss">Discuss</h3>
-<p>Students work with a partner</p>
+<h3 id="justify-5-minutes">justify (5 minutes)</h3>
 <ol>
-<li>Partners take turn explaining new code and justify use of functions</li>
-<li>Partner plays game and takes notes on any bugs</li>
-<li>Partner writes down feature requests</li>
+<li>As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.</li>
+<li>Tell students that in the future, they are expected to justify their code in this way after each feature that they add.</li>
+<li>Students practice by explaining their code to a partner.</li>
 </ol>
 
                     
@@ -638,7 +653,7 @@
         </div>
 
         
-        <a href="../devy-green/index.html" class="navigation navigation-prev " aria-label="Previous page: devY Green"><i class="fa fa-angle-left"></i></a>
+        <a href="../devy-minecraft/plan.html" class="navigation navigation-prev " aria-label="Previous page: devY Minecraft"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../resources/index.html" class="navigation navigation-next " aria-label="Next page: Resources"><i class="fa fa-angle-right"></i></a>

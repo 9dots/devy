@@ -1,3 +1,4 @@
+[follow up conditionals lesson](#todo:0)
 # defining functions continued
 
 ##### Overview
@@ -7,9 +8,9 @@
 ### Explore
 1. Show students the maze (2d staircase)
 2. Show students the list of tasks that the Teacher robot understands.
-  - move() - move forward 1 step
-  - turnRight() - turn right 90 degrees
-   -turnLeft() - turn left 90 degrees
+  - `move()` - move forward 1 step
+  - `turnRight()` - turn right 90 degrees
+  - `turnLeft()` - turn left 90 degrees
 3. Students write down their program to help the teacher robot navigate the maze
 4. After successfully helping the teacher robot students look for patterns in the tasks
 5. Students write the instructions from the pattern and give that task a name

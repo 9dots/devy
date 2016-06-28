@@ -15,7 +15,7 @@ By the end of the lesson, students will be able to:
 ### discover (30-45 minutes)
 
 ### produce (20 minutes)
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+With their partner, students plan and attempt to implement a solution for {{feature}}.
 
 1. Fill in handout
 2. Discuss plans

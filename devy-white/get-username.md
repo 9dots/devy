@@ -58,7 +58,7 @@ FUNCTION setName (input)
   - Otherwise
     - the input is a guess and should call `checkDone`
 
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+With their partner, students plan and attempt to implement a solution for getting the user name.
 
 1. Fill in handout
 2. Discuss plans

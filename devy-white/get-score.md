@@ -74,7 +74,7 @@ FUNCTION getScore ()
   RETURN (guessesLeft / maxGuesses) * 100
 ```
 
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+With their partner, students plan and attempt to implement a solution for getting and rendering a score based using the formula `(guessesLeft / maxGuesses) * 100`.
 
 1. Fill in handout
 2. Discuss plans

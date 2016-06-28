@@ -50,7 +50,7 @@ FUNCTION reset
 - the main function should check to see if the user inputted 'reset'
   - if the input === 'reset', call the reset function
 
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+With their partner, students plan and attempt to implement a solution for reseting the game.
 
 1. Fill in handout
 2. Discuss plans

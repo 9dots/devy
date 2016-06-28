@@ -67,9 +67,9 @@ Create a function that says 'Hello World'. Students follow along by coding this 
   helloWorld()
   helloWorld()
   ```
+
 ### Engage
 
-##### codewars
 1. http://www.codewars.com/kata/55f73be6e12baaa5900000d4/train
 2. http://www.codewars.com/kata/55f73f66d160f1f1db000059/train
 3. http://www.codewars.com/kata/563a5f4366fbf8cc6e00008b/train

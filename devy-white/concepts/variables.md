@@ -77,6 +77,8 @@ var phrase = `My favorite animal is ${favoriteAnimal}`
 
 ### Engage
 
+[Create variables codewars](#todo:0)
+
 1. Split into smaller groups with tutors to complete [variable worksheet](http://bit.ly/1SebxsH).  (http://bit.ly/1SebxsH)
 2. [Messi goals](http://codewars.com/messigoals)
 3. [Variable assignment debug](https://www.codewars.com/kata/5612e743cab69fec6d000077/train/javascript)

@@ -64,6 +64,8 @@ function main (input) {
 
 ### Engage
 
+[Create conditional codewars exercises](#todo:0)
+
 1. [Comparing values handout]()
 2. Personalized greeting - Check to see if the name entered is your own
 ```js

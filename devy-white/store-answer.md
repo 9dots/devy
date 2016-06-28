@@ -71,7 +71,7 @@ FUNCTION renderHint (guess)
     RETURN too small hint
 ```
 
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+With their partner, students plan and attempt to implement a solution for storing the correct answer in a variable.
 
 1. Fill in handout
 2. Discuss plans

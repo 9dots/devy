@@ -63,7 +63,7 @@ Remind students that their goals are:
       RETURN too small hint
   ```
 
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+With their partner, students plan and attempt to implement a solution for creating a maximum number of guesses. If the maximum number is reached, the game should output 'Game over'
 
 1. Fill in handout
 2. Discuss plans

@@ -12,8 +12,6 @@ By the end of the lesson, students will be able to:
 
 ### plan (5 minutes)
 
-### discover (30-45 minutes)
-
 ### produce (20 minutes)
 With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
 
@@ -54,7 +52,8 @@ With their partner, students plan and attempt to implement a solution for checki
   }
 
   function renderGrade () {
-      return `Your grade was a: ${getGrade()}`
+      var grade = getGrade()
+      return `Your grade was a: ${grade}`
   }
   ```
 3. Students contrast the ideal solutions with their own ideas.
