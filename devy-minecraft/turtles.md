@@ -1,4 +1,4 @@
-[minecraft lesson 1](#todo:0)
+[minecraft lesson 1](#todo:20)
 
 # building with turtles
 
@@ -51,19 +51,10 @@ With their partner, students plan and attempt to implement a solution for checki
 2. Attempt a solution
 3. Justify reasoning
 
-### implement (15 minutes)
-1. Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.
-2. After hearing their solutions, introduce students to the teacher solution.
-
-```ruby
-turtle.forward()
-turtle.forward()
-turtle.forward()
-```
-3. Students contrast the ideal solutions with their own ideas.
-4. Student implement a working solution in their project.
-
 ### justify (5 minutes)
 1. As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.
 2. Tell students that in the future, they are expected to justify their code in this way after each feature that they add.
 3. Students practice by explaining their code to a partner.
+
+### building
+1. Students now

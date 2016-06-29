@@ -39,3 +39,11 @@
     - `turtle.turnLeft()`
     - `turtle.digDown()`
 5. Show students their movement challenges for the first day. When students finish a challenge, they raise their hand and have a tutor check their work to make sure that it functions correctly.
+
+## Ideas
+
+- Open ended
+  - Students work with a team/partner to create different elements using their turtles
+  - After discovering how to create a new element students teach it to their partner
+  - Their partner then has to explain back how it works.
+  - After sharing information, students can give their teammate a disk with the code for their new element.

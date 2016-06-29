@@ -64,22 +64,28 @@ function main (input) {
 
 ### Engage
 
-[Create conditional codewars exercises](#todo:0)
+[Create conditional codewars exercises](#done:20)
 
 1. [Comparing values handout]()
 2. Personalized greeting - Check to see if the name entered is your own
+https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript
+
+Solution
 ```js
-function main (name) {
-      if (name === `Daniel`) {
-        return `Hello, main user ${name}`
+function main (name, owner) {
+      if (name === owner) {
+        return `Hello boss`
       } else {
-        return `Welcome, guest user ${name}`
+        return `Hello guest`
       }
 }
 ```
 3. Calculator
+https://www.codewars.com/kata/basic-mathematical-operations
+
+Solution:
 ```js
-function main (num1, op, num2) {
+function basicOp (op, num1, num2) {
       if (op === `+`) {
         return num1 + num2
       } else if (op === `-`) {

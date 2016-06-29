@@ -57,7 +57,7 @@
         data-chapter-title="conditionals"
         data-filepath="devy-white/concepts/conditionals.md"
         data-basepath="../.."
-        data-revision="Mon Jun 27 2016 17:43:55 GMT-0700 (PDT)"
+        data-revision="Tue Jun 28 2016 17:26:03 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -617,34 +617,40 @@
 </li>
 </ol>
 <h3 id="engage">Engage</h3>
-<p><a href="#todo:0">Create conditional codewars exercises</a></p>
+<p><a href="#done:20">Create conditional codewars exercises</a></p>
 <ol>
 <li><a href="">Comparing values handout</a></li>
-<li>Personalized greeting - Check to see if the name entered is your own<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> `Daniel`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> main user $<span class="token punctuation">{</span>name<span class="token punctuation">}</span>`
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Welcome<span class="token punctuation">,</span> guest user $<span class="token punctuation">{</span>name<span class="token punctuation">}</span>`
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-<li>Calculator<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> op<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">+</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">-</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">-</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `I can&apos;t <span class="token keyword">do</span> that operation`
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
+<li>Personalized greeting - Check to see if the name entered is your own
+<a href="https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript" target="_blank">https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript</a></li>
 </ol>
+<p>Solution</p>
+<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>name<span class="token punctuation">,</span> owner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> owner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> `Hello boss`
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> `Hello guest`
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol>
+<li>Calculator
+<a href="https://www.codewars.com/kata/basic-mathematical-operations" target="_blank">https://www.codewars.com/kata/basic-mathematical-operations</a></li>
+</ol>
+<p>Solution:</p>
+<pre><code class="lang-js"><span class="token keyword">function</span> basicOp <span class="token punctuation">(</span>op<span class="token punctuation">,</span> num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">+</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">-</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> num1 <span class="token operator">-</span> num2
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> `I can&apos;t <span class="token keyword">do</span> that operation`
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
 
                     
                     </section>
@@ -671,6 +677,14 @@
     
 
     
+    <script src="https://embed.tonicdev.com"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-tonic/plugin.js"></script>
+    
+
+    
     <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
@@ -692,7 +706,7 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"edit-link":{"base":"https://github.com/9dots/devy/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/9dots/devy"},"prism":{},"tasklist":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    var config = {"edit-link":{"base":"https://github.com/9dots/devy/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/9dots/devy"},"prism":{},"tasklist":{},"tonic":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
     gitbook.start(config);
 });
 </script>

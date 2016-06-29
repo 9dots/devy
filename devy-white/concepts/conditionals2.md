@@ -29,23 +29,7 @@ if (condition) {
 
 ### Engage
 
-1. Calculator
-```js
-function main (num1, op, num2) {
-      if (op === `+`) {
-        return num1 + num2
-      } else if (op === `-`) {
-        return num1 - num2
-      } else if (op === 'x') {
-        return num1 * num2
-      } else if (op === '/') {
-        return num1 / num2
-      } else {
-        return `I can't do that operation`
-      }
-}
-```
-2. Assign letter grade
+1. Assign letter grade
 ```js
 function main (grade1, grade2, grade3) {
       var sum = grade1 + grade2 + grade3
@@ -63,7 +47,7 @@ function main (grade1, grade2, grade3) {
       }
 }
 ```
-3. Password unlock
+2. Password unlock
   ```js
   var password = 'secret'
 
