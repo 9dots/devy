@@ -85,35 +85,38 @@ With their partner, students plan and attempt to implement a solution for gettin
 1. Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.
 2. After hearing their solutions, introduce students to the teacher solution.
   ```js
-    var MAX_TRIES = 10
-    var guesses = 0
+  var MAX_TRIES = 10
+  var guesses = 0
     //...
 
-    function checkDone (guess) {
-      if (guesses >= MAX_TRIES) {
-        return `Game Over! ${renderScore()}`
-      } else {
-        checkGuess(guess)
-      }
-    }
+  function checkDone (guess) {
+     if (guesses >= MAX_TRIES) {
+       var scoreMessage = renderScore()
+       return `Game Over! ${scoreMessage}`
+     } else {
+       checkGuess(guess)
+     }
+  }
 
-    function checkGuess(guess) {
-      if (guess === answer) {
-        return `Correct! ${renderScore()}`
-      } else {
-        return `Wrong! ${renderHint()}`
-      }
-    }
+  function checkGuess(guess) {
+     if (guess === answer) {
+       var score = renderScore()
+       return `Correct! ${score}`
+     } else {
+       var hint = renderHint()
+       return `Wrong! ${hint}`
+     }
+  }
 
-    function getScore () {
-      var guessesLeft = MAX_TRIES - guesses
-      return (guessesLeft / MAX_TRIES) * 100
-    }
+  function renderScore () {
+     var score = getScore()
+     return `Your score is: ${score}`
+  }
 
-    function renderScore () {
-      return `Your score is: ${getScore()}`
-    }
-
+  function getScore () {
+     var guessesLeft = MAX_TRIES - guesses
+     return (guessesLeft / MAX_TRIES) * 100
+  }
   ```
 3. Students contrast the ideal solutions with their own ideas.
 4. Student implement a working solution in their project.

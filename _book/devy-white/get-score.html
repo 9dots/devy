@@ -57,7 +57,7 @@
         data-chapter-title="get score"
         data-filepath="devy-white/get-score.md"
         data-basepath=".."
-        data-revision="Tue Jun 28 2016 17:26:03 GMT-0700 (PDT)"
+        data-revision="Wed Jun 29 2016 17:25:13 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -442,6 +442,21 @@
             
         </li>
     
+        <li class="chapter " data-level="3.2" data-path="devy-minecraft/lua-examples.html">
+            
+                
+                    <a href="../devy-minecraft/lua-examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        lua syntax examples
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -642,34 +657,38 @@ FUNCTION getScore ()
 <ol>
 <li>Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.</li>
 <li><p>After hearing their solutions, introduce students to the teacher solution.</p>
-<pre><code class="lang-js"> <span class="token keyword">var</span> MAX_TRIES <span class="token operator">=</span> <span class="token number">10</span>
- <span class="token keyword">var</span> guesses <span class="token operator">=</span> <span class="token number">0</span>
+<pre><code class="lang-js"><span class="token keyword">var</span> MAX_TRIES <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token keyword">var</span> guesses <span class="token operator">=</span> <span class="token number">0</span>
  <span class="token comment" spellcheck="true">//...</span>
 
- <span class="token keyword">function</span> checkDone <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>guesses <span class="token operator">&gt;=</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Game Over<span class="token operator">!</span> $<span class="token punctuation">{</span><span class="token function">renderScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
-   <span class="token punctuation">}</span>
- <span class="token punctuation">}</span>
+<span class="token keyword">function</span> checkDone <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>guesses <span class="token operator">&gt;=</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> scoreMessage <span class="token operator">=</span> <span class="token function">renderScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> `Game Over<span class="token operator">!</span> $<span class="token punctuation">{</span>scoreMessage<span class="token punctuation">}</span>`
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
- <span class="token keyword">function</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Correct<span class="token operator">!</span> $<span class="token punctuation">{</span><span class="token function">renderScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> $<span class="token punctuation">{</span><span class="token function">renderHint</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
-   <span class="token punctuation">}</span>
- <span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> answer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> score <span class="token operator">=</span> <span class="token function">renderScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> `Correct<span class="token operator">!</span> $<span class="token punctuation">{</span>score<span class="token punctuation">}</span>`
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> hint <span class="token operator">=</span> <span class="token function">renderHint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> $<span class="token punctuation">{</span>hint<span class="token punctuation">}</span>`
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
- <span class="token keyword">function</span> getScore <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">var</span> guessesLeft <span class="token operator">=</span> MAX_TRIES <span class="token operator">-</span> guesses
-   <span class="token keyword">return</span> <span class="token punctuation">(</span>guessesLeft <span class="token operator">/</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span>
- <span class="token punctuation">}</span>
+<span class="token keyword">function</span> renderScore <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> score <span class="token operator">=</span> <span class="token function">getScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> `Your score is<span class="token punctuation">:</span> $<span class="token punctuation">{</span>score<span class="token punctuation">}</span>`
+<span class="token punctuation">}</span>
 
- <span class="token keyword">function</span> renderScore <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Your score is<span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token function">getScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>`
- <span class="token punctuation">}</span>
+<span class="token keyword">function</span> getScore <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> guessesLeft <span class="token operator">=</span> MAX_TRIES <span class="token operator">-</span> guesses
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>guessesLeft <span class="token operator">/</span> MAX_TRIES<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>Students contrast the ideal solutions with their own ideas.</li>

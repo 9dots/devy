@@ -57,7 +57,7 @@
         data-chapter-title="conditionals"
         data-filepath="devy-white/concepts/conditionals.md"
         data-basepath="../.."
-        data-revision="Tue Jun 28 2016 17:26:03 GMT-0700 (PDT)"
+        data-revision="Wed Jun 29 2016 17:25:13 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -442,6 +442,21 @@
             
         </li>
     
+        <li class="chapter " data-level="3.2" data-path="devy-minecraft/lua-examples.html">
+            
+                
+                    <a href="../../devy-minecraft/lua-examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        lua syntax examples
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -564,20 +579,20 @@
                         <h1 id="simple-conditionals">Simple conditionals</h1>
 <h3 id="explore">Explore</h3>
 <p>Play a game where students react to different situations based on instructions. For example:</p>
-<pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>shoeColor <span class="token operator">===</span> `white`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">raiseRightHand</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<ol>
+<li>Start the game with just an if statement<pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>shoeColor <span class="token operator">===</span> `white`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">raiseRightHand</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ol>
-<li>Start the game with just an if statement</li>
+</li>
 <li>Then add in an else</li>
 <li><p>Add an else-if</p>
 <pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>shoeColor <span class="token operator">===</span> `white`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token function">raiseRightHand</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">raiseRightHand</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>shoeColor <span class="token operator">===</span> `blue`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token function">raiseLeftHand</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">raiseLeftHand</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-   <span class="token function">clap</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">clap</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
@@ -593,7 +608,8 @@
 <p>As a group, build an application that only responds if the user inputs the word <code>hello</code></p>
 <ol>
 <li><p>Start by asking students, &quot;How many inputs do we need to create this application? What should it be called?&quot;</p>
-<pre><code>This application need one input. A simple name could be input but the name of the parameter doesn&apos;t matter.
+<pre><code>This application need one input.
+A simple name could be input but the name of the parameter doesn&apos;t matter.
 </code></pre><pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
 <span class="token punctuation">}</span>
@@ -619,38 +635,37 @@
 <h3 id="engage">Engage</h3>
 <p><a href="#done:20">Create conditional codewars exercises</a></p>
 <ol>
-<li><a href="">Comparing values handout</a></li>
-<li>Personalized greeting - Check to see if the name entered is your own
-<a href="https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript" target="_blank">https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript</a></li>
-</ol>
-<p>Solution</p>
-<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>name<span class="token punctuation">,</span> owner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> owner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> `Hello boss`
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> `Hello guest`
-      <span class="token punctuation">}</span>
+<li><a href="https://www.weo.io/activity/577409e042d5437c00d65614/public/preview/" target="_blank">Comparing values handout</a> -
+<a href="https://www.weo.io/activity/577409e042d5437c00d65614/public/preview/" target="_blank">https://www.weo.io/activity/577409e042d5437c00d65614/public/preview/</a></li>
+<li><p>Personalized greeting - <a href="https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript" target="_blank">https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript</a></p>
+<p>Solution:</p>
+<pre><code class="lang-js"><span class="token keyword">function</span> greet <span class="token punctuation">(</span>name<span class="token punctuation">,</span> owner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> owner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> `Hello boss`
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> `Hello guest`
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ol>
-<li>Calculator
-<a href="https://www.codewars.com/kata/basic-mathematical-operations" target="_blank">https://www.codewars.com/kata/basic-mathematical-operations</a></li>
-</ol>
+</li>
+<li><p>Calculator - <a href="https://www.codewars.com/kata/basic-mathematical-operations" target="_blank">https://www.codewars.com/kata/basic-mathematical-operations</a></p>
 <p>Solution:</p>
 <pre><code class="lang-js"><span class="token keyword">function</span> basicOp <span class="token punctuation">(</span>op<span class="token punctuation">,</span> num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">+</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">-</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> num1 <span class="token operator">-</span> num2
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> `I can&apos;t <span class="token keyword">do</span> that operation`
-      <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">+</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">-</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num1 <span class="token operator">-</span> num2
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">*</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">/</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> `I can&apos;t <span class="token keyword">do</span> that operation`
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
+</li>
+</ol>
 
                     
                     </section>

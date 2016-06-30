@@ -4,7 +4,7 @@
 In this lesson, students will use [cycle shell](http://cycle.sh) to create simple applications.
 
 ##### Learning Goals
-By the end of the lesson, students will be able to
+By the end of the lesson, students will be able to:
   - read a function
   - identify parameters
   - explain how to return a value from a function
@@ -36,7 +36,7 @@ function main (input) {
 2. A function is a reusable set of instructions. A function is a block of code and has curly braces `{}` to mark the beginning and end of the code block. Code inside of the code block should be indented. The function is written as:
 ```js
 function name (parameter1, parameter2) {
-      return value
+     return value
 }
 ```
 3. Parameters are variables that only exist inside of the function.
@@ -51,30 +51,23 @@ function name (parameter1, parameter2) {
   3. Ask students, 'What value gets returned from this function?'
     - `hello`
 
-
-```js
-function main (input) {
-      return input
-}
-```
-
 ##### Strings
 
 1. To return words return ` `` `
 ```js
 function main (input) {
-      return `Hello`
+     return `Hello`
 }
 ```
 ```js
 function main (input) {
-      return `Hello, Daniel`
+     return `Hello, Daniel`
 }
 ```
 2. To use a variable in a string, use a dollar sign followed by curly braces such as `${variableName}`
 ```js
 function main (name) {
-      return `Hello, ${name}`
+     return `Hello, ${name}`
 }
 ```
 
@@ -83,31 +76,31 @@ function main (name) {
 1. As a group, create an echo application that returns the user's input.
 ```js
 function main (input) {
-      return input
+     return input
 }
 ```
 2. Create a pluralizer that adds an 's' to the user's input.
 ```js
 function main (input) {
-      return `${input}s`
+     return `${input}s`
 }
 ```
 3. Create a greeting app that returns 'Hello, -------'
 ```js
 function main (input) {
-      return `Hello, ${input}`
+     return `Hello, ${input}`
 }
 ```
 4. Create a compliment machine app that returns a compliment with the name the user inputs.
 ```js
 function main (input) {
-      return `${input}, you have a wonderful smile.`
+     return `${input}, you have a wonderful smile.`
 }
 ```
 5. Create a mad lib that takes multiple user inputs and places them in a sentence.
 ```js
 function main (adjective, noun, verb) {
-      return `The ${adjective} ${noun} ${verb} to the pond.`
+     return `The ${adjective} ${noun} ${verb} to the pond.`
 }
 ```
 

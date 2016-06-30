@@ -57,7 +57,7 @@
         data-chapter-title="cycle shell"
         data-filepath="devy-white/cycle-shell.md"
         data-basepath=".."
-        data-revision="Tue Jun 28 2016 17:26:03 GMT-0700 (PDT)"
+        data-revision="Wed Jun 29 2016 17:25:13 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -442,6 +442,21 @@
             
         </li>
     
+        <li class="chapter " data-level="3.2" data-path="devy-minecraft/lua-examples.html">
+            
+                
+                    <a href="../devy-minecraft/lua-examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        lua syntax examples
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -565,7 +580,7 @@
 <h5 id="overview">Overview</h5>
 <p>In this lesson, students will use <a href="http://cycle.sh" target="_blank">cycle shell</a> to create simple applications.</p>
 <h5 id="learning-goals">Learning Goals</h5>
-<p>By the end of the lesson, students will be able to</p>
+<p>By the end of the lesson, students will be able to:</p>
 <ul>
 <li>read a function</li>
 <li>identify parameters</li>
@@ -599,7 +614,7 @@
 <ol>
 <li>The first line of cycle-shell sets up the interactive page on the right side of the screen.</li>
 <li>A function is a reusable set of instructions. A function is a block of code and has curly braces <code>{}</code> to mark the beginning and end of the code block. Code inside of the code block should be indented. The function is written as:<pre><code class="lang-js"><span class="token keyword">function</span> name <span class="token punctuation">(</span>parameter1<span class="token punctuation">,</span> parameter2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> value
+  <span class="token keyword">return</span> value
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
@@ -623,23 +638,19 @@
 </ul>
 </li>
 </ol>
-<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> input
-<span class="token punctuation">}</span>
-</code></pre>
 <h5 id="strings">Strings</h5>
 <ol>
 <li>To return words return <code>`` </code><pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Hello`
+  <span class="token keyword">return</span> `Hello`
 <span class="token punctuation">}</span>
 </code></pre>
 <pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> Daniel`
+  <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> Daniel`
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>To use a variable in a string, use a dollar sign followed by curly braces such as <code>${variableName}</code><pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> $<span class="token punctuation">{</span>name<span class="token punctuation">}</span>`
+  <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> $<span class="token punctuation">{</span>name<span class="token punctuation">}</span>`
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
@@ -647,27 +658,27 @@
 <h3 id="engage">Engage</h3>
 <ol>
 <li>As a group, create an echo application that returns the user&apos;s input.<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> input
+  <span class="token keyword">return</span> input
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>Create a pluralizer that adds an &apos;s&apos; to the user&apos;s input.<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `$<span class="token punctuation">{</span>input<span class="token punctuation">}</span>s`
+  <span class="token keyword">return</span> `$<span class="token punctuation">{</span>input<span class="token punctuation">}</span>s`
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>Create a greeting app that returns &apos;Hello, -------&apos;<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> $<span class="token punctuation">{</span>input<span class="token punctuation">}</span>`
+  <span class="token keyword">return</span> `Hello<span class="token punctuation">,</span> $<span class="token punctuation">{</span>input<span class="token punctuation">}</span>`
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>Create a compliment machine app that returns a compliment with the name the user inputs.<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `$<span class="token punctuation">{</span>input<span class="token punctuation">}</span><span class="token punctuation">,</span> you have a wonderful smile<span class="token punctuation">.</span>`
+  <span class="token keyword">return</span> `$<span class="token punctuation">{</span>input<span class="token punctuation">}</span><span class="token punctuation">,</span> you have a wonderful smile<span class="token punctuation">.</span>`
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>Create a mad lib that takes multiple user inputs and places them in a sentence.<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>adjective<span class="token punctuation">,</span> noun<span class="token punctuation">,</span> verb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> `The $<span class="token punctuation">{</span>adjective<span class="token punctuation">}</span> $<span class="token punctuation">{</span>noun<span class="token punctuation">}</span> $<span class="token punctuation">{</span>verb<span class="token punctuation">}</span> to the pond<span class="token punctuation">.</span>`
+  <span class="token keyword">return</span> `The $<span class="token punctuation">{</span>adjective<span class="token punctuation">}</span> $<span class="token punctuation">{</span>noun<span class="token punctuation">}</span> $<span class="token punctuation">{</span>verb<span class="token punctuation">}</span> to the pond<span class="token punctuation">.</span>`
 <span class="token punctuation">}</span>
 </code></pre>
 </li>

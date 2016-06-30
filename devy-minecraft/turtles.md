@@ -10,6 +10,12 @@ By the end of the lesson, students will be able to:
 ##### Overview
 This lesson starts by introducing students to the goals of the class. Then, students explore the programmable turtles and complete some coding challenges. After using their turtle to build, students are given time to build without the use of the turtle.
 
+```ruby
+for x=1,10 do
+  print(x)
+end
+```
+
 ### plan (5 minutes)
 
 Explain the goal of the class

@@ -2,25 +2,25 @@
 
 ### Explore
 Play a game where students react to different situations based on instructions. For example:
-```js
-if (shoeColor === `white`) {
-	raiseRightHand()
-}
-```
 
 1. Start the game with just an if statement
+```js
+if (shoeColor === `white`) {
+	 raiseRightHand()
+}
+```
 2. Then add in an else
 3. Add an else-if
 
   ```js
   if (shoeColor === `white`) {
-  	raiseRightHand()
+     raiseRightHand()
   } else if (shoeColor === `blue`) {
-      raiseLeftHand()
+     raiseLeftHand()
   } else {
-      clap()
+     clap()
   }
-```
+  ```
 4. Students interpret the rules. If they do the wrong actions they sit down.
 
 
@@ -35,7 +35,8 @@ As a group, build an application that only responds if the user inputs the word 
 
 1. Start by asking students, "How many inputs do we need to create this application? What should it be called?"
 ```
-This application need one input. A simple name could be input but the name of the parameter doesn't matter.
+This application need one input.
+A simple name could be input but the name of the parameter doesn't matter.
 ```
   ```js
   function main (input) {
@@ -66,36 +67,35 @@ function main (input) {
 
 [Create conditional codewars exercises](#done:20)
 
-1. [Comparing values handout]()
-2. Personalized greeting - Check to see if the name entered is your own
-https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript
+1. [Comparing values handout](https://www.weo.io/activity/577409e042d5437c00d65614/public/preview/) -
+https://www.weo.io/activity/577409e042d5437c00d65614/public/preview/
+2. Personalized greeting - https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript
 
-Solution
-```js
-function main (name, owner) {
-      if (name === owner) {
-        return `Hello boss`
-      } else {
-        return `Hello guest`
-      }
-}
-```
-3. Calculator
-https://www.codewars.com/kata/basic-mathematical-operations
+  Solution:
+  ```js
+  function greet (name, owner) {
+     if (name === owner) {
+       return `Hello boss`
+     } else {
+       return `Hello guest`
+     }
+  }
+  ```
+3. Calculator - https://www.codewars.com/kata/basic-mathematical-operations
 
-Solution:
-```js
-function basicOp (op, num1, num2) {
-      if (op === `+`) {
-        return num1 + num2
-      } else if (op === `-`) {
-        return num1 - num2
-      } else if (op === 'x') {
-        return num1 * num2
-      } else if (op === '/') {
-        return num1 / num2
-      } else {
-        return `I can't do that operation`
-      }
-}
-```
+  Solution:
+  ```js
+  function basicOp (op, num1, num2) {
+     if (op === `+`) {
+       return num1 + num2
+     } else if (op === `-`) {
+       return num1 - num2
+     } else if (op === `*`) {
+       return num1 * num2
+     } else if (op === `/`) {
+       return num1 / num2
+     } else {
+       return `I can't do that operation`
+     }
+  }
+  ```
