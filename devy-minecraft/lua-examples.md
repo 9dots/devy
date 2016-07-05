@@ -55,7 +55,7 @@ else -- otherwise
 end
 ```
 
-#### Arrays are lists. They can be used to keep track of a list of actions (such as what movements your turtle has done.)
+#### Arrays are lists. They can be used to keep track of a list of actions (such as what movements your turtle has done.
 
 ```ruby
 local moves = {} -- Create an empty list to keep track of the moves

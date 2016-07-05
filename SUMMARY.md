@@ -24,6 +24,7 @@
     * [adding levels](devy-blue/adding-levels.md)
 * [devY Minecraft](devy-minecraft/plan.md)
     * [turtles](devy-minecraft/turtles.md)
+    * [loops](devy-minecraft/loops.md)
     * [lua syntax examples](devy-minecraft/lua-examples.md)
 * [Resources](resources/README.md)
     * [cycle shell](resources/cycle.md)

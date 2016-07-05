@@ -7,11 +7,12 @@ By the end of the lesson, students will be able to:
   - Call methods to control the turtle
   - Explain how to move the turtle
 
-##### Overview
-This lesson starts by introducing students to the goals of the class. Then, students explore the programmable turtles and complete some coding challenges. After using their turtle to build, students are given time to build without the use of the turtle.
-
 ### introduction - 20 minutes
+
+##### predict peer code - 5 minutes
+
 ##### introduce concept - 10 minutes
+**Earn student interest for lesson**
 Introduce students to turtles
   - Turtles are programmable Minecraft blocks that allow you to automate different Minecraft actions such as:
     - building
@@ -61,7 +62,7 @@ Introduce students to turtles
 ### student build - 10 minutes
 With building enabled, students create one of the building challenges. While building, students take notes on the procedures they used for their creation, and attempt to map that procedure list to code that the turtle can understand.
 
-### turtle build with new process - 30 minutes
+### turtle build with new process - 25 minutes
 Using their notes from the research time, student continue to work on their building challenge. When students are building, the process should be a loop of
   - code - create or revise the program.
   - predict - predict the outcome of the code using the physical representations.
@@ -80,12 +81,5 @@ Using their notes from the research time, student continue to work on their buil
       - What was the most difficult part of this coding challenge?
       - What challenge are you going to work on next?
 
-### share code - 10 minutes
-##### share with partner - 5 minutes
-Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else.
-
-##### share to group - 5 minutes
-2-3 students per day share their code with the entire group.
-1. When students share their code, the group predicts what will happen when the code is run.
-2. The sharer explains the code.
-3. The sharer runs the example code on the projector.
+### share with partner / tutor - 10 minutes
+Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else (tutor).

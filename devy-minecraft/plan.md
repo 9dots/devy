@@ -62,7 +62,7 @@
   - code
   - predict
   - observe
-  - explain (what happened or didn't happen)
+  - explain (when tutor is available)
   - loop to start
 - share out findings with build partner
 - partner explains code back (or to tutor)
@@ -71,11 +71,17 @@
 - 2 or 3 students
 - look at code
 
-
 #### class timing
 - code (intro new concept)
 - turtle build
 - student build
   - r & d
+  - use turtle remote control to research how to build their specific challenge
   - take notes on building process
 - turtle build w/ new process
+
+
+#### Roles
+- student
+- builder
+- teacher
