@@ -48,10 +48,10 @@ end -- end outer for loop
 - `turtle.detectDown()` -- Check to see if there is a block directly below the turtle. Returns true or false.
 
 ```ruby
-if turtle.detect() == true then -- If the turtle
-  turtle.up()
-else
-  turtle.forward()
+if turtle.detect() == true then -- If the turtle detects a block in front
+  turtle.up() -- move up
+else -- otherwise
+  turtle.forward() -- move forward
 end
 ```
 

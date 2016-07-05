@@ -57,7 +57,7 @@
         data-chapter-title="turtles"
         data-filepath="devy-minecraft/turtles.md"
         data-basepath=".."
-        data-revision="Wed Jun 29 2016 17:25:13 GMT-0700 (PDT)"
+        data-revision="Tue Jul 05 2016 11:15:10 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -576,7 +576,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p><a href="#todo:20">minecraft lesson 1</a></p>
+                        <p><a href="#done:10">minecraft lesson 1</a></p>
 <h1 id="building-with-turtles">building with turtles</h1>
 <h5 id="learning-goals">Learning Goals</h5>
 <p>By the end of the lesson, students will be able to:</p>
@@ -586,20 +586,10 @@
 </ul>
 <h5 id="overview">Overview</h5>
 <p>This lesson starts by introducing students to the goals of the class. Then, students explore the programmable turtles and complete some coding challenges. After using their turtle to build, students are given time to build without the use of the turtle.</p>
-<pre><code class="lang-ruby"><span class="token keyword">for</span> x<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">10</span> <span class="token keyword">do</span>
-  <span class="token function">print<span class="token punctuation">(</span></span>x<span class="token punctuation">)</span>
-<span class="token keyword">end</span>
-</code></pre>
-<h3 id="plan-5-minutes">plan (5 minutes)</h3>
-<p>Explain the goal of the class</p>
+<h3 id="introduction--20-minutes">introduction - 20 minutes</h3>
+<h5 id="introduce-concept--10-minutes">introduce concept - 10 minutes</h5>
+<p>Introduce students to turtles</p>
 <ul>
-<li>Students are working to create a city, a theme park, and an automatic mining facility.</li>
-<li>In the city, each student has a plot of land that they can build their house on.</li>
-<li>There is one catch: for 45 minutes per day, students will not be able to build directly. They need to use programmable turtle to do their building!</li>
-</ul>
-<h3 id="discover-3045-minutes">discover (30-45 minutes)</h3>
-<ol>
-<li>Introduce students to turtles<ul>
 <li>Turtles are programmable Minecraft blocks that allow you to automate different Minecraft actions such as:<ul>
 <li>building</li>
 <li>mining</li>
@@ -615,7 +605,30 @@
 </li>
 <li>To call functions in Lua simple write the name of the function and the add parentheses (just like Javascript)</li>
 </ul>
+<h5 id="predict-novel-code--5-minutes">predict novel code - 5 minutes</h5>
+<ol>
+<li>Students create their turtle cutout.</li>
+<li>Show students the first code example. Students look at the code and use their cutout to predict what the code will do.</li>
+<li>After students finish their predictions, run the code on the projector.<pre><code class="lang-ruby">turtle<span class="token punctuation">.</span><span class="token function">forward<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span><span class="token function">turnLeft<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span><span class="token function">forward<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span><span class="token function">forward<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+</code></pre>
 </li>
+<li>Discuss with students what happened and why.</li>
+</ol>
+<h5 id="plan-with-teammate--5-minutes">plan with teammate - 5 minutes</h5>
+<ol>
+<li>Students get a partner or a group (2-3).</li>
+<li>Each student in the group picks one building challenge. At the end of the day, each person in the group explains their code to the group.</li>
+<li>Once students have successfully taught their group how their program works, they can share their code with them using the floppy disks (in game).<ul>
+<li>Successful teaching means that each of the members of the group can explain the code back to the group (or hopefully a tutor)</li>
+</ul>
+</li>
+</ol>
+<h3 id="turtle-build--10-minutes">turtle build - 10 minutes</h3>
+<ol>
+<li>Students join the Minecraft game a receive a turtle and turtle remote.</li>
 <li>Show students how to interact with a turtle.<ul>
 <li>You need a remote to control the turtle. Once you have a remote right-click on the turtle you want to program.</li>
 <li>You can use the remote to control the robot directly.</li>
@@ -634,24 +647,47 @@
 </li>
 </ul>
 </li>
-<li>Show students their movement challenges for the first day. When students finish a challenge, they raise their hand and have a tutor check their work to make sure that it functions correctly.</li>
+<li>Students work on the building challenge they selected.</li>
 </ol>
-<h3 id="produce-20-minutes">produce (20 minutes)</h3>
-<p>With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.</p>
+<h3 id="student-build--10-minutes">student build - 10 minutes</h3>
+<p>With building enabled, students create one of the building challenges. While building, students take notes on the procedures they used for their creation, and attempt to map that procedure list to code that the turtle can understand.</p>
+<h3 id="turtle-build-with-new-process--30-minutes">turtle build with new process - 30 minutes</h3>
+<p>Using their notes from the research time, student continue to work on their building challenge. When students are building, the process should be a loop of</p>
+<ul>
+<li>code - create or revise the program.</li>
+<li>predict - predict the outcome of the code using the physical representations.</li>
+<li>observe - run the code in game and take notes on what happens using the worksheet.</li>
+<li>explain<ul>
+<li>If it did not work:<ul>
+<li>Why did it not work?</li>
+<li>What line do you think the problem is on?</li>
+<li>What kind of mistake is it?<ul>
+<li>syntax</li>
+<li>logic</li>
+</ul>
+</li>
+<li>What can you change to fix it?</li>
+<li>Loop to start</li>
+</ul>
+</li>
+<li>If it did work:<ul>
+<li>Why does the code work now?</li>
+<li>What was the most difficult part of this coding challenge?</li>
+<li>What challenge are you going to work on next?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="share-code--10-minutes">share code - 10 minutes</h3>
+<h5 id="share-with-partner--5-minutes">share with partner - 5 minutes</h5>
+<p>Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else.</p>
+<h5 id="share-to-group--5-minutes">share to group - 5 minutes</h5>
+<p>2-3 students per day share their code with the entire group.</p>
 <ol>
-<li>Discuss plans</li>
-<li>Attempt a solution</li>
-<li>Justify reasoning</li>
-</ol>
-<h3 id="justify-5-minutes">justify (5 minutes)</h3>
-<ol>
-<li>As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.</li>
-<li>Tell students that in the future, they are expected to justify their code in this way after each feature that they add.</li>
-<li>Students practice by explaining their code to a partner.</li>
-</ol>
-<h3 id="building">building</h3>
-<ol>
-<li>Students now</li>
+<li>When students share their code, the group predicts what will happen when the code is run.</li>
+<li>The sharer explains the code.</li>
+<li>The sharer runs the example code on the projector.</li>
 </ol>
 
                     

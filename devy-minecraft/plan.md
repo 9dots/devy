@@ -42,8 +42,40 @@
 
 ## Ideas
 
-- Open ended
-  - Students work with a team/partner to create different elements using their turtles
-  - After discovering how to create a new element students teach it to their partner
-  - Their partner then has to explain back how it works.
-  - After sharing information, students can give their teammate a disk with the code for their new element.
+#### introduction
+- introduce concepts
+- predict novel code
+
+
+#### debugging
+- make turtle for predicting and debugging
+- when predicting act out turtle movements using physical representation or body
+- running turtle in first person viewpoint
+
+#### presentation
+- Present features out of order
+- Add thumbnails
+- Concepts needed for feature
+
+#### when building  
+- loop of
+  - code
+  - predict
+  - observe
+  - explain (what happened or didn't happen)
+  - loop to start
+- share out findings with build partner
+- partner explains code back (or to tutor)
+
+#### end of day sharing
+- 2 or 3 students
+- look at code
+
+
+#### class timing
+- code (intro new concept)
+- turtle build
+- student build
+  - r & d
+  - take notes on building process
+- turtle build w/ new process

@@ -1,4 +1,4 @@
-[minecraft lesson 1](#todo:20)
+[minecraft lesson 1](#done:10)
 
 # building with turtles
 
@@ -10,22 +10,9 @@ By the end of the lesson, students will be able to:
 ##### Overview
 This lesson starts by introducing students to the goals of the class. Then, students explore the programmable turtles and complete some coding challenges. After using their turtle to build, students are given time to build without the use of the turtle.
 
-```ruby
-for x=1,10 do
-  print(x)
-end
-```
-
-### plan (5 minutes)
-
-Explain the goal of the class
-  - Students are working to create a city, a theme park, and an automatic mining facility.
-  - In the city, each student has a plot of land that they can build their house on.
-  - There is one catch: for 45 minutes per day, students will not be able to build directly. They need to use programmable turtle to do their building!
-
-### discover (30-45 minutes)
-
-1. Introduce students to turtles
+### introduction - 20 minutes
+##### introduce concept - 10 minutes
+Introduce students to turtles
   - Turtles are programmable Minecraft blocks that allow you to automate different Minecraft actions such as:
     - building
     - mining
@@ -36,31 +23,69 @@ Explain the goal of the class
     - Lua is used in lots of games such as World of Warcraft and Angry Birds.
     - This means the concepts will be the same as your coding classes but the syntax, or how it is written, will be different.
   - To call functions in Lua simple write the name of the function and the add parentheses (just like Javascript)
+
+##### predict novel code - 5 minutes
+1. Students create their turtle cutout.
+2. Show students the first code example. Students look at the code and use their cutout to predict what the code will do.
+3. After students finish their predictions, run the code on the projector.
+  ```ruby
+  turtle.forward()
+  turtle.turnLeft()
+  turtle.forward()
+  turtle.forward()
+  ```
+4. Discuss with students what happened and why.
+
+##### plan with teammate - 5 minutes
+1. Students get a partner or a group (2-3).
+2. Each student in the group picks one building challenge. At the end of the day, each person in the group explains their code to the group.
+3. Once students have successfully taught their group how their program works, they can share their code with them using the floppy disks (in game).
+  - Successful teaching means that each of the members of the group can explain the code back to the group (or hopefully a tutor)
+
+### turtle build - 10 minutes
+1. Students join the Minecraft game a receive a turtle and turtle remote.
 2. Show students how to interact with a turtle.
   - You need a remote to control the turtle. Once you have a remote right-click on the turtle you want to program.
   - You can use the remote to control the robot directly.
   - Show students the coding interface.
   - After adding code, students need to push the run button to make the robot run the code.
   - The undo button will reset the turtle back to where it started and undo everything from the last run.
-4. Students test out turtles using the examples.
+3. Students test out turtles using the examples.
   - Students have 5 minutes to try out all of the example methods in the API. For example:
     - `turtle.forward()`
     - `turtle.back()`
     - `turtle.turnLeft()`
     - `turtle.digDown()`
-5. Show students their movement challenges for the first day. When students finish a challenge, they raise their hand and have a tutor check their work to make sure that it functions correctly.
+4. Students work on the building challenge they selected.
 
-### produce (20 minutes)
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+### student build - 10 minutes
+With building enabled, students create one of the building challenges. While building, students take notes on the procedures they used for their creation, and attempt to map that procedure list to code that the turtle can understand.
 
-1. Discuss plans
-2. Attempt a solution
-3. Justify reasoning
+### turtle build with new process - 30 minutes
+Using their notes from the research time, student continue to work on their building challenge. When students are building, the process should be a loop of
+  - code - create or revise the program.
+  - predict - predict the outcome of the code using the physical representations.
+  - observe - run the code in game and take notes on what happens using the worksheet.
+  - explain
+    - If it did not work:
+      - Why did it not work?
+      - What line do you think the problem is on?
+      - What kind of mistake is it?
+        - syntax
+        - logic
+      - What can you change to fix it?
+      - Loop to start
+    - If it did work:
+      - Why does the code work now?
+      - What was the most difficult part of this coding challenge?
+      - What challenge are you going to work on next?
 
-### justify (5 minutes)
-1. As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.
-2. Tell students that in the future, they are expected to justify their code in this way after each feature that they add.
-3. Students practice by explaining their code to a partner.
+### share code - 10 minutes
+##### share with partner - 5 minutes
+Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else.
 
-### building
-1. Students now
+##### share to group - 5 minutes
+2-3 students per day share their code with the entire group.
+1. When students share their code, the group predicts what will happen when the code is run.
+2. The sharer explains the code.
+3. The sharer runs the example code on the projector.
