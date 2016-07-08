@@ -1,10 +1,10 @@
 # building with turtles
 
 ##### Learning Goals
-By the end of the lesson, students will be able to:
-  - Produce code
+By the end of the lesson, students will be able to loop through:
+  - Produce and revise code
   - Predict the outcome of code
-  - Explain the code output
+  - Test code
 
 ---
 ###### Classroom norms
@@ -16,6 +16,12 @@ By the end of the lesson, students will be able to:
 3. When the students are frozen in Minecraft, they are expected to:
   - tilt computer screens down to a 45 degree angle
   - eyes to the front of the room prepared to listen to the teacher
+
+###### Follow up questions
+Use these questions to help students elaborate when explaining their code:
+- "Can you say more about that?"
+- "What do you mean by that?"
+- "How can you take that idea a step further?"
 ---
 
 ### student mindset - 20 minutes
@@ -31,21 +37,22 @@ Introduce students to turtles
     - Lua is a scripting language like Javascript.
     - Lua is used in lots of games such as World of Warcraft and Angry Birds.
     - This means the concepts will be the same as your coding classes but the syntax, or how it is written, will be different.
-  - To call functions in Lua simple write the name of the function and the add parentheses (just like Javascript)
+  - To call functions in Lua write the name of the function and add parentheses (just like Javascript)
   - Students still control their character, but instead of building directly, students program the turtle to build for them
 
 ##### predict novel code - 5 minutes
 
 1. Students create their turtle cutout.
 2. Show students the first code example. Students look at the code and use their cutout to predict what the code will do.
-3. After students finish their predictions, run the code on the projector.
+3. If everyone picks the same solution, ask for students to come up with alternative approaches (even if they think it is wrong).
+4. After students finish their predictions, run the code on the projector.
   ```ruby
   turtle.forward()
   turtle.turnLeft()
   turtle.forward()
   turtle.forward()
   ```
-4. Discuss with students what happened and why.
+5. Discuss with students what happened and why.
 
 ---
 ###### Teacher notes
@@ -98,7 +105,6 @@ Introduce students to turtles
 ##### plan with teammate - 5 minutes
 1. Students get a partner or a group (2-3).
 2. Each student in the group picks one building challenge. At the end of the day, each person in the group explains their code to the group.
-3. Once students have successfully taught their group how their program works, they can share their code with them using the floppy disks (in game).
   - Successful teaching means that each of the members of the group can explain the code back to the group (or hopefully a tutor)
 
 ##### turtle build with new process - 15 minutes
@@ -126,3 +132,14 @@ Using their notes from the research time, student continue to work on their buil
 
 ### teacher mindset - 10 minutes
 Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else (tutor).
+
+Each student should:
+1. Show code to partner
+2. Allow the partner to predict what the turtle will do
+3. Clarify their partner's understanding of the code
+
+---
+###### Teacher notes
+Ask students to explain your partner's idea in your own words.
+
+---

@@ -3,32 +3,34 @@
 ### Building challenges
 Each building should be create as a separate file so that it can be used as a function.
 
-- basic
+- function (sequence)
   - Square (2 blocks per side)
-  - Dig a square of any size
+  - Create a letter
+  - Create a number
   - Chair
   - Couch
   - Table
   - Bed
-  - Statue
-  - Pixel art
-  - Dirt hut
+  - Animal statue
 - loop
-  - Square (4 blocks per side)
-  - Square of any size
   - Staircase
-  - Wall
   - Tower
   - Waterfall
+  - Pixel art
+  - Dirt hut
+- nested loop
+  - Square (4 blocks per side)
+  - Square of any size
+  - Wall
   - Floor
+  - Dig a square of any size
   - Roof
   - Pool
   - Mote
   - Farm
-  - Rail lines
   - Bridge
   - Window
-- collaborate
+- everything
   - Roller Coaster
   - Waterslide
   - Castle
