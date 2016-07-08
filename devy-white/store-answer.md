@@ -55,20 +55,29 @@ SET answer to number
 SET guesses to 0
 
 FUNCTION main (guess)
-  RETURN checkGuess(guess)
+  guessNumber(guess)
 
-FUNCTION checkGuess (guess)
+FUNCTION guessNumber (guess)
   INCREMENT guesses
-  IF guess is equal to answer
-    RETURN win message
+  IF checkGuess(guess) is true
+    RETURN renderPlayerWins()
   ELSE
     RETURN renderHint(guess)
+
+FUNCTION checkGuess (guess)
+  IF guess is equal to answer
+    RETURN true
+  ELSE
+    RETURN false
 
 FUNCTION renderHint (guess)
   IF guess is greater than answer
     RETURN too big hint
   ELSE
     RETURN too small hint
+
+FUNCTION renderPlayerWins ()
+  RETURN win message
 ```
 
 With their partner, students plan and attempt to implement a solution for storing the correct answer in a variable.
@@ -93,11 +102,19 @@ With their partner, students plan and attempt to implement a solution for storin
 
   function guessNumber (guess) {
       guesses++ // Add one to guesses
-      if (guess === answer) { // could be any number
+      if (checkGuess()) { // could be any number
         return `Correct! It took you ${guesses} guesses to solve it!`
       } else {
         return renderHint(guess) // call the getHint function
       }      
+  }
+
+  function checkGuess (guess) {
+    if (guess === answer) {
+      return true
+    } else {
+      return false
+    }
   }
 
   function renderHint (guess) {

@@ -10,8 +10,8 @@ By the end of the lesson, students will be able to:
 This lesson introduces students to the process of adding new features to their projects. Start by leading a pseudocode planning time. Once the concepts required have been outlined, introduce students to conditionals using the conditionals lesson. After practicing conditionals in their smaller projects, refocus students on guess the number project.  Students get with a partner and discuss strategies for implementing conditionals in their project to check if the player has guessed the correct number.
 
 ##### Suggested stations
-1. String templates (link)
-2. Function syntax (link)
+1. String templates
+2. Function syntax
 
 ### plan (5 minutes)
 1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
@@ -29,7 +29,7 @@ This lesson introduces students to the process of adding new features to their p
 pseudocode
 ```
 FUNCTION main (guess)
-  IF guess is equal to correct
+  IF guess is equal to answer
     RETURN win message
   ELSE
     RETURN lose message
@@ -48,14 +48,22 @@ With their partner, students plan and attempt to implement a solution for checki
 
 ```js
 function main (guess) {
-  return checkGuess(guess)
+  return guessNumber(guess)
+}
+
+function guessNumber (guess) {
+  if (checkGuess(guess)) {
+    return `You win!` // or any winning message
+  } else {
+    return `Nope!` // or any losing message
+  }
 }
 
 function checkGuess (guess) {
-  if (guess === 4) {// could be any number
-    return `Correct! You win!` // or any winning message
+  if (guess === 4) { // could be any number
+    return true
   } else {
-    return `Wrong! Try again!` // or any losing message
+    return false
   }
 }
 ```

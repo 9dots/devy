@@ -43,21 +43,29 @@ SET guesses to 0
 SET maxGuesses to number
 
 FUNCTION main (guess)
-  RETURN checkDone(guess)
+  RETURN guessNumber(guess)
+
+FUNCTION guessNumber (guess)
+  INCREMENT guesses
+  IF checkDone() is true
+    RETURN lose message
+  ELSE
+    IF checkGuess(guess) is true
+      RETURN win message
+    ELSE
+      RETURN renderHint(guess)
 
 FUNCTION checkDone (guess)
   IF guesses is greater than or equal to maxGuesses
-    SET scoreMessage to renderScore()
-    RETURN game over message + scoreMessage
+    RETURN true
   ELSE
-    RETURN CALL checkGuess(guess)
+    RETURN false
 
 FUNCTION checkGuess (guess)
-  INCREMENT guesses
   IF guess is equal to answer
-    RETURN win message
+    RETURN true
   ELSE
-    RETURN renderHint(guess)
+    RETURN false
 
 FUNCTION renderHint (guess)
   IF guess is greater than answer

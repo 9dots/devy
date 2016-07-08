@@ -41,20 +41,29 @@ Remind students that their goals are:
   SET maxGuesses to number
 
   FUNCTION main (guess)
-    RETURN checkDone(guess)
+    RETURN guessNumber(guess)
+
+  FUNCTION guessNumber (guess)
+    INCREMENT guesses
+    IF checkDone() is true
+      RETURN lose message
+    ELSE
+      IF checkGuess(guess) is true
+        RETURN win message
+      ELSE
+        RETURN renderHint(guess)
 
   FUNCTION checkDone (guess)
     IF guesses is greater than or equal to maxGuesses
-      RETURN game over message
+      RETURN true
     ELSE
-      RETURN checkGuess(guess)
+      RETURN false
 
   FUNCTION checkGuess (guess)
-    INCREMENT guesses
     IF guess is equal to answer
-      RETURN win message
+      RETURN true
     ELSE
-      RETURN renderHint(guess)
+      RETURN false
 
   FUNCTION renderHint (guess)
     IF guess is greater than answer
@@ -80,22 +89,34 @@ With their partner, students plan and attempt to implement a solution for creati
   var answer = 6
 
   function main (guess) {
-      return checkDone(guess)
+      return guessNumber(guess)
+  }
+
+  function guessNumber (guess) {
+      if (checkDone()) {
+        return 'Game over'
+      } else {
+        if (checkGuess()) {
+          return `Correct!`
+        } else {
+          return renderHint(guess)
+        }
+      }
   }
 
   function checkDone (guess) {
       if (guesses >= MAX_TRIES) {
-        return `Game over`
+        return true
       } else {
-        return checkGuess(guess)
+        return false
       }
   }
 
   function checkGuess (guess) {
       if (guess === answer) {
-        return `Correct!`
+        return true
       } else {
-        return renderHint(guess)
+        return false
       }
   }
 

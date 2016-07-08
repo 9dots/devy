@@ -57,7 +57,7 @@
         data-chapter-title="turtles"
         data-filepath="devy-minecraft/turtles.md"
         data-basepath=".."
-        data-revision="Tue Jul 05 2016 14:30:01 GMT-0700 (PDT)"
+        data-revision="Fri Jul 08 2016 10:08:08 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -591,19 +591,34 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p><a href="#done:10">minecraft lesson 1</a></p>
-<h1 id="building-with-turtles">building with turtles</h1>
+                        <h1 id="building-with-turtles">building with turtles</h1>
 <h5 id="learning-goals">Learning Goals</h5>
 <p>By the end of the lesson, students will be able to:</p>
 <ul>
-<li>Call methods to control the turtle</li>
-<li>Explain how to move the turtle</li>
+<li>Produce code</li>
+<li>Predict the outcome of code</li>
+<li>Explain the code output</li>
 </ul>
-<h3 id="introduction--20-minutes">introduction - 20 minutes</h3>
-<h5 id="predict-peer-code--5-minutes">predict peer code - 5 minutes</h5>
+<hr>
+<h6 id="classroom-norms">Classroom norms</h6>
+<ol>
+<li>Discuss the different roles students adopt during each lesson:<ul>
+<li>Student mindset: Students learn a new concept</li>
+<li>Builder mindset: Students use their knowledge to work on creating something new</li>
+<li>Teacher mindset: Students teach their peers and their tutors by explaining how their creation works.</li>
+</ul>
+</li>
+<li>Whenever students are creating a new program they are expected to predict how that code works by using their paper cutout <strong>before</strong> executing the code in game.</li>
+<li>When the students are frozen in Minecraft, they are expected to:<ul>
+<li>tilt computer screens down to a 45 degree angle</li>
+<li>eyes to the front of the room prepared to listen to the teacher</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="student-mindset--20-minutes">student mindset - 20 minutes</h3>
 <h5 id="introduce-concept--10-minutes">introduce concept - 10 minutes</h5>
-<p><strong>Earn student interest for lesson</strong>
-Introduce students to turtles</p>
+<p>Introduce students to turtles</p>
 <ul>
 <li>Turtles are programmable Minecraft blocks that allow you to automate different Minecraft actions such as:<ul>
 <li>building</li>
@@ -619,6 +634,7 @@ Introduce students to turtles</p>
 </ul>
 </li>
 <li>To call functions in Lua simple write the name of the function and the add parentheses (just like Javascript)</li>
+<li>Students still control their character, but instead of building directly, students program the turtle to build for them</li>
 </ul>
 <h5 id="predict-novel-code--5-minutes">predict novel code - 5 minutes</h5>
 <ol>
@@ -632,16 +648,20 @@ turtle<span class="token punctuation">.</span><span class="token function">forwa
 </li>
 <li>Discuss with students what happened and why.</li>
 </ol>
-<h5 id="plan-with-teammate--5-minutes">plan with teammate - 5 minutes</h5>
-<ol>
-<li>Students get a partner or a group (2-3).</li>
-<li>Each student in the group picks one building challenge. At the end of the day, each person in the group explains their code to the group.</li>
-<li>Once students have successfully taught their group how their program works, they can share their code with them using the floppy disks (in game).<ul>
-<li>Successful teaching means that each of the members of the group can explain the code back to the group (or hopefully a tutor)</li>
+<hr>
+<h6 id="teacher-notes">Teacher notes</h6>
+<ul>
+<li>Play up how believable all student ideas are.</li>
+<li>Collect all student ideas before showing the correct answer.</li>
+<li>After running the code, have students assess their prediction.<ul>
+<li>did it match?</li>
+<li>what was different?</li>
 </ul>
 </li>
-</ol>
-<h3 id="turtle-build--10-minutes">turtle build - 10 minutes</h3>
+</ul>
+<hr>
+<h3 id="builder-mindset--40-minutes">builder mindset - 40 minutes</h3>
+<h5 id="turtle-build--20-minutes">turtle build - 20 minutes</h5>
 <ol>
 <li>Students join the Minecraft game a receive a turtle and turtle remote.</li>
 <li>Show students how to interact with a turtle.<ul>
@@ -652,27 +672,69 @@ turtle<span class="token punctuation">.</span><span class="token function">forwa
 <li>The undo button will reset the turtle back to where it started and undo everything from the last run.</li>
 </ul>
 </li>
-<li>Students test out turtles using the examples.<ul>
-<li>Students have 5 minutes to try out all of the example methods in the API. For example:<ul>
+<li>Students test out turtles using the move methods.<ul>
+<li>The move methods are:<ul>
+<li><code>turtle.forward()</code></li>
+<li><code>turtle.back()</code></li>
+<li><code>turtle.up()</code></li>
+<li><code>turtle.down()</code></li>
+<li><code>turtle.turnRight()</code></li>
+<li><code>turtle.turnLeft()</code></li>
+</ul>
+</li>
+<li>Students create a first program using the move methods. It should have at least four lines. For example:<ul>
 <li><code>turtle.forward()</code></li>
 <li><code>turtle.back()</code></li>
 <li><code>turtle.turnLeft()</code></li>
-<li><code>turtle.digDown()</code></li>
+<li><code>turtle.up()</code></li>
 </ul>
 </li>
+<li>When they are done, students get with a partner and predict the code that their partner wrote using their cutouts.</li>
 </ul>
 </li>
-<li>Students work on the building challenge they selected.</li>
+<li>Introduce digging<ul>
+<li>The dig methods are:<ul>
+<li><code>turtle.dig()</code> - digs directly in front of the turtle</li>
+<li><code>turtle.digUp()</code> - digs one space above the turtle</li>
+<li><code>turtle.digDown()</code> - digs one space below the turtle</li>
+</ul>
+</li>
+<li>Students write a program that digs a capital letter into the ground using the movement and dig methods.</li>
+<li>When they are done, students get with a partner and predict the code that their partner wrote using their cutouts.</li>
+</ul>
+</li>
+<li>Introduce placing<ul>
+<li>The place methods are:<ul>
+<li><code>turtle.place()</code> - place a block directly in front of the turtle</li>
+<li><code>turtle.placeUp()</code> - place a block one space above the turtle</li>
+<li><code>turtle.placeDown()</code> - place a block one space below the turtle</li>
+</ul>
+</li>
+<li>Students edit their dig program to place a block in each hole that robot digs for the letter</li>
+</ul>
+</li>
 </ol>
-<h3 id="student-build--10-minutes">student build - 10 minutes</h3>
-<p>With building enabled, students create one of the building challenges. While building, students take notes on the procedures they used for their creation, and attempt to map that procedure list to code that the turtle can understand.</p>
-<h3 id="turtle-build-with-new-process--25-minutes">turtle build with new process - 25 minutes</h3>
-<p>Using their notes from the research time, student continue to work on their building challenge. When students are building, the process should be a loop of</p>
+<h5 id="plan-with-teammate--5-minutes">plan with teammate - 5 minutes</h5>
+<ol>
+<li>Students get a partner or a group (2-3).</li>
+<li>Each student in the group picks one building challenge. At the end of the day, each person in the group explains their code to the group.</li>
+<li>Once students have successfully taught their group how their program works, they can share their code with them using the floppy disks (in game).<ul>
+<li>Successful teaching means that each of the members of the group can explain the code back to the group (or hopefully a tutor)</li>
+</ul>
+</li>
+</ol>
+<h5 id="turtle-build-with-new-process--15-minutes">turtle build with new process - 15 minutes</h5>
+<p>Using their notes from the research time, student continue to work on their building challenge. When students are building, the process should be a loop of:</p>
 <ul>
 <li>code - create or revise the program.</li>
 <li>predict - predict the outcome of the code using the physical representations.</li>
 <li>observe - run the code in game and take notes on what happens using the worksheet.</li>
-<li>explain<ul>
+<li>loop to start</li>
+</ul>
+<hr>
+<h6 id="teacher-notes">Teacher notes</h6>
+<p>  As students are working, rotate between students and discuss their code.</p>
+<ul>
 <li>If it did not work:<ul>
 <li>Why did it not work?</li>
 <li>What line do you think the problem is on?</li>
@@ -682,7 +744,6 @@ turtle<span class="token punctuation">.</span><span class="token function">forwa
 </ul>
 </li>
 <li>What can you change to fix it?</li>
-<li>Loop to start</li>
 </ul>
 </li>
 <li>If it did work:<ul>
@@ -692,9 +753,8 @@ turtle<span class="token punctuation">.</span><span class="token function">forwa
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h3 id="share-with-partner--tutor--10-minutes">share with partner / tutor - 10 minutes</h3>
+<hr>
+<h3 id="teacher-mindset--10-minutes">teacher mindset - 10 minutes</h3>
 <p>Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else (tutor).</p>
 
                     

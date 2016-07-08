@@ -28,22 +28,37 @@ Students learn how to add hints to their game. During this lesson students learn
 [creating functions lesson](concepts/defining-functions.md)
 
 ### produce (20 minutes)
+Students create four functions:
+1. `guessNumber` - calls checkGuess to check if the player got it right. If the player wins call renderPlayerWins else call renderHint
+2. `checkGuess` - takes a number and returns either true or false
+3. `renderHint` - takes a number and returns a hint message: `too high` or `too low`
+4. `renderPlayerWins` - returns a message to display when the player wins
+
 pseudocode:
 ```
 FUNCTION main (guess)
-  RETURN checkGuess(guess)
+  RETURN guessNumber(guess)
+
+FUNCTION guessNumber (guess)
+  IF checkGuess(guess) is true
+    RETURN renderPlayerWins()
+  ELSE
+    RETURN renderHint(guess)
 
 FUNCTION checkGuess (guess)
   IF guess is equal to answer
-    RETURN win message
+    RETURN true
   ELSE
-    RETURN renderHint(guess)
+    RETURN false
 
 FUNCTION renderHint (guess)
   IF guess [is greater than] answer
     RETURN too big hint
   ELSE
     RETURN too small hint
+
+FUNCTION renderPlayerWins
+  RETURN win message
 ```
 
 With their partner, students plan and attempt to implement a solution for rendering hints if the user guesses incorrectly.
@@ -61,14 +76,22 @@ With their partner, students plan and attempt to implement a solution for render
 
   ```js
   function main (guess) {
-      return checkGuess(guess) // pass the guess to the guessNumber function
+      return guessNumber(guess) // pass the guess to the guessNumber function
+  }
+
+  function guessNumber (guess) {
+    if (checkGuess(guess)) {
+      return renderPlayerWins()
+    } else {
+      return renderHint(guess) // call the getHint function
+    }
   }
 
   function checkGuess (guess) {
       if (guess === 6) { // could be any number
-        return `Correct!`
+        return true
       } else {
-        return renderHint(guess) // call the getHint function
+        return false
       }      
   }
 
@@ -78,6 +101,10 @@ With their partner, students plan and attempt to implement a solution for render
       } else {
         return `${guess} is too low` // the guess is too low
       }
+  }
+
+  function renderPlayerWins () {
+    return `Correct! You win!`
   }
   ```
 3. Students contrast the teacher solutions with their own ideas.

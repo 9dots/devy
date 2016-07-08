@@ -57,7 +57,7 @@
         data-chapter-title="check guess"
         data-filepath="devy-white/check-guess.md"
         data-basepath=".."
-        data-revision="Tue Jul 05 2016 14:30:01 GMT-0700 (PDT)"
+        data-revision="Fri Jul 08 2016 10:08:08 GMT-0700 (PDT)"
         data-innerlanguage="">
     
 
@@ -603,8 +603,8 @@
 <p>This lesson introduces students to the process of adding new features to their projects. Start by leading a pseudocode planning time. Once the concepts required have been outlined, introduce students to conditionals using the conditionals lesson. After practicing conditionals in their smaller projects, refocus students on guess the number project.  Students get with a partner and discuss strategies for implementing conditionals in their project to check if the player has guessed the correct number.</p>
 <h5 id="suggested-stations">Suggested stations</h5>
 <ol>
-<li>String templates (link)</li>
-<li>Function syntax (link)</li>
+<li>String templates</li>
+<li>Function syntax</li>
 </ol>
 <h3 id="plan-5-minutes">plan (5 minutes)</h3>
 <ol>
@@ -625,7 +625,7 @@
 <h3 id="produce-30-minutes">produce (30 minutes)</h3>
 <p>pseudocode</p>
 <pre><code>FUNCTION main (guess)
-  IF guess is equal to correct
+  IF guess is equal to answer
     RETURN win message
   ELSE
     RETURN lose message
@@ -642,14 +642,22 @@
 <li>After hearing their solutions, introduce students to the teacher solution.</li>
 </ol>
 <pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token function">guessNumber</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> guessNumber <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">checkGuess</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> `You win<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any winning message</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> `Nope<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any losing message</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">function</span> checkGuess <span class="token punctuation">(</span>guess<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">// could be any number</span>
-    <span class="token keyword">return</span> `Correct<span class="token operator">!</span> You win<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any winning message</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>guess <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// could be any number</span>
+    <span class="token keyword">return</span> <span class="token keyword">true</span>
   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> `Wrong<span class="token operator">!</span> Try again<span class="token operator">!</span>` <span class="token comment" spellcheck="true">// or any losing message</span>
+    <span class="token keyword">return</span> <span class="token keyword">false</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
