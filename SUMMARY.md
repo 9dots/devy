@@ -26,6 +26,7 @@
     * [turtles](devy-minecraft/turtles.md)
     * [loops](devy-minecraft/loops.md)
     * [lua syntax examples](devy-minecraft/lua-examples.md)
+    * [turtle challenges](devy-minecraft/building-challenges.md)
 * [Resources](resources/README.md)
     * [cycle shell](resources/cycle.md)
     * [codewars](resources/codewars.md)
