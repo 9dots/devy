@@ -8,11 +8,13 @@ Each building should be create as a separate file so that it can be used as a fu
 ### rectangular shapes
   - Tower (5)
   - Tower (arbitrary)
-  - Waterfall
+  - Waterfall (lavafall)
   - Square (2x)
   - Square (arbitrary size)
   - Rectangle (2 x 3)
   - Rectangle (function with width and height)
+  - Filled in square
+  - Filled in rectangle
   - Cube (3x3x3)
   - Cube (arbitrary)
   - Rectangular prism (3x4x4)
@@ -31,6 +33,11 @@ Each building should be create as a separate file so that it can be used as a fu
   - Triangular prism
   - Waterslide
 
+### conditionals
+  - inventory
+  - switch materials
+  - switch to next available building block
+
 ### house
   - Hut
   - Farm
@@ -41,8 +48,13 @@ Each building should be create as a separate file so that it can be used as a fu
   - Window
   - Roof
 
+
 ### misc
   - Animal statue
   - Block art
   - Create a letter
   - Create a number
+
+student actions | teacher actions
+---|---
+asdf|asdf

@@ -13,6 +13,7 @@ By the end of the lesson, students will be able to:
 ### pseudocode planning
 Distribute the features checklist and introduce the guess the number game.
 
+{% table "teacher actions", "student actions" %}
 1. Ask students to describe the steps to playing a number in game if they were playing with another person. The list should be similar to:
   1. Person 1 thinks of a number. (variables)
   2. Person 1 tells person 2 the number of guesses they are allowed to take. (variables)
@@ -20,9 +21,17 @@ Distribute the features checklist and introduce the guess the number game.
   4. Person 1 checks if the guess is correct. (conditionals)
     - If the guess is correct person 2 wins (strings)
     - Otherwise person 1 give person 2 a hint: higher or lower. (strings)
+
   5. If person 2 runs out of guesses without getting the correct answer they lose the game. (conditionals)
 2. Tell students that the game is going to be built in stages as they learn new concepts.
 3. To create this game the first step is to learn about functions and cycle-shell.
+,,,
+
+1. stuff
+2. more stuff
+3. the most stuff
+{% endtable %}
+
 
 ##### Functions
 

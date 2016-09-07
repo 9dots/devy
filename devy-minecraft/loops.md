@@ -2,7 +2,7 @@
 
 ##### Overview
 
-### introduction - 20 minutes
+### student mindset - 20 minutes
 ##### introduce concept - 10 minutes
 Introduce loops
 
@@ -12,7 +12,7 @@ Example of loop code
 ##### plan with teammate - 5 minutes
 With teammate, plan which challenges to undertake
 
-### turtle build - 10 minutes
+### engineer mindset - 10 minutes
 Use turtles to build item from building challenges
 
 ### student build - 10 minutes
@@ -21,7 +21,7 @@ With building enabled, students create one of the building challenges. While bui
 ### turtle build with new process - 30 minutes
 Using their notes from the research time, student create their
 
-### share code - 10 minutes
+### teacher mindset - 10 minutes
 ##### share with partner - 5 minutes
 Students show their partner the code that they have created during the lesson. The goal is to teach the code well enough that the partner can then turn around and explain the code to someone else.
 

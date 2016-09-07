@@ -1,10 +1,8 @@
 # Lua Examples
 
-#### To call a function or method, write the name of the function followed by parentheses
+#### Move functions
 ```ruby
-turtle.forward()
-turtle.back()
-turtle.dig()
+
 ```
 
 #### To create a function that digs 3 times.
@@ -17,8 +15,6 @@ end -- end function
 
 forward3() -- call function
 ```
-
-
 
 
 #### For loops are used to repeat an action a specific number of times. In the example below, the turtle moves forward 10 times.
