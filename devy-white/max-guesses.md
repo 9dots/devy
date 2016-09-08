@@ -6,7 +6,7 @@ By the end of the lesson, students will be able to:
   - increment a variable
 
 ##### Overview
-
+Students use their knowledge of defining functions, creating variables, and conditionals to add a maximum number of guesses to their game. If the maximum number of guesses has been exceeded, then the game returns a game over message.
 
 ##### Suggested stations
 - variable values
@@ -27,11 +27,52 @@ By the end of the lesson, students will be able to:
 3. Discuss which concepts are new.
 {% endtlist %}
 
-### discover (30-45 minutes)
-[variable arithmetic lesson]()
-
 ### produce (20 minutes)
-With their partner, students plan and attempt to implement a solution for checking if the user guess is correct.
+Remind students that their goals are:
+1. Create a variable to store the maximum guesses
+2. Create a function called `checkDone` that checks if the current number of guesses is greater than or equal to the maximum guesses.
+  - If it is tell the player the game is over.
+  - Otherwise check the guess.
+
+  pseudocode:
+  ```
+  SET answer to number
+  SET guesses to 0
+  SET maxGuesses to number
+
+  FUNCTION main (guess)
+    RETURN guessNumber(guess)
+
+  FUNCTION guessNumber (guess)
+    INCREMENT guesses
+    IF checkDone() is true
+      RETURN lose message
+    ELSE
+      IF checkGuess(guess) is true
+        RETURN win message
+      ELSE
+        RETURN renderHint(guess)
+
+  FUNCTION checkDone (guess)
+    IF guesses is greater than or equal to maxGuesses
+      RETURN true
+    ELSE
+      RETURN false
+
+  FUNCTION checkGuess (guess)
+    IF guess is equal to answer
+      RETURN true
+    ELSE
+      RETURN false
+
+  FUNCTION renderHint (guess)
+    IF guess is greater than answer
+      RETURN too big hint
+    ELSE
+      RETURN too small hint
+  ```
+
+With their partner, students plan and attempt to implement a solution for creating a maximum number of guesses. If the maximum number is reached, the game should output 'Game over'
 
 1. Fill in handout
 2. Discuss plans
@@ -42,50 +83,44 @@ With their partner, students plan and attempt to implement a solution for checki
 1. Discuss with students their ideas. Make sure to have students from each group explain what they attempted or any ideas they had on how they could use their knowledge to implement a solution.
 2. After hearing their solutions, introduce students to the teacher solution.
   ```js
-  var random = require('random-js')()
 
   var MAX_TRIES = 10
   var guesses = 0
-  var answer = random.integer(1, 10)
-  var gameOver = false
+  var answer = 6
 
   function main (guess) {
-      if (!gameOver) {
-        return checkDone(guess)
+      return guessNumber(guess)
+  }
+
+  function guessNumber (guess) {
+      if (checkDone()) {
+        return 'Game over'
       } else {
-        return `Game is over`
+        if (checkGuess()) {
+          return `Correct!`
+        } else {
+          return renderHint(guess)
+        }
       }
   }
 
   function checkDone (guess) {
       if (guesses >= MAX_TRIES) {
-        gameOver = true
-        return `Game over`
+        return true
       } else {
-        return guessNumber(guess)
+        return false
       }
   }
 
-  function guessNumber (guess) {
+  function checkGuess (guess) {
       if (guess === answer) {
-        return `Correct!`
+        return true
       } else {
-        return renderWrongGuess(guess)
+        return false
       }
   }
 
-  function renderWrongGuess (guess) {
-      guesses++
-      return `Wrong!
-    ${getHint(guess)}
-    ${getGuessesLeft()}`
-  }
-
-  function getGuessesLeft () {
-      return `You have ${MAX_TRIES - guesses} guesses left.`
-  }
-
-  function getHint (guess) {
+  function renderHint (guess) {
       if (guess > answer) {
         return `${guess} is too high!`
       } else {
@@ -100,3 +135,14 @@ With their partner, students plan and attempt to implement a solution for checki
 1. As a group, explain the code that they have written. Make sure to decompose each block and expression that was added to the code.
 2. Tell students that in the future, they are expected to justify their code in this way after each feature that they add.
 3. Students practice by explaining their code to a partner.
+
+### test
+1. Students play the game of their partner.
+2. When students are testing a game, they are looking for:
+  - bugs
+  - feature improvements
+3. When students find a bug they fill out a bug report:
+  - What were you doing in the game?
+  - What did you type into the input box?
+  - What did you expect to happen?
+  - What actually happened?

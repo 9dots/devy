@@ -1,626 +1,607 @@
+
 <!DOCTYPE HTML>
-<html lang="en" >
-    
+<html lang="" >
     <head>
-        
+        <title>conditionals continued · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>conditionals continued | devY</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
         
+    
     <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tasklist/github-markdown.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
     
         
-        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        <link rel="stylesheet" href="../../styles/website.css">
         
     
         
-        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-tasklist/github-markdown.css">
+    
         
     
         
-        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+    
         
     
         
-        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
-        
-    
     
 
         
     
     
-    <link rel="next" href="../../devy-white/concepts/variables.html" />
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="variables.html" />
     
     
-    <link rel="prev" href="../../devy-white/concepts/conditionals.html" />
+    <link rel="prev" href="conditionals.html" />
     
 
-        
     </head>
     <body>
         
+<div class="book">
+    <div class="book-summary">
         
-    <div class="book"
-        data-level="1.6.4"
-        data-chapter-title="conditionals continued"
-        data-filepath="devy-white/concepts/conditionals2.md"
-        data-basepath="../.."
-        data-revision="Mon Jun 13 2016 18:07:05 GMT-0700 (PDT)"
-        data-innerlanguage="">
-    
-
-<div class="book-summary">
-    <nav role="navigation">
-        <ul class="summary">
             
-            
-            
-            
-
-            
-
-            
-    
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../../index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                        Introduction
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1" data-path="devy-white/index.html">
-            
-                
-                    <a href="../../devy-white/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        devY White
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.1" data-path="devy-white/cycle-shell.html">
-            
-                
-                    <a href="../../devy-white/cycle-shell.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                        cycle shell
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="devy-white/checkGuess.html">
-            
-                
-                    <a href="../../devy-white/checkGuess.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                        guess
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="devy-white/hints.html">
-            
-                
-                    <a href="../../devy-white/hints.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                        hints
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="devy-white/store-answer.html">
-            
-                
-                    <a href="../../devy-white/store-answer.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.4.</b>
-                        
-                        store answer
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="devy-white/max-guesses.html">
-            
-                
-                    <a href="../../devy-white/max-guesses.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.5.</b>
-                        
-                        maximum guesses
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" >
-            
-            <span><b>1.6.</b> concepts</span>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.1" data-path="devy-white/concepts/string-templates.html">
-            
-                
-                    <a href="../../devy-white/concepts/string-templates.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.1.</b>
-                        
-                        string templates
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2" data-path="devy-white/concepts/defining-functions.html">
-            
-                
-                    <a href="../../devy-white/concepts/defining-functions.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.2.</b>
-                        
-                        defining functions
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.3" data-path="devy-white/concepts/conditionals.html">
-            
-                
-                    <a href="../../devy-white/concepts/conditionals.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.3.</b>
-                        
-                        conditionals
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.6.4" data-path="devy-white/concepts/conditionals2.html">
-            
-                
-                    <a href="../../devy-white/concepts/conditionals2.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.4.</b>
-                        
-                        conditionals continued
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.5" data-path="devy-white/concepts/variables.html">
-            
-                
-                    <a href="../../devy-white/concepts/variables.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.5.</b>
-                        
-                        variables
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.6" data-path="devy-white/concepts/objects.html">
-            
-                
-                    <a href="../../devy-white/concepts/objects.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.6.</b>
-                        
-                        objects
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="devy-blue/index.html">
-            
-                
-                    <a href="../../devy-blue/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        devY Blue
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.1" data-path="devy-blue/objects.html">
-            
-                
-                    <a href="../../devy-blue/objects.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.</b>
-                        
-                        object literals
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2" data-path="devy-blue/main.html">
-            
-                
-                    <a href="../../devy-blue/main.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.2.</b>
-                        
-                        main function
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3" data-path="devy-blue/debugging.html">
-            
-                
-                    <a href="../../devy-blue/debugging.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.3.</b>
-                        
-                        debugging
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4" data-path="devy-blue/accessing-properties.html">
-            
-                
-                    <a href="../../devy-blue/accessing-properties.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.4.</b>
-                        
-                        accessing properties
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="devy-blue/adding-levels.html">
-            
-                
-                    <a href="../../devy-blue/adding-levels.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.5.</b>
-                        
-                        adding levels
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="devy-green/index.html">
-            
-                
-                    <a href="../../devy-green/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        devY Green
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="3.1" data-path="devy-green/functions.html">
-            
-                
-                    <a href="../../devy-green/functions.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.1.</b>
-                        
-                        functions
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="resources/index.html">
-            
-                
-                    <a href="../../resources/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        Resources
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="4.1" data-path="resources/cycle.html">
-            
-                
-                    <a href="../../resources/cycle.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.</b>
-                        
-                        cycle shell
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.2" data-path="resources/codewars.html">
-            
-                
-                    <a href="../../resources/codewars.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.2.</b>
-                        
-                        codewars
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.3" data-path="resources/weo.html">
-            
-                
-                    <a href="../../resources/weo.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                        weo
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.4" data-path="devy-blue/escape-game.html">
-            
-                
-                    <a href="../../devy-blue/escape-game.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.4.</b>
-                        
-                        escape the room guide
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-
-            
-            <li class="divider"></li>
-            <li>
-                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                    Published with GitBook
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
 
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    devY White
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../cycle-shell.html">
+            
+                <a href="../cycle-shell.html">
+            
+                    
+                    cycle shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../check-guess.html">
+            
+                <a href="../check-guess.html">
+            
+                    
+                    check guess
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../hints.html">
+            
+                <a href="../hints.html">
+            
+                    
+                    hints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../store-answer.html">
+            
+                <a href="../store-answer.html">
+            
+                    
+                    store answer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../max-guesses.html">
+            
+                <a href="../max-guesses.html">
+            
+                    
+                    maximum guesses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../get-score.html">
+            
+                <a href="../get-score.html">
+            
+                    
+                    get score
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../get-username.html">
+            
+                <a href="../get-username.html">
+            
+                    
+                    get user's name
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../reset.html">
+            
+                <a href="../reset.html">
+            
+                    
+                    reset game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../render-grade.html">
+            
+                <a href="../render-grade.html">
+            
+                    
+                    render grade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="defining-functions.html">
+            
+                <a href="defining-functions.html">
+            
+                    
+                    defining functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="conditionals.html">
+            
+                <a href="conditionals.html">
+            
+                    
+                    conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10.3" data-path="conditionals2.html">
+            
+                <a href="conditionals2.html">
+            
+                    
+                    conditionals continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../devy-blue/">
+            
+                <a href="../../devy-blue/">
+            
+                    
+                    devY Blue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../devy-blue/objects.html">
+            
+                <a href="../../devy-blue/objects.html">
+            
+                    
+                    object literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../devy-blue/main.html">
+            
+                <a href="../../devy-blue/main.html">
+            
+                    
+                    main function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../devy-blue/debugging.html">
+            
+                <a href="../../devy-blue/debugging.html">
+            
+                    
+                    debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../devy-blue/accessing-properties.html">
+            
+                <a href="../../devy-blue/accessing-properties.html">
+            
+                    
+                    accessing properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../devy-blue/adding-levels.html">
+            
+                <a href="../../devy-blue/adding-levels.html">
+            
+                    
+                    adding levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../devy-minecraft/plan.html">
+            
+                <a href="../../devy-minecraft/plan.html">
+            
+                    
+                    devY Minecraft
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../devy-minecraft/turtles.html">
+            
+                <a href="../../devy-minecraft/turtles.html">
+            
+                    
+                    turtles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../devy-minecraft/loops.html">
+            
+                <a href="../../devy-minecraft/loops.html">
+            
+                    
+                    loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../devy-minecraft/lua-examples.html">
+            
+                <a href="../../devy-minecraft/lua-examples.html">
+            
+                    
+                    lua syntax examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../devy-minecraft/building-challenges.html">
+            
+                <a href="../../devy-minecraft/building-challenges.html">
+            
+                    
+                    turtle challenges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../resources/">
+            
+                <a href="../../resources/">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../resources/cycle.html">
+            
+                <a href="../../resources/cycle.html">
+            
+                    
+                    cycle shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../resources/codewars.html">
+            
+                <a href="../../resources/codewars.html">
+            
+                    
+                    codewars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../resources/weo.html">
+            
+                <a href="../../resources/weo.html">
+            
+                    
+                    weo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../devy-blue/escape-game.html">
+            
+                <a href="../../devy-blue/escape-game.html">
+            
+                    
+                    escape the room guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
     <div class="book-body">
-        <div class="body-inner">
-            <div class="book-header" role="navigation">
-    <!-- Actions Left -->
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
     
 
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../" >devY</a>
+        <a href="../.." >conditionals continued</a>
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1" role="main">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-">
-                    
-                        <h1 id="conditional-continued">Conditional Continued</h1>
-<h5 id="learning-goals">Learning Goals</h5>
-<p>By the end of the lesson, students will be able to:</p>
-<ul>
-<li>demonstrate learning by creating a calculator</li>
-</ul>
-<h5 id="overview">Overview</h5>
-<p>Students review conditionals and continue to practice creating apps using <a href="http://cycle.sh" target="_blank">cycle.sh</a></p>
-<h5 id="projects">Projects</h5>
-<ol>
-<li><p>Password unlock</p>
-<pre><code class="lang-js"><span class="token keyword">var</span> password <span class="token operator">=</span> <span class="token string">&apos;secret&apos;</span>
 
-<span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">if</span> <span class="token punctuation">(</span>input <span class="token operator">===</span> <span class="token string">&apos;password&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-       <span class="token keyword">return</span> `Unlocked`
-     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-       <span class="token keyword">return</span> `Locked`
-     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="conditional-continued">Conditional Continued</h1><h5 id="learning-goals">Learning Goals</h5><p>By the end of the lesson, students will be able to:</p><ul><li>demonstrate learning by creating a calculator
+</li></ul>
+<h5 id="overview">Overview</h5><p>Students review conditionals and continue to practice creating apps using <a href="http://cycle.sh" target="_blank">cycle.sh</a></p><h3 id="explore">Explore</h3><p>Students explore conditionals by playing a game of simon says with conditionals.</p><ol><li>Write a series of if/else statements
 </li>
-<li>Calculator<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> op<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">+</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">-</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">-</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `I can&apos;t <span class="token keyword">do</span> that operation`
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<li>Students follow along with the statements written on the board.
 </li>
-<li>GPA finder<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>grade1<span class="token punctuation">,</span> grade2<span class="token punctuation">,</span> grade3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">var</span> sum <span class="token operator">=</span> grade1 <span class="token operator">+</span> grade2 <span class="token operator">+</span> grade3
-   <span class="token keyword">var</span> num <span class="token operator">=</span> sum <span class="token operator">/</span> <span class="token number">3</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> <span class="token number">90</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token string">&apos;A&apos;</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> <span class="token number">80</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token string">&apos;B&apos;</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> <span class="token number">70</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token string">&apos;C&apos;</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token string">&apos;D&apos;</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> <span class="token string">&apos;F&apos;</span>
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-</ol>
-<h3 id="explore">Explore</h3>
-<p>Students explore conditionals by playing a game of simon says with conditionals.</p>
-<ol>
-<li>Write a series of if/else statements</li>
-<li>Students follow along with the statements written on the board.</li>
-<li>If a students does the wrong action they sit down.</li>
-</ol>
-<h3 id="explain">Explain</h3>
-<ol>
-<li>Review what students know about conditionals<pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> <span class="token comment" spellcheck="true">// what to do if true</span>
+<li>If a students does the wrong action they sit down.
+</li></ol>
+<h3 id="explain">Explain</h3><p><a href="#todo:0">Create conditional codewars 2 exercises</a></p><ol><li>Review what students know about conditionals
+<pre><code class="lang-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true">// what to do if true</span>
 <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-   <span class="token keyword">return</span> <span class="token comment" spellcheck="true">// what to do if false</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-</ol>
-<h3 id="engage">Engage</h3>
-<ol>
-<li>Calculator<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>num1<span class="token punctuation">,</span> op<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">+</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> `<span class="token operator">-</span>`<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">-</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">*</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>op <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-     <span class="token keyword">return</span> `I can&apos;t <span class="token keyword">do</span> that operation`
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-<li>GPA finder<pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>grade1<span class="token punctuation">,</span> grade2<span class="token punctuation">,</span> grade3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true">// what to do if false</span>
+<span class="token punctuation">}</span></code></pre>
+</li></ol>
+<h3 id="engage">Engage</h3><ol><li><p>Assign letter grade</p><pre><code class="lang-js"><span class="token keyword">function</span> main <span class="token punctuation">(</span>grade1<span class="token punctuation">,</span> grade2<span class="token punctuation">,</span> grade3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">var</span> sum <span class="token operator">=</span> grade1 <span class="token operator">+</span> grade2 <span class="token operator">+</span> grade3
    <span class="token keyword">var</span> num <span class="token operator">=</span> sum <span class="token operator">/</span> <span class="token number">3</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> <span class="token number">90</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -634,10 +615,9 @@
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
      <span class="token keyword">return</span> <span class="token string">&apos;F&apos;</span>
    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-<li><p>Password unlock</p>
+<span class="token punctuation">}</span></code></pre>
+<ol><li>Password unlock
+</li></ol>
 <pre><code class="lang-js"><span class="token keyword">var</span> password <span class="token operator">=</span> <span class="token string">&apos;secret&apos;</span>
 
 <span class="token keyword">function</span> main <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -646,63 +626,101 @@
      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
        <span class="token keyword">return</span> `Locked`
      <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-</ol>
+<span class="token punctuation">}</span></code></pre>
+</li></ol>
 
-                    
-                    </section>
-                
-                
-                </div>
-            </div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
         </div>
-
-        
-        <a href="../../devy-white/concepts/conditionals.html" class="navigation navigation-prev " aria-label="Previous page: conditionals"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../../devy-white/concepts/variables.html" class="navigation navigation-next " aria-label="Next page: variables"><i class="fa fa-angle-right"></i></a>
-        
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
     </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="conditionals.html" class="navigation navigation-prev " aria-label="Previous page: conditionals">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="variables.html" class="navigation navigation-next " aria-label="Next page: variables">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
-<script src="../../gitbook/app.js"></script>
+    </div>
 
-    
-    <script src="../../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
-    
-
-    
-    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
-    
-
-    
-    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
-    
-
-    
-    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
-    
-
-    
-    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
-    
-
-    
-    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
-    
-
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"edit-link":{"base":"https://github.com/9dots/devy/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/9dots/devy"},"prism":{},"tasklist":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
-    gitbook.start(config);
-});
-</script>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"conditionals continued","level":"1.2.10.3","depth":3,"next":{"title":"variables","level":"1.2.10.4","depth":3,"path":"devy-white/concepts/variables.md","ref":"devy-white/concepts/variables.md","articles":[]},"previous":{"title":"conditionals","level":"1.2.10.2","depth":3,"path":"devy-white/concepts/conditionals.md","ref":"devy-white/concepts/conditionals.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.x.x","theme":"default","variables":{},"plugins":["edit-link","prism","-highlight","tasklist","tonic","livereload"],"pluginsConfig":{"prism":{},"tasklist":{},"github":{"url":"https://github.com/9dots/devy"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/9dots/devy/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"devy-white/concepts/conditionals2.md","mtime":"2016-09-08T22:57:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-08T22:57:56.632Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
 
         
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://embed.tonicdev.com"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tonic/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
     </body>
-    
 </html>
+

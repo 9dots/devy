@@ -1,0 +1,145 @@
+/* CSS for website */
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+tbody {
+  width: 100%;
+}
+tr {
+  width: 100%
+}
+.page-wrapper {
+  background-color: #e5e5e5
+}
+.activity-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #6B6178;
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 12px;
+  background-color: #fff;
+}
+.activity-header .activity-icon {
+  width: 150px;
+  height: 150px;
+  background: url('/images/8.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  margin-right: 16px;
+}
+.activity-header .activity .activity-number {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.markdown-section hr {
+  background: url('/images/Banner2.png');
+  background-size: contain;
+  height: 90px;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.activity-header .activity {
+  flex: 1;
+}
+.activity-header .activity-length {
+  display: flex;
+  align-items: center;
+}
+.activity-header .activity-length .length-icon {
+  height: 80px;
+  width: 80px;
+  margin-right: 15px;
+  background: url('/images/3.png');
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.activity-header .activity-length .activity-length-header {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+.markdown-section table td {
+  width: 50%;
+  border: 0;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.markdown-section table td p:first-child {
+  display:inline;
+}
+.markdown-section table td ol {
+  margin-left: 2.5em;
+}
+.markdown-section table tr {
+  border: 0;
+}
+.markdown-section table th {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-left: calc(3.4em + 16px);
+  border: 0;
+  width: 50%;
+}
+.markdown-section table thead {
+  border-top: 2px solid #886CAF;
+}
+.markdown-section table .second {
+  border-left: 1px dotted #F8B8A9;
+  background-color: #FEF9F0
+}
+.markdown-section table tr:nth-child(2n) {
+    background-color: #fff;
+}
+.markdown-section p {
+  margin-bottom: 0;
+}
+.page-inner {
+  max-width: 75%;
+}
+.markdown-section table {
+	counter-reset: rowNumber; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+  color: #6B6178;
+  margin-bottom: 5em;
+}
+table tbody tr {
+	position:relative; /* Create a positioning context */
+	margin:0 0 12px 2em; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 8px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+  counter-increment: rowNumber;
+}
+table tr td .number {
+	content:counter(rowNumber); /* Use the counter as content */
+	/* Position and style the number */
+  display: inline-block;
+  top: -1px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+  border-radius: 2em;
+	width:2.1em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding:4px;
+	color:#4D425D;
+	background:#F7B8B1;
+	font-weight:bold;
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	text-align:center;
+}
+table tr td .content {
+  margin-left: 3.2em;
+  position: relative;
+  top: -30px;
+}
