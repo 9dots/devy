@@ -13,25 +13,49 @@ By the end of the lesson, students will be able to:
 ### pseudocode planning
 Distribute the features checklist and introduce the guess the number game.
 
-{% table "teacher actions", "student actions" %}
-1. Ask students to describe the steps to playing a number in game if they were playing with another person. The list should be similar to:
-  1. Person 1 thinks of a number. (variables)
-  2. Person 1 tells person 2 the number of guesses they are allowed to take. (variables)
-  3. Person 2 guesses a number.
-  4. Person 1 checks if the guess is correct. (conditionals)
-    - If the guess is correct person 2 wins (strings)
-    - Otherwise person 1 give person 2 a hint: higher or lower. (strings)
+---
+{% activity activityName='Activity 1', length='5-10' %}
+This is the first activity blah blah blah
 
-  5. If person 2 runs out of guesses without getting the correct answer they lose the game. (conditionals)
-2. Tell students that the game is going to be built in stages as they learn new concepts.
-3. To create this game the first step is to learn about functions and cycle-shell.
+*Materials: This is the list of materials to use blah blah*
+{% endactivity %}
+{% table "teacher actions", "student actions" %}
+1) **On Paper**
+
+Ask students to describe the steps to playing a number in game if they were playing with another person. The list should be similar to:
+  1. more
+  2. stuff
+  3. whatever
+2) Tell students that the game is going to be built in stages as they learn new concepts.
+3) To create this game the first step is to learn about functions and cycle-shell.
+
 ,,,
 
-1. stuff
-2. more stuff
-3. the most stuff
+1) stuff
+3) the most stuff
 {% endtable %}
 
+---
+{% activity activityName='Activity 2', length='20' %}
+This is the second activity
+
+*Materials: This is the materials list of materials to use blah blah*
+{% endactivity %}
+{% table "teacher actions", "student actions" %}
+1) **On Paper**
+
+Ask students to describe the steps to playing a number in game if they were playing with another person. The list should be similar to:
+  1. more
+  2. stuff
+  3. whatever
+2) Tell students that the game is going to be built in stages as they learn new concepts.
+3) To create this game the first step is to learn about functions and cycle-shell.
+
+,,,
+
+1) stuff
+2) the most stuff
+{% endtable %}
 
 ##### Functions
 
@@ -41,13 +65,16 @@ function main (input) {
   return input
 }
 ```
+
 1. The first line of cycle-shell sets up the interactive page on the right side of the screen.
 2. A function is a reusable set of instructions. A function is a block of code and has curly braces `{}` to mark the beginning and end of the code block. Code inside of the code block should be indented. The function is written as:
+
 ```js
 function name (parameter1, parameter2) {
      return value
 }
 ```
+
 3. Parameters are variables that only exist inside of the function.
   - In cycle shell the parameters have the value of whatever is written in the input box.
   - Each word that is separated by a space will be the value of the next parameter.
