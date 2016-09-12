@@ -13,7 +13,7 @@ Discuss order:
   1. Syntax error
   2. Logic mistakes
 
-## Explore
+### Explore
 Create a human version of an object and if/else chain.  
 
 1. Go through an example with if/else chain similar to the one students create in the previous lesson. Announce your steps out loud.
