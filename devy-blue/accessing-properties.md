@@ -1,19 +1,51 @@
-# Accessing properties
+{% title title='Accessing properties' %}
+{% endtitle %}
 
-##### Learning Goals
-By the end of the lesson, students will be able to:
-  - Access object keys by variable
+{% header title='Overview', icon='activity' %}
+{% endheader %}
 
-##### Overview
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sapien neque, aliquam a venenatis et, scelerisque et justo. Praesent interdum, tortor eu porttitor facilisis, justo velit eleifend odio, ut vulputate libero nisi nec mi. Suspendisse in semper nunc, at feugiat tortor. Nam euismod in urna finibus varius. Vivamus ultrices lorem suscipit augue lacinia, eget rhoncus lacus dapibus. Quisque sollicitudin vel orci consectetur molestie. Donec nec odio lacus. Etiam orci metus, tempus eget finibus vel, vehicula quis nisl. Vestibulum neque eros, rhoncus sed est eget, lacinia pulvinar ligula. Phasellus porta ligula metus. Morbi non vehicula odio. Quisque fermentum dignissim diam, in tempus lacus condimentum non. Sed blandit nisl vitae magna interdum, eget rhoncus dui rhoncus.
 
-### Debugging Review
-Debugging review with examples.
+{% overviewSection title='Objectives', icon='objectives' %}
+{% endoverviewSection %}
 
-Discuss order:
-  1. Syntax error
-  2. Logic mistakes
+1. I can describe the importance of knowing how to code.
+2. I am not afraid to fail. I succeed by learning why I failed and then trying again.
 
-### Explore
+{% overviewSection title='Agenda', icon='agenda' %}
+{% endoverviewSection %}
+
+1. **Do now:** Students introduce themselves and their interests
+2. **Attention Getting Signal:** Teach or review your signal to move from small group to whole group
+3. **River crossing activity:** Student repeatedly encounter failure and connect it to progress as they resolve their issues
+
+{% overviewSection title='Vocab', icon='vocab' %}
+{% endoverviewSection %}
+
+**Code**
+
+A set of instructions designed to be carried out by a computer.
+
+{% overviewSection title='Materials', icon='materials' %}
+{% endoverviewSection %}
+
+1. Name tents
+2. Markers for name tents
+3. Code cards
+4. Felt strips
+5. Paper river crossing worksheet
+
+{% overviewSection title='Standards', icon='standards' %}
+{% endoverviewSection %}
+
+standard | description
+---|---
+ETS1.A | Defining and delimiting engineering problems
+ETS1.B | Developing possible solutions
+
+{% header title='Explore', icon='objectives' %}
+{% endheader %}
+
 Create a human version of an object and if/else chain.  
 
 1. Go through an example with if/else chain similar to the one students create in the previous lesson. Announce your steps out loud.
@@ -34,7 +66,7 @@ Create a human version of an object and if/else chain.
 2. As your game gets bigger how many items do you think will be in the game?
 3. Is it easier to check the list or create an if/else chain to check each word?
 
-### Explain
+## Explain
 1. Review what students currently know about accessing properties of objects
 2. In the generic example show students the syntax for accessing a Javascript object using a variable in [repl.it](repl.it)
 ```js
@@ -68,7 +100,7 @@ items: {
   }
   ```
 
-### Engage
+## Engage
 
 1. Students work on refactoring their code
 2. Students work on adding an inventory to their game
