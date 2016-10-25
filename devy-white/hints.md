@@ -14,7 +14,7 @@ Students learn how to add hints to their game. During this lesson students learn
 - function syntax
 
 ### plan (5 minutes)
-{% tlist %}
+ 
 1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
   - [x] Person 2 guesses a number.
   - [x] Person 1 (game) checks if the guess is correct. (conditionals)
@@ -22,7 +22,7 @@ Students learn how to add hints to their game. During this lesson students learn
     - [ ] Otherwise person 1 give person 2 a hint: higher or lower. (function, return, strings, conditional)
 2. Label each of the steps with a javascript concept (in the parentheses above)
 3. Discuss which concepts are new.
-{% endtlist %}
+ 
 
 ### discover (30-45 minutes)
 [creating functions lesson](concepts/defining-functions.md)

@@ -15,7 +15,7 @@ Students add a feature to the game where the user is presented with a score base
 - defining functions
 
 ### plan (5 minutes)
-{% tlist %}
+
 1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
   - [x] Person 1 thinks of a number. (variables)
   - [x] Person 1 decides the maximum number of guesses. (variables)
@@ -28,7 +28,7 @@ Students add a feature to the game where the user is presented with a score base
   - [x] Otherwise game is over. (conditionals)
 2. Label each of the steps with a javascript concept (in the parentheses above)
 3. Discuss which concepts are new.
-{% endtlist %}
+ 
 
 ### produce (20 minutes)
 Students need to:

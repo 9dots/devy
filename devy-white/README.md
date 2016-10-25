@@ -14,8 +14,6 @@ devY White is an introduction course that introduces students to the cycle shell
 ### Project
 Students demonstrate their knowledge of cycle-shell and these concepts to create a guess the number game.
 
-{% tlist %}
-
 ##### Core Features
 
 - [ ] **Check user guess**
@@ -101,5 +99,3 @@ Students demonstrate their knowledge of cycle-shell and these concepts to create
     - variables
       - update
       - numbers
-
-{% endtlist %}

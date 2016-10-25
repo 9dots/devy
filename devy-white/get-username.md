@@ -13,7 +13,7 @@ Students add a welcome message to their game and ask the user to input a name. S
 - setting variables
 
 ### plan (5 minutes)
-{% tlist %}
+ 
 1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
   - [ ] Person 1 gets the name of the player 2 (variables, conditionals)
   - [x] Person 1 thinks of a number. (variables)
@@ -27,7 +27,7 @@ Students add a welcome message to their game and ask the user to input a name. S
   - [x] Otherwise game is over. (conditionals)
 2. Label each of the steps with a javascript concept (in the parentheses above)
 3. Discuss which concepts are new.
-{% endtlist %}
+
 
 ### produce (20 minutes)
 pseudocode with students:

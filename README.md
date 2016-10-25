@@ -1,42 +1,32 @@
-# devY
+<header title='title' subtitle='subtitle'/>
 
-### Overview
+<notable>
 
-##### Recommended Grades
-5th-8th
+## Overview
 
-##### Mission
-The goal of devY is to provide educators with the tools and curriculum to create a unique project based learning environment to teach coding. We believe that an offline exploration of concepts enhances student understanding, and engaging projects cement learning.
+## Agenda
 
-### Unit structure
-In each devY unit, students create a project that includes all of the concepts taught in the unit. The project is built in pieces, with each lesson mapping to a particular concept needed to create the larger project. Some lessons may take several classes to implement so the units are designed to let students move at their own pace.
+## Engage
 
-### Lesson structure
-devY lessons are composed of the following sections:
+### 1) Unearthing Loops in Video Games (7 min)
 
-##### Explore
-Students engage with the coding concept in an offline way.
-##### Questions
-Map explore exercise to Javascript concept.
-##### Explain
-Explicit instruction on how to implement the Javascript.
-##### Engage
-Use the new concept in a real word situation. During this time, students also break off to coding stations to review/reinforce learning of a particular concept.
+- [ ] **Review the concept of loops.** Display the slide of Rover moving 14 steps in one direction.
+  - [ ] Step through the code required to get Rover to the finish line.
+  - [ ] The sequence can be shortened to only 3 blocks by using a loop.
+  - [ ] “Move 1 Step” can be looped 14 times to produce the same result.
+  - [ ] Step through the looped code.
 
-### Tools
-All of the platforms used in these lessons are 100% free.
+- asdf
+  - asdfas
 
-##### cycle shell
-Using [cycle shell](http://cycle.sh) students can interact with their computer in a terminal like environment. This allows students to build meaningful web applications with only and introductory knowledge of Javascript.
+1. stuff
+  2. more stuff
+  3. 
 
-[cycle shell tutorial](resources/cycle.md)
+<note mt='1em'>
+  #### key points
+  <iconp icon='star'>Actions that happen more than once can be coded as a loop.</iconp>
+  <iconp icon='star'>Loops allow us to repeat sequences without having to write out the entire sequence multiple times. </iconp>
+</note>
 
-##### codewars (optional)
-[Codewars](http://codewars.com) is an online platform where users solve real coding challenges. This curriculum utilizes codewars to reinforce concepts when students break out into coding stations.
-
-[codewars tutorial](resources/codewars.md)
-
-##### weo (optional)
-[Weo](http://weo.io) is an educational platform that makes it easy to create and grade assignments. The devY curriculum employs this to create quizzes and short review exercises.
-
-[weo tutorial](resources/weo.md)
+</notable>

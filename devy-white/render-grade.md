@@ -1,3 +1,4 @@
+git pull
 # render grade
 
 ##### Learning Goals

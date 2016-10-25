@@ -13,7 +13,7 @@ Students use their knowledge of defining functions, creating variables, and cond
 - conditional syntax
 
 ### plan (5 minutes)
-{% tlist %}
+ 
 1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
   - [x] Person 1 thinks of a number. (variables)
   - [ ] Person 1 decides the maximum number of guesses. (variables)
@@ -25,7 +25,7 @@ Students use their knowledge of defining functions, creating variables, and cond
   - [ ] Otherwise game is over. (conditionals)
 2. Label each of the steps with a javascript concept (in the parentheses above)
 3. Discuss which concepts are new.
-{% endtlist %}
+ 
 
 ### produce (20 minutes)
 Remind students that their goals are:

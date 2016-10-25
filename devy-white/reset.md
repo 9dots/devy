@@ -12,7 +12,7 @@ Students add a reset function that resets the variable values back to their orig
 - updating variable values
 
 ### plan (5 minutes)
-{% tlist %}
+ 
 1. Lead a discussion with students about how the guessing part of the game would work in the human context. The final solution should look similar to:
   - [ ] If at any points the user types 'reset' the game should be reset to it's initial state (variables, conditionals, function)
   - [x] Person 1 gets the name of the player 2 (variables, conditionals)
@@ -27,7 +27,7 @@ Students add a reset function that resets the variable values back to their orig
   - [x] Otherwise game is over. (conditionals)
 2. Label each of the steps with a javascript concept (in the parentheses above)
 3. Discuss which concepts are new.
-{% endtlist %}
+ 
 
 ### produce (20 minutes)
 pseudocode:

@@ -1,15 +1,15 @@
 {
-    "gitbook": "3.x.x",
-    "structure": {
-        "summary": "SUMMARY.md"
+  "gitbook": "3.2.2",
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "plugins": ["edit-link", "prism", "highlight", "9dots-style", "mdx-components", "markedx"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/9dots/devy/tree/master"
     },
-    "plugins": ["edit-link", "prism", "-highlight", "tasklist", "tonic"],
-    "pluginsConfig": {
-        "edit-link": {
-            "base": "https://github.com/9dots/devy/tree/master"
-        },
-        "github": {
-            "url": "https://github.com/9dots/devy"
-        }
+    "github": {
+      "url": "https://github.com/9dots/devy"
+    }
   }
 }
